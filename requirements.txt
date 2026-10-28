@@ -1,0 +1,14 @@
+numpy
+scipy
+pandas
+pyarrow
+astropy
+astroquery
+sep
+pyyaml
+python-dotenv
+openai
+pydantic
+matplotlib
+pytest
+ruff
