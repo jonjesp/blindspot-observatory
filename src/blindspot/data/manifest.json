@@ -1,0 +1,15 @@
+{
+  "source": "Original ZTF science images used by all experiments in this project",
+  "images": [
+    {
+      "field": "E4_r",
+      "filename": "ztf_20180411467847_000535_zr_c11_o_q3_sciimg.fits",
+      "sha256": "51f8a813654603f26b7c6db47960479db520ac51de7cee87d6803b51729fab61"
+    },
+    {
+      "field": "E5_g",
+      "filename": "ztf_20180325251921_000314_zg_c08_o_q2_sciimg.fits",
+      "sha256": "a8cc7164b81be22e72f75d9bc4db892c974f65b28c15fe1fcc3ef7491f323a8c"
+    }
+  ]
+}

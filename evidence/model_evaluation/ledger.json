@@ -1,0 +1,3125 @@
+{
+  "attempts": {
+    "muse-spark-1.1/F01": {
+      "cost_usd": 0.0089472,
+      "decision": {
+        "decision": "probe",
+        "justification": "rms_radius_change 0.1676 is large vs background_mad_change 0.0423 small, pointing to PSF growth. Recovery drop is severe for nominal A [13,12,13,12] to B [3,1,2,2] and moderate for bright A [21,19,20,20] to B [9,15,15,14], consistent with peak dilution from broader PSF.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 18.127355800010264,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"rms_radius_change 0.1676 is large vs background_mad_change 0.0423 small, pointing to PSF growth. Recovery drop is severe for nominal A [13,12,13,12] to B [3,1,2,2] and moderate for bright A [21,19,20,20] to B [9,15,15,14], consistent with peak dilution from broader PSF.\", \"probes\": [\"probe_psf\"]}",
+      "reasoning_tokens": 1937,
+      "recorded_utc": "2026-11-03T03:57:02+00:00",
+      "request_sha256": "40b697e8ab18c0a196f039c7df49e32163a21d05d8ba5fd644d9a331ba939681",
+      "reservation_usd": 0.03717975,
+      "response_id": "chatcmpl-01a19f8d-a2ff-7167-88b3-16d98d838336",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:56:44+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 2053,
+        "prompt_tokens": 277
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F02": {
+      "cost_usd": 0.009757700000000001,
+      "decision": {
+        "decision": "probe",
+        "justification": "background_mad_change=0.0 rules out sky anomaly. rms_radius_change=0.0348 is only 3.5%, too small to explain nominal recovery collapse 17.25/25->1.25/25 vs bright 21.75->17.25. Strong flux-dependent threshold loss with unchanged background/PSF points to flux scaling.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 26.69308889983222,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"background_mad_change=0.0 rules out sky anomaly. rms_radius_change=0.0348 is only 3.5%, too small to explain nominal recovery collapse 17.25/25->1.25/25 vs bright 21.75->17.25. Strong flux-dependent threshold loss with unchanged background/PSF points to flux scaling.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 2142,
+      "recorded_utc": "2026-11-03T03:41:20+00:00",
+      "request_sha256": "89de3119e3b1311ac8538ff43e1ca9c067bd88bf22ef5224c487863b2da09e24",
+      "reservation_usd": 0.03717725,
+      "response_id": "chatcmpl-01a19f7f-43a0-723b-88c9-b2768a4f51e1",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:40:53+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 2244,
+        "prompt_tokens": 276
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F03": {
+      "cost_usd": 0.010113450000000001,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright recovery unchanged (mean 22.8 vs 22.2 /25) but nominal halves (15 to 7.2/25). background_mad_change=0.0 rules out sky anomaly; rms_radius_change=0.12 directly supports PSF broadening lowering peak S/N for faint sources.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 24.743321599904448,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Bright recovery unchanged (mean 22.8 vs 22.2 /25) but nominal halves (15 to 7.2/25). background_mad_change=0.0 rules out sky anomaly; rms_radius_change=0.12 directly supports PSF broadening lowering peak S/N for faint sources.\", \"probes\": [\"probe_psf\"]}",
+      "reasoning_tokens": 2237,
+      "recorded_utc": "2026-11-03T03:29:15+00:00",
+      "request_sha256": "6b734ac273a9965c9daa0e407522d301430f7dfe61a2f85f24a67e68a2c9e289",
+      "reservation_usd": 0.03717475,
+      "response_id": "chatcmpl-01a19f74-35b0-7506-b511-f072178c0265",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:28:51+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 2328,
+        "prompt_tokens": 275
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F04": {
+      "cost_usd": 0.00712195,
+      "decision": {
+        "decision": "probe",
+        "justification": "rms_radius_change 0.1668 dominates background_mad_change 0.0 and integrated_amplitude_change 0.0726. Recovery drops bright ~89%->67% and nominal ~62%->25%, stronger at faint end, consistent with PSF broadening lowering peak S/N.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 16.99296410009265,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"rms_radius_change 0.1668 dominates background_mad_change 0.0 and integrated_amplitude_change 0.0726. Recovery drops bright ~89%->67% and nominal ~62%->25%, stronger at faint end, consistent with PSF broadening lowering peak S/N.\", \"probes\": [\"probe_psf\"]}",
+      "reasoning_tokens": 1532,
+      "recorded_utc": "2026-11-03T03:37:46+00:00",
+      "request_sha256": "e022f4e7e7861bfcd79aeb726151e1041384d44132baaa54b1617ea906bd1f0e",
+      "reservation_usd": 0.0372285,
+      "response_id": "chatcmpl-01a19f7b-ffb4-7183-9271-41c3ad8524e3",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:37:29+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 1620,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F05": {
+      "cost_usd": 0.00720395,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright recovery unchanged ~23-24/25 in both A and B while nominal collapses from 17-18/25 (~71%) to 5-10/25 (~26%), threshold-dependent loss. background_mad_change 0.2825 dominates integrated_amplitude_change 0.0669 and rms_radius_change 0.0455, consistent with sky noise inflation.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 16.242138899862766,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Bright recovery unchanged ~23-24/25 in both A and B while nominal collapses from 17-18/25 (~71%) to 5-10/25 (~26%), threshold-dependent loss. background_mad_change 0.2825 dominates integrated_amplitude_change 0.0669 and rms_radius_change 0.0455, consistent with sky noise inflation.\", \"probes\": [\"probe_sky\"]}",
+      "reasoning_tokens": 1533,
+      "recorded_utc": "2026-11-03T03:27:21+00:00",
+      "request_sha256": "3894d7338f5bf0ae1ded6aa26c83187d7f806e16d76b70d9a5a27d54a2b4804c",
+      "reservation_usd": 0.0372335,
+      "response_id": "chatcmpl-01a19f72-7777-7522-b0b2-cc87911d9787",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:27:05+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 1639,
+        "prompt_tokens": 290
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F06": {
+      "cost_usd": 0.015157450000000001,
+      "decision": {
+        "decision": "probe",
+        "justification": "Background MAD change 0.0 rules out sky. Bright 96%->78% vs nominal 67%->15% shows brightness-dependent threshold loss. Integrated amplitude change 0.237 dominates rms radius change 0.084, pointing to flux dimming as primary cause.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 43.27976499986835,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Background MAD change 0.0 rules out sky. Bright 96%->78% vs nominal 67%->15% shows brightness-dependent threshold loss. Integrated amplitude change 0.237 dominates rms radius change 0.084, pointing to flux dimming as primary cause.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 3426,
+      "recorded_utc": "2026-11-03T03:36:44+00:00",
+      "request_sha256": "e1e306a65653d69530dc04497a7673e4ae0f851a1adc3078c3bbdd976344e32c",
+      "reservation_usd": 0.03722725,
+      "response_id": "chatcmpl-01a19f7b-0e6f-77f3-8ce7-a01398d6e24a",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:36:01+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 3511,
+        "prompt_tokens": 288
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F07": {
+      "cost_usd": 0.008664700000000001,
+      "decision": {
+        "decision": "probe",
+        "justification": "Background MAD change 0.0 rules out sky. Bright recovery 21.25->19.75 (-7%) vs nominal 14.75->7.75 (-47%) shows threshold effect. Integrated amplitude change 0.2884 dominates rms_radius 0.0861, consistent with flux dimming.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 16.250452500069514,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Background MAD change 0.0 rules out sky. Bright recovery 21.25->19.75 (-7%) vs nominal 14.75->7.75 (-47%) shows threshold effect. Integrated amplitude change 0.2884 dominates rms_radius 0.0861, consistent with flux dimming.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 1891,
+      "recorded_utc": "2026-11-03T03:29:53+00:00",
+      "request_sha256": "0eba093627747158a868a5cd3179248b42b35ab2f20fe906014827c4f30ab825",
+      "reservation_usd": 0.03722975,
+      "response_id": "chatcmpl-01a19f74-ca83-75f9-bdd1-51340dc5abcf",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:29:37+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 1983,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F08": {
+      "cost_usd": 0.010248950000000001,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal collapses A~13.5/25 to B~2.25/25 vs bright 22.75 to 18.5 mild drop, faint-biased loss. background_mad_change 0.298 is large and dominates integrated_amplitude_change 0.108, indicating sky noise increase raising threshold, not PSF or flux.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 21.663919399958104,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal collapses A~13.5/25 to B~2.25/25 vs bright 22.75 to 18.5 mild drop, faint-biased loss. background_mad_change 0.298 is large and dominates integrated_amplitude_change 0.108, indicating sky noise increase raising threshold, not PSF or flux.\", \"probes\": [\"probe_sky\"]}",
+      "reasoning_tokens": 2260,
+      "recorded_utc": "2026-11-03T03:30:32+00:00",
+      "request_sha256": "a996ad764e0ac165be24a04128fcb33f66aaf0ba741704de73c228cda05aea51",
+      "reservation_usd": 0.03719225,
+      "response_id": "chatcmpl-01a19f75-6119-7127-ac97-e72882393efa",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:30:10+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 2359,
+        "prompt_tokens": 278
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F09": {
+      "cost_usd": 0.018639450000000002,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "background_mad_change 0.0 rules out sky. Both integrated_amplitude_change 0.2646 and rms_radius_change 0.1202 are significant and pilot shows bright 23->20 and nominal 15->~8 drop; PSF broadening and flux loss both predict larger nominal loss, so both remain plausible.",
+        "probes": [
+          "probe_flux",
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 49.86761810001917,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"background_mad_change 0.0 rules out sky. Both integrated_amplitude_change 0.2646 and rms_radius_change 0.1202 are significant and pilot shows bright 23->20 and nominal 15->~8 drop; PSF broadening and flux loss both predict larger nominal loss, so both remain plausible.\", \"probes\": [\"probe_flux\", \"probe_psf\"]}",
+      "reasoning_tokens": 4231,
+      "recorded_utc": "2026-11-03T03:43:01+00:00",
+      "request_sha256": "ffdffa4a7bf7599d8c93af0c92c6ec5c0f2530cbb52bd65eaacc0437eddcb237",
+      "reservation_usd": 0.0372285,
+      "response_id": "chatcmpl-01a19f80-cec0-7646-8f6b-35ca1e74d844",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:42:11+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 4330,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F10": {
+      "cost_usd": 0.0169862,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Bright recovers ~70% in A/B (17-19/25) while nominal drops 14.2/25 -> 4.8/25, so faint-end threshold loss. background_mad_change 0.0 rules out sky. Both integrated_amplitude_change 0.0937 and rms_radius_change 0.0926 are non-zero and similar, so flux loss and PSF broadening remain plausible.",
+        "probes": [
+          "probe_psf",
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 45.40150130004622,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Bright recovers ~70% in A/B (17-19/25) while nominal drops 14.2/25 -> 4.8/25, so faint-end threshold loss. background_mad_change 0.0 rules out sky. Both integrated_amplitude_change 0.0937 and rms_radius_change 0.0926 are non-zero and similar, so flux loss and PSF broadening remain plausible.\", \"probes\": [\"probe_psf\", \"probe_flux\"]}",
+      "reasoning_tokens": 3823,
+      "recorded_utc": "2026-11-03T03:54:15+00:00",
+      "request_sha256": "1d4ede1b348e58df39380be36400a614f904a87c74983d95bf56cd13974d7e9d",
+      "reservation_usd": 0.0372285,
+      "response_id": "chatcmpl-01a19f8b-17cb-76fb-a9d0-c9fcb4ccebdd",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:53:30+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 3941,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F11": {
+      "cost_usd": 0.00868895,
+      "decision": {
+        "decision": "abstain",
+        "justification": "All instrument indicators ~0: background_mad_change 0.0, integrated_amplitude 0.0005, rms_radius 0.019. Recovery identical within noise: bright A mean 20.5 vs B 21; nominal A 14.25 vs B 13.5 with overlapping ranges [13-17] vs [11-17], no evidence of sky/psf/flux anomaly.",
+        "probes": []
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 18.730134000070393,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"abstain\", \"justification\": \"All instrument indicators ~0: background_mad_change 0.0, integrated_amplitude 0.0005, rms_radius 0.019. Recovery identical within noise: bright A mean 20.5 vs B 21; nominal A 14.25 vs B 13.5 with overlapping ranges [13-17] vs [11-17], no evidence of sky/psf/flux anomaly.\", \"probes\": []}",
+      "reasoning_tokens": 1877,
+      "recorded_utc": "2026-11-03T03:51:35+00:00",
+      "request_sha256": "39fec503b1d7c463cdc28ec443bc0bf4acff810d1fe1e83b2efe9768b4709a3c",
+      "reservation_usd": 0.03723225,
+      "response_id": "chatcmpl-01a19f88-a4cf-746f-9f30-e58d31e9b68e",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:51:16+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 1989,
+        "prompt_tokens": 288
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F12": {
+      "cost_usd": 0.026230200000000002,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright 21->16.5 mean (-21%) and nominal 15.75->3.5 mean (-78%) shows faint-dominated loss. background_mad_change 0.0583 is too small for sky to cause 78% loss. integrated_amplitude_change 0.1061 modest indicates peak suppressed but total roughly conserved, favoring PSF broadening over pure flux scale.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 59.280431600054726,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Bright 21->16.5 mean (-21%) and nominal 15.75->3.5 mean (-78%) shows faint-dominated loss. background_mad_change 0.0583 is too small for sky to cause 78% loss. integrated_amplitude_change 0.1061 modest indicates peak suppressed but total roughly conserved, favoring PSF broadening over pure flux scale.\", \"probes\": [\"probe_psf\"]}",
+      "reasoning_tokens": 6012,
+      "recorded_utc": "2026-11-03T04:05:21+00:00",
+      "request_sha256": "ba059cc67b95e4ecabc57a04ec5707582b3827baa7997df93ab059b99bd96be4",
+      "reservation_usd": 0.0371935,
+      "response_id": "chatcmpl-01a19f95-4056-7405-b4c6-5187cefd52d6",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T04:04:22+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 6119,
+        "prompt_tokens": 279
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F13": {
+      "cost_usd": 0.0073187,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapses 13,14,18,17 -> 6,4,6,4 /25 while bright remains 21,21,22,20 -> 18,21,18,18. background_mad_change 0.2984 dominates rms_radius_change 0.0613 and integrated_amplitude_change 0.0646, consistent with sky background increase hurting faint sources.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 15.247080000117421,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{ \"decision\": \"probe\", \"justification\": \"Nominal recovery collapses 13,14,18,17 -> 6,4,6,4 /25 while bright remains 21,21,22,20 -> 18,21,18,18. background_mad_change 0.2984 dominates rms_radius_change 0.0613 and integrated_amplitude_change 0.0646, consistent with sky background increase hurting faint sources.\", \"probes\": [\"probe_sky\"]}",
+      "reasoning_tokens": 1554,
+      "recorded_utc": "2026-11-03T03:50:08+00:00",
+      "request_sha256": "40d59fad14bc9431836f9e68abd77ef2948a4cb8bfeb9106377ab33ecb2a7cf4",
+      "reservation_usd": 0.03723225,
+      "response_id": "chatcmpl-01a19f87-53e9-77f7-b666-3d1da141f3ec",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:49:53+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 1666,
+        "prompt_tokens": 290
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F14": {
+      "cost_usd": 0.0071262,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapses A~15.5 to B~2.8 vs bright mild 22.2->19.5; background_mad_change=0.0 rules out sky; rms_radius_change=0.1812 >> integrated_amplitude_change=0.0738 indicates PSF broadening lowers peak S/N causing threshold loss",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 14.28207329986617,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{ \"decision\": \"probe\", \"justification\": \"Nominal recovery collapses A~15.5 to B~2.8 vs bright mild 22.2->19.5; background_mad_change=0.0 rules out sky; rms_radius_change=0.1812 >> integrated_amplitude_change=0.0738 indicates PSF broadening lowers peak S/N causing threshold loss\", \"probes\": [\"probe_psf\"] }",
+      "reasoning_tokens": 1522,
+      "recorded_utc": "2026-11-03T03:59:34+00:00",
+      "request_sha256": "af0e33b95814a4b92c8eb9332ee53a7ebabcf2d21a45ebcaeca29d8c668ecc8e",
+      "reservation_usd": 0.0372285,
+      "response_id": "chatcmpl-01a19f8f-f39e-742b-b11e-b9a6bf09fa8a",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:59:19+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 1621,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F15": {
+      "cost_usd": 0.011002950000000001,
+      "decision": {
+        "decision": "probe",
+        "justification": "background_mad_change 0.0 rules out sky. rms_radius_change only 0.0469 too small to explain large magnitude dependent loss: bright 19-21->16 vs nominal 10-15->2-5. Collapse of faint near threshold points to flux scaling/zero-point.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 26.97097699996084,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{ \"decision\": \"probe\", \"justification\": \"background_mad_change 0.0 rules out sky. rms_radius_change only 0.0469 too small to explain large magnitude dependent loss: bright 19-21->16 vs nominal 10-15->2-5. Collapse of faint near threshold points to flux scaling/zero-point.\", \"probes\": [\"probe_flux\"] }",
+      "reasoning_tokens": 2446,
+      "recorded_utc": "2026-11-03T03:57:29+00:00",
+      "request_sha256": "dbe167a0e4101e34e2a1fd91eb2a9ed2dc0a9ee8fd8f67f80c80137e7b1accba",
+      "reservation_usd": 0.03717725,
+      "response_id": "chatcmpl-01a19f8e-0c7f-73c3-8b8b-6f60d1ac121c",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:57:02+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 2537,
+        "prompt_tokens": 276
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F16": {
+      "cost_usd": 0.0205125,
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 56.20943620009348,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Bright recovery nearly intact 20.0->18.5/25 while nominal 12.75->5.75/25 collapses => sensitivity loss near threshold, not global loss. rms_radius_change 0.13 direct evidence for PSF broadening which also produces apparent integrated_amplitude_change 0.12 via aperture loss. Sky would give ~0 change in both shape metrics, flux alone cannot create radius increase.\", \"probes\": [\"probe_psf\"]}",
+      "reasoning_tokens": 4632,
+      "recorded_utc": "2026-11-03T03:25:40+00:00",
+      "request_sha256": "295d19c7ed9df23b9b2dbd8fae00590b56330d4a4c1ba2e3271fd25c7ee7544a",
+      "reservation_usd": 0.037186,
+      "response_id": "chatcmpl-01a19f70-ebf3-77e2-a509-dae46627938c",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:24:44+00:00",
+      "state": "invalid_response",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 4745,
+        "prompt_tokens": 277
+      },
+      "usage_exceeded_reservation": false,
+      "validation_error": "Justification missing or out of length range"
+    },
+    "muse-spark-1.1/F17": {
+      "cost_usd": 0.011053200000000001,
+      "decision": {
+        "decision": "abstain",
+        "justification": "Indicators all near zero: background_mad_change 0.0, integrated_amplitude_change 0.0071, rms_radius_change 0.0456. Recovery bright A [23,23,23,23] vs B [23,23,23,22] and nominal A [15,18,18,16] vs B [18,15,17,15] out of 25 overlap fully. No detectable completeness anomaly.",
+        "probes": []
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 28.6995423999615,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"abstain\", \"justification\": \"Indicators all near zero: background_mad_change 0.0, integrated_amplitude_change 0.0071, rms_radius_change 0.0456. Recovery bright A [23,23,23,23] vs B [23,23,23,22] and nominal A [15,18,18,16] vs B [18,15,17,15] out of 25 overlap fully. No detectable completeness anomaly.\", \"probes\": []}",
+      "reasoning_tokens": 2426,
+      "recorded_utc": "2026-11-03T03:52:13+00:00",
+      "request_sha256": "88c9cdb22461ecd96181275d9eb84d4d5d548d17a66bb1ea8a35829d06e9362c",
+      "reservation_usd": 0.0372335,
+      "response_id": "chatcmpl-01a19f89-3bf9-701d-afbb-703d1b77648a",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:51:45+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 2545,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F18": {
+      "cost_usd": 0.0166992,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright recovery ~22/25 in both A and B vs nominal 19/25->~7/25 shows faint-only completeness loss. Integrated amplitude change 0.077 and rms radius change 0.068 are both small, ruling out large PSF or flux shift. Pattern fits sky/threshold increase.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 46.0977837999817,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Bright recovery ~22/25 in both A and B vs nominal 19/25->~7/25 shows faint-only completeness loss. Integrated amplitude change 0.077 and rms radius change 0.068 are both small, ruling out large PSF or flux shift. Pattern fits sky/threshold increase.\", \"probes\": [\"probe_sky\"]}",
+      "reasoning_tokens": 3786,
+      "recorded_utc": "2026-11-03T04:07:10+00:00",
+      "request_sha256": "1fc3be3905dbd38655d4719b9bf7a6f24ea44b4ab4fab1c6d6c9df8728b790d3",
+      "reservation_usd": 0.03718725,
+      "response_id": "chatcmpl-01a19f96-e9d6-76ef-bac7-86e4673de26f",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T04:06:24+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 3877,
+        "prompt_tokens": 277
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F19": {
+      "cost_usd": 0.0083472,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright recovery unchanged A [23,23,22,22] vs B [23,22,23,23] while nominal halves A [21,18,16,19] vs B [11,8,10,9]. background_mad_change 0.2819 dominates integrated_amplitude_change 0.0021 and rms_radius_change 0.0667, indicating sky noise increase.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 18.223236699821427,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Bright recovery unchanged A [23,23,22,22] vs B [23,22,23,23] while nominal halves A [21,18,16,19] vs B [11,8,10,9]. background_mad_change 0.2819 dominates integrated_amplitude_change 0.0021 and rms_radius_change 0.0667, indicating sky noise increase.\", \"probes\": [\"probe_sky\"]}",
+      "reasoning_tokens": 1797,
+      "recorded_utc": "2026-11-03T03:38:46+00:00",
+      "request_sha256": "b768656a57903a07df864b5ba2435dcf73ac6897b1493623a37cf28fa57a5670",
+      "reservation_usd": 0.03723475,
+      "response_id": "chatcmpl-01a19f7c-e990-7592-aafe-1a4e25c520d7",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:38:28+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 1908,
+        "prompt_tokens": 290
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F20": {
+      "cost_usd": 0.00827475,
+      "decision": {
+        "decision": "probe",
+        "justification": "Anomaly clear: bright 18->11, nominal 12->~1, stronger faint loss. background_mad_change 0.3406 dominates integrated_amplitude_change 0.081 and rms_radius_change 0.0257, consistent with increased sky noise raising threshold.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 18.221480199834332,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{ \"decision\": \"probe\", \"justification\": \"Anomaly clear: bright 18->11, nominal 12->~1, stronger faint loss. background_mad_change 0.3406 dominates integrated_amplitude_change 0.081 and rms_radius_change 0.0257, consistent with increased sky noise raising threshold.\", \"probes\": [\"probe_sky\"] }",
+      "reasoning_tokens": 1774,
+      "recorded_utc": "2026-11-03T03:23:07+00:00",
+      "request_sha256": "4abb9f871f7f2424176147bdae417efcd73ab5f77466912c49340027e811858e",
+      "reservation_usd": 0.037231,
+      "response_id": "chatcmpl-01a19f6e-9669-71e2-94b2-b4d6bb9d91a0",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:22:49+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 1862,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F21": {
+      "cost_usd": 0.0105742,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapses 67%->21% while bright remains ~80%, classic SNR threshold loss. background_mad_change +27% dominates vs integrated_amplitude_change +5% negligible and rms_radius_change +13% secondary, so elevated sky noise explains the faint incompleteness.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 27.29254090017639,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{ \"decision\": \"probe\", \"justification\": \"Nominal recovery collapses 67%->21% while bright remains ~80%, classic SNR threshold loss. background_mad_change +27% dominates vs integrated_amplitude_change +5% negligible and rms_radius_change +13% secondary, so elevated sky noise explains the faint incompleteness.\", \"probes\": [\"probe_sky\"] }",
+      "reasoning_tokens": 2343,
+      "recorded_utc": "2026-11-03T03:35:43+00:00",
+      "request_sha256": "9b2104976d8c2a8315730fc9cee61ada2ece8be301f0a1a1f6832497714e0fe9",
+      "reservation_usd": 0.03723225,
+      "response_id": "chatcmpl-01a19f7a-206a-72c6-a023-3df51487619d",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:35:16+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 2432,
+        "prompt_tokens": 290
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F22": {
+      "cost_usd": 0.008586950000000001,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright recovery preserved A~24 B~24 but nominal collapses A~19.8 to B~8.3. background_mad_change 0.0 rules out sky noise increase, rms_radius_change 0.016 rules out PSF broadening. integrated_amplitude_change 0.3024 is large, consistent with flux dimming pushing nominal below threshold.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 18.52018400002271,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Bright recovery preserved A~24 B~24 but nominal collapses A~19.8 to B~8.3. background_mad_change 0.0 rules out sky noise increase, rms_radius_change 0.016 rules out PSF broadening. integrated_amplitude_change 0.3024 is large, consistent with flux dimming pushing nominal below threshold.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 1864,
+      "recorded_utc": "2026-11-03T03:55:26+00:00",
+      "request_sha256": "ecb84566b23ea9e9840118d2543c67c8879b7e256c7444eb6811ffab6a040e27",
+      "reservation_usd": 0.0372285,
+      "response_id": "chatcmpl-01a19f8c-2b4b-7582-bcc8-895c18ba19f0",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:55:07+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 1965,
+        "prompt_tokens": 288
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F23": {
+      "cost_usd": 0.014019700000000001,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright recovery unchanged ~23.5/25 in both A and B while nominal mean drops 19.0->6.5, so threshold effect. background_mad_change=0.0 rules out sky. integrated_amplitude_change=0.244 dominates rms_radius_change=0.101; PSF broadening would conserve integrated flux ~0, so flux dimming is clearly most plausible.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 30.569675299804658,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Bright recovery unchanged ~23.5/25 in both A and B while nominal mean drops 19.0->6.5, so threshold effect. background_mad_change=0.0 rules out sky. integrated_amplitude_change=0.244 dominates rms_radius_change=0.101; PSF broadening would conserve integrated flux ~0, so flux dimming is clearly most plausible.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 3137,
+      "recorded_utc": "2026-11-03T04:04:22+00:00",
+      "request_sha256": "c77d0c9f2b8122cafbeffc302c28d6e6e8f8ab52cf09d153e8cb75a6a2e88296",
+      "reservation_usd": 0.0372285,
+      "response_id": "chatcmpl-01a19f94-58da-75de-9db3-5d857b277ef2",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T04:03:51+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 3243,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F24": {
+      "cost_usd": 0.017092450000000002,
+      "decision": {
+        "decision": "probe",
+        "justification": "background_mad_change=0.0 rules out sky. Bright A 100% vs B ~91% but nominal A ~85% vs B ~18% is catastrophic faint-only loss. 0.0395 integrated change too small to cause this via flux alone, while 0.0657 rms_radius increase explains peak dilution with near-conserved flux.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 47.36347159999423,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"background_mad_change=0.0 rules out sky. Bright A 100% vs B ~91% but nominal A ~85% vs B ~18% is catastrophic faint-only loss. 0.0395 integrated change too small to cause this via flux alone, while 0.0657 rms_radius increase explains peak dilution with near-conserved flux.\", \"probes\": [\"probe_psf\"]}",
+      "reasoning_tokens": 3863,
+      "recorded_utc": "2026-11-03T03:39:59+00:00",
+      "request_sha256": "35fffeaa7f3fa46f3498ff72b39aba2368171e987777de4774e392a507de45c1",
+      "reservation_usd": 0.0372285,
+      "response_id": "chatcmpl-01a19f7e-08f5-746a-a556-1b0a0e45a39f",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:39:12+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 3966,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F25": {
+      "cost_usd": 0.0074692,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright recovery ~100% in both (A 25/25, B 25/24/25/25). Nominal A avg 22.25/25 drops to 7.5/25 in B (9,6,7,8) = strong faint loss. background_mad_change 0.0 rules out sky. rms_radius_change 0.136 > integrated_amplitude_change 0.0677 points to PSF broadening.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 17.718760899966583,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{ \"decision\": \"probe\", \"justification\": \"Bright recovery ~100% in both (A 25/25, B 25/24/25/25). Nominal A avg 22.25/25 drops to 7.5/25 in B (9,6,7,8) = strong faint loss. background_mad_change 0.0 rules out sky. rms_radius_change 0.136 > integrated_amplitude_change 0.0677 points to PSF broadening.\", \"probes\": [\"probe_psf\"] }",
+      "reasoning_tokens": 1580,
+      "recorded_utc": "2026-11-03T03:25:58+00:00",
+      "request_sha256": "4948734b1ab561481ec43f408448237a34da544b6407abe64b8e548df8ce934c",
+      "reservation_usd": 0.03722725,
+      "response_id": "chatcmpl-01a19f71-3133-7188-a9f7-4645fa22a252",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:25:40+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 1702,
+        "prompt_tokens": 288
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F26": {
+      "cost_usd": 0.0078062,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright recovery A [23,23,23,24] vs B [23,24,23,23] is intact, while nominal A [20,22,21,19] vs B [7,8,6,6] collapses, indicating faint-SNR loss. background_mad_change 0.298 dominates integrated_amplitude_change 0.0318 and rms_radius_change 0.0769, consistent with increased sky noise.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 16.47745930007659,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Bright recovery A [23,23,23,24] vs B [23,24,23,23] is intact, while nominal A [20,22,21,19] vs B [7,8,6,6] collapses, indicating faint-SNR loss. background_mad_change 0.298 dominates integrated_amplitude_change 0.0318 and rms_radius_change 0.0769, consistent with increased sky noise.\", \"probes\": [\"probe_sky\"]}",
+      "reasoning_tokens": 1660,
+      "recorded_utc": "2026-11-03T03:49:13+00:00",
+      "request_sha256": "700c3b959b98e990083f61eb87e6283ead945e20d235c7e6bb008fad3c641b76",
+      "reservation_usd": 0.037231,
+      "response_id": "chatcmpl-01a19f86-7c42-7204-8bf6-0d485444a2dd",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:48:57+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 1781,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F27": {
+      "cost_usd": 0.0067297,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright counts stable A~23-24 vs B~21-24, nominal drops A~19-22 to B~7-12 indicating near-threshold loss. background_mad_change 0.0 disfavors sky, rms_radius_change 0.0166 disfavors PSF, integrated_amplitude_change 0.252 favors flux.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 12.703940999927,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Bright counts stable A~23-24 vs B~21-24, nominal drops A~19-22 to B~7-12 indicating near-threshold loss. background_mad_change 0.0 disfavors sky, rms_radius_change 0.0166 disfavors PSF, integrated_amplitude_change 0.252 favors flux.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 1429,
+      "recorded_utc": "2026-11-03T03:58:21+00:00",
+      "request_sha256": "f306fb84ef2b23d062a44b3dbb30d99e2fcfeb1e2dc1a75795f79a56c7e32267",
+      "reservation_usd": 0.037231,
+      "response_id": "chatcmpl-01a19f8e-d77f-72bb-9a75-e2b036de9422",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:58:08+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 1528,
+        "prompt_tokens": 288
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F28": {
+      "cost_usd": 0.009851700000000001,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright A 24/25 -> B 21-23 slight loss but nominal A 19-22 -> B 6-7 collapse 84% to 26% indicates near-threshold S/N loss. background_mad_change 0.282 large, integrated_amplitude_change 0.022 tiny argues against flux loss, rms_radius_change 0.116 modest secondary, so sky noise is most plausible.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 28.086243600118905,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{ \"decision\": \"probe\", \"justification\": \"Bright A 24/25 -> B 21-23 slight loss but nominal A 19-22 -> B 6-7 collapse 84% to 26% indicates near-threshold S/N loss. background_mad_change 0.282 large, integrated_amplitude_change 0.022 tiny argues against flux loss, rms_radius_change 0.116 modest secondary, so sky noise is most plausible.\", \"probes\": [\"probe_sky\"]}",
+      "reasoning_tokens": 2148,
+      "recorded_utc": "2026-11-03T03:45:24+00:00",
+      "request_sha256": "f992afb5e25de5a7d460f6c6da6af97ba12660a7adc92e14029143437801b4cd",
+      "reservation_usd": 0.03723225,
+      "response_id": "chatcmpl-01a19f82-ff13-716f-af63-9cf9e704be5a",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:44:56+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 2262,
+        "prompt_tokens": 290
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F29": {
+      "cost_usd": 0.00839895,
+      "decision": {
+        "decision": "probe",
+        "justification": "B shows severe nominal drop A~19.5 to B~2.25 with modest bright drop 24 to ~19. background_mad_change 0.0 rules out sky noise increase. integrated_amplitude_change 0.12 rules out large flux loss. Pattern matches PSF broadening reducing peak SNR.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 18.168123200070113,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"B shows severe nominal drop A~19.5 to B~2.25 with modest bright drop 24 to ~19. background_mad_change 0.0 rules out sky noise increase. integrated_amplitude_change 0.12 rules out large flux loss. Pattern matches PSF broadening reducing peak SNR.\", \"probes\": [\"probe_psf\"]}",
+      "reasoning_tokens": 1833,
+      "recorded_utc": "2026-11-03T03:48:57+00:00",
+      "request_sha256": "ef2bc763241984c433d5d7a6f911afd991396fa11987cef8f9bb11d58ae2e1d9",
+      "reservation_usd": 0.03718725,
+      "response_id": "chatcmpl-01a19f86-3bb7-745a-a2f8-cca4da9b57d3",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:48:38+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 1924,
+        "prompt_tokens": 277
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F30": {
+      "cost_usd": 0.01174795,
+      "decision": {
+        "decision": "probe",
+        "justification": "Anomaly is real and flux-dependent: bright A avg 22->B 20 (-9%) vs nominal ~17.25->6.5 (-62%). background_mad_change 0.049 and rms_radius_change 0.079 are both <0.1, disfavoring sky and PSF; strong faint-only loss fits flux/zeropoint offset.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 33.35923589998856,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Anomaly is real and flux-dependent: bright A avg 22->B 20 (-9%) vs nominal ~17.25->6.5 (-62%). background_mad_change 0.049 and rms_radius_change 0.079 are both <0.1, disfavoring sky and PSF; strong faint-only loss fits flux/zeropoint offset.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 2609,
+      "recorded_utc": "2026-11-03T03:33:27+00:00",
+      "request_sha256": "9819121744a79b968026fce65822162278039e699ea9de15478df1e5c3ebf66d",
+      "reservation_usd": 0.037181,
+      "response_id": "chatcmpl-01a19f78-0e76-7536-b75f-16fb380eb93d",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:32:54+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 2712,
+        "prompt_tokens": 277
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F31": {
+      "cost_usd": 0.00624545,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery drops 76% to 24% while bright only 96% to 88%. background_mad_change=0.0 rules out sky, integrated_amplitude_change=0.0179 shows flux conserved, consistent with PSF broadening lowering peak SNR.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 16.52287150011398,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{ \"decision\": \"probe\", \"justification\": \"Nominal recovery drops 76% to 24% while bright only 96% to 88%. background_mad_change=0.0 rules out sky, integrated_amplitude_change=0.0179 shows flux conserved, consistent with PSF broadening lowering peak SNR.\", \"probes\": [\"probe_psf\"] }",
+      "reasoning_tokens": 1333,
+      "recorded_utc": "2026-11-03T03:50:25+00:00",
+      "request_sha256": "7ecf2e227ae9d53927769a41d21644e27037ab2262a7ff910628ca9fc78dee62",
+      "reservation_usd": 0.03718975,
+      "response_id": "chatcmpl-01a19f87-94be-7294-aa1f-d4dd3f2f8f57",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:50:08+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 1417,
+        "prompt_tokens": 278
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F32": {
+      "cost_usd": 0.011469700000000001,
+      "decision": {
+        "decision": "abstain",
+        "justification": "Recovery similar: bright A 23.75 vs B 24, nominal A 17.75 vs B 19 within A batch variance 14-21. background_mad_change 0.0, integrated_amplitude 0.0457, rms_radius 0.0116 all small. No clear mechanism.",
+        "probes": []
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 26.09179289988242,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"abstain\", \"justification\": \"Recovery similar: bright A 23.75 vs B 24, nominal A 17.75 vs B 19 within A batch variance 14-21. background_mad_change 0.0, integrated_amplitude 0.0457, rms_radius 0.0116 all small. No clear mechanism.\", \"probes\": []}",
+      "reasoning_tokens": 2550,
+      "recorded_utc": "2026-11-03T03:46:57+00:00",
+      "request_sha256": "59b1468f90b5b499ccd44bd4da1db0e72d392564c5d70c904b92f183aba1d862",
+      "reservation_usd": 0.0372335,
+      "response_id": "chatcmpl-01a19f84-66b7-736e-89c4-fe76ff4ac393",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:46:30+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 2643,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F33": {
+      "cost_usd": 0.00808145,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright counts A[24,23,23,24] vs B[21,23,23,21] stable, nominal A[17,21,16,22] vs B[5,9,9,8] collapses: faint-dominated incompleteness anomaly. integrated_amplitude_change 0.1035 and rms_radius_change 0.1241 are small, disfavoring flux or PSF change, most consistent with increased sky background.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 17.78157430002466,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\n  \"decision\": \"probe\",\n  \"justification\": \"Bright counts A[24,23,23,24] vs B[21,23,23,21] stable, nominal A[17,21,16,22] vs B[5,9,9,8] collapses: faint-dominated incompleteness anomaly. integrated_amplitude_change 0.1035 and rms_radius_change 0.1241 are small, disfavoring flux or PSF change, most consistent with increased sky background.\",\n  \"probes\": [\"probe_sky\"]\n}",
+      "reasoning_tokens": 1722,
+      "recorded_utc": "2026-11-03T04:01:17+00:00",
+      "request_sha256": "e717a2a81945f5963b1be2176ae0868235f7a94fa24e536edf80a434467d552f",
+      "reservation_usd": 0.0371885,
+      "response_id": "chatcmpl-01a19f91-8924-705e-a6f6-6abbc1fc97a0",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T04:01:00+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 1849,
+        "prompt_tokens": 278
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F34": {
+      "cost_usd": 0.0110127,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery drops from ~77% to ~34% (19,16,21,21 vs 12,6,6,10) while bright stays identical 23-24/25, indicating raised threshold. background_mad_change 0.2501 is large vs rms_radius_change 0.0237 negligible, supporting sky noise increase over PSF broadening.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 25.897544499952346,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery drops from ~77% to ~34% (19,16,21,21 vs 12,6,6,10) while bright stays identical 23-24/25, indicating raised threshold. background_mad_change 0.2501 is large vs rms_radius_change 0.0237 negligible, supporting sky noise increase over PSF broadening.\", \"probes\": [\"probe_sky\"]}",
+      "reasoning_tokens": 2436,
+      "recorded_utc": "2026-11-03T03:54:41+00:00",
+      "request_sha256": "8d3ae1ec83cbf06e82c1a75d982674bb2c9ba4e4f4037af0f298781b3caf7a5d",
+      "reservation_usd": 0.0371835,
+      "response_id": "chatcmpl-01a19f8b-7d11-748d-8d66-ff732aa52cc9",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:54:15+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 2539,
+        "prompt_tokens": 277
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F35": {
+      "cost_usd": 0.00756395,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright recovery stable A~23 vs B~22.5 while nominal collapses A avg 18.75 vs B avg 4.75. background_mad_change=0.0 rules out sky, rms_radius_change=0.0336 is tiny vs integrated_amplitude_change=0.2133, consistent with flux loss pushing faint sources below threshold but leaving bright detectable.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 16.179322199895978,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Bright recovery stable A~23 vs B~22.5 while nominal collapses A avg 18.75 vs B avg 4.75. background_mad_change=0.0 rules out sky, rms_radius_change=0.0336 is tiny vs integrated_amplitude_change=0.2133, consistent with flux loss pushing faint sources below threshold but leaving bright detectable.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 1619,
+      "recorded_utc": "2026-11-03T03:32:37+00:00",
+      "request_sha256": "0018e14aa0a6bdaabdf054d21c2f222346e63f718bca246fa410eb469bb3c599",
+      "reservation_usd": 0.0372285,
+      "response_id": "chatcmpl-01a19f77-48c7-72ce-b237-19f2261cf02f",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:32:21+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 1724,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.1/F36": {
+      "cost_usd": 0.00635595,
+      "decision": {
+        "decision": "abstain",
+        "justification": "No anomaly: background_mad_change=0.0, integrated_amplitude_change=0.0204 (~2%), bright counts A~25 vs B~25 and nominal A mean 19.75 vs B mean 20.25 out of 25 are essentially identical.",
+        "probes": []
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 12.9040471999906,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"abstain\", \"justification\": \"No anomaly: background_mad_change=0.0, integrated_amplitude_change=0.0204 (~2%), bright counts A~25 vs B~25 and nominal A mean 19.75 vs B mean 20.25 out of 25 are essentially identical.\", \"probes\": []}",
+      "reasoning_tokens": 1359,
+      "recorded_utc": "2026-11-03T03:47:28+00:00",
+      "request_sha256": "a1ddf13bbf9f937f123bac7dd6f0230ba3958a54e3493cefc6823423bbc2de9e",
+      "reservation_usd": 0.03719475,
+      "response_id": "chatcmpl-01a19f84-dfd5-708d-8eda-5c633e893997",
+      "response_model": "muse-spark-1.1",
+      "started_utc": "2026-11-03T03:47:15+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 113,
+        "completion_tokens": 1443,
+        "prompt_tokens": 278
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F01": {
+      "cost_usd": 0.007289899999999999,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal B 1-3 vs A 12-13 drops far more than bright, background_mad_change 0.0423 is small while rms_radius_change 0.1676 is large, indicating PSF effect.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 13.075519300065935,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal B 1-3 vs A 12-13 drops far more than bright, background_mad_change 0.0423 is small while rms_radius_change 0.1676 is large, indicating PSF effect.\", \"probes\": [\"probe_psf\"]}",
+      "reasoning_tokens": 1596,
+      "recorded_utc": "2026-11-03T03:56:02+00:00",
+      "request_sha256": "2fed0457f696aa469fcccad4919095d5413f8641cd16e87da4369777265c4c19",
+      "reservation_usd": 0.03717725,
+      "response_id": "chatcmpl-01a19f8c-ba5c-71fd-8f60-9b4373bbf95b",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:55:49+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 1670,
+        "prompt_tokens": 366
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F02": {
+      "cost_usd": 0.005265649999999999,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal B recovery 0-3 vs A 15-20 shows severe loss while bright modestly drops; background_mad_change 0.0 and rms_radius_change 0.0348 rule out sky/PSF, leaving flux as clearly most plausible.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 10.047283099964261,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal B recovery 0-3 vs A 15-20 shows severe loss while bright modestly drops; background_mad_change 0.0 and rms_radius_change 0.0348 rule out sky/PSF, leaving flux as clearly most plausible.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 1113,
+      "recorded_utc": "2026-11-03T03:41:30+00:00",
+      "request_sha256": "7bc4450af14ea5050b70c3949ecf45fb79a66cf14dd4cc93f440dc6b2b862a36",
+      "reservation_usd": 0.03717475,
+      "response_id": "chatcmpl-01a19f7f-6ad9-734f-86c3-100d7f71c50d",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:41:20+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 1194,
+        "prompt_tokens": 365
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F03": {
+      "cost_usd": 0.020921400000000003,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Nominal B 6-8 vs A 13-17 drops sharply while bright stable; background_mad_change 0.0 rules out sky; rms_radius_change 0.12 suggests PSF but flux also explains faint-only loss.",
+        "probes": [
+          "probe_psf",
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 36.61285850009881,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\":\"ambiguous\",\"justification\":\"Nominal B 6-8 vs A 13-17 drops sharply while bright stable; background_mad_change 0.0 rules out sky; rms_radius_change 0.12 suggests PSF but flux also explains faint-only loss.\",\"probes\":[\"probe_psf\",\"probe_flux\"]}",
+      "reasoning_tokens": 4804,
+      "recorded_utc": "2026-11-03T03:28:21+00:00",
+      "request_sha256": "44bcb56eadc557f7e30f9d61f9a69da1e73a5b9a1d1543447d36ab4dfa7bb88e",
+      "reservation_usd": 0.03717225,
+      "response_id": "chatcmpl-01a19f73-60c2-723f-a361-edf85a06b85e",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:27:44+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 4878,
+        "prompt_tokens": 364
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F04": {
+      "cost_usd": 0.0087669,
+      "decision": {
+        "decision": "probe",
+        "justification": "Recovery counts lower in B than A for bright and nominal. background_mad_change 0.0 rules out sky; rms_radius_change 0.1668 exceeds integrated_amplitude_change 0.0726, favoring PSF.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 14.949510700069368,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Recovery counts lower in B than A for bright and nominal. background_mad_change 0.0 rules out sky; rms_radius_change 0.1668 exceeds integrated_amplitude_change 0.0726, favoring PSF.\", \"probes\": [\"probe_psf\"]}",
+      "reasoning_tokens": 1938,
+      "recorded_utc": "2026-11-03T03:37:29+00:00",
+      "request_sha256": "5975aa4dd2a0a48aaf1af0413300b798e00962badfb87ee0938b0110e1429765",
+      "reservation_usd": 0.037226,
+      "response_id": "chatcmpl-01a19f7b-bd39-7720-a64c-346aea3efaac",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:37:14+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 2014,
+        "prompt_tokens": 378
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F05": {
+      "cost_usd": 0.00933075,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright recovery unchanged A [23,24,24,23] vs B [23,24,24,24] but nominal falls A [17,18,18,18] to B [5,10,5,6]. background_mad_change 0.2825 dominates amplitude 0.0669 and radius 0.0455.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 13.979326399974525,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\":\"probe\",\"justification\":\"Bright recovery unchanged A [23,24,24,23] vs B [23,24,24,24] but nominal falls A [17,18,18,18] to B [5,10,5,6]. background_mad_change 0.2825 dominates amplitude 0.0669 and radius 0.0455.\",\"probes\":[\"probe_sky\"]}",
+      "reasoning_tokens": 1988,
+      "recorded_utc": "2026-11-03T03:27:35+00:00",
+      "request_sha256": "e856f8aa407d2128886a9668ca7772becb162b3aa70699d8c86b6a151a6384c4",
+      "reservation_usd": 0.037231,
+      "response_id": "chatcmpl-01a19f72-ae21-7294-87f3-ec2da681dfe6",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:27:21+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 2084,
+        "prompt_tokens": 379
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F06": {
+      "cost_usd": 0.0172444,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright 24-25 to 18-21 and nominal 15-19 to 2-6 shows faint-dominated loss. background_mad_change 0.0 excludes sky; integrated_amplitude_change 0.237 >> rms_radius_change 0.0838 favors flux.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 29.78113429993391,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Bright 24-25 to 18-21 and nominal 15-19 to 2-6 shows faint-dominated loss. background_mad_change 0.0 excludes sky; integrated_amplitude_change 0.237 >> rms_radius_change 0.0838 favors flux.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 3924,
+      "recorded_utc": "2026-11-03T03:37:14+00:00",
+      "request_sha256": "1e18b41e8424f1449bc0d68fc6a27b1940a810bac0f70f349792b8f67390958f",
+      "reservation_usd": 0.03722475,
+      "response_id": "chatcmpl-01a19f7b-82fa-76d5-9662-34fb9f34ac52",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:36:44+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 4009,
+        "prompt_tokens": 377
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F07": {
+      "cost_usd": 0.0112234,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal B much lower than A while bright similar; background_mad_change 0.0 rules out sky, integrated_amplitude_change 0.2884 much larger than rms_radius_change 0.0861 so flux most plausible.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 16.832147600129247,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal B much lower than A while bright similar; background_mad_change 0.0 rules out sky, integrated_amplitude_change 0.2884 much larger than rms_radius_change 0.0861 so flux most plausible.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 2517,
+      "recorded_utc": "2026-11-03T03:30:10+00:00",
+      "request_sha256": "fb71b530e99fc7e5a30642d3a528e36db6f6fde9000fae62abf8cc4899faa9f0",
+      "reservation_usd": 0.03722725,
+      "response_id": "chatcmpl-01a19f75-0c6f-7061-8755-db51371a7929",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:29:54+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 2592,
+        "prompt_tokens": 378
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F08": {
+      "cost_usd": 0.0266175,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal B 1-4 vs A 12-15 shows severe faint loss; bright B 17-20 vs A 22-24 modest loss. background_mad_change 0.298 exceeds integrated_amplitude_change 0.1079, favoring sky-noise threshold increase.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 46.446407799841836,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal B 1-4 vs A 12-15 shows severe faint loss; bright B 17-20 vs A 22-24 modest loss. background_mad_change 0.298 exceeds integrated_amplitude_change 0.1079, favoring sky-noise threshold increase.\", \"probes\": [\"probe_sky\"]}",
+      "reasoning_tokens": 6068,
+      "recorded_utc": "2026-11-03T03:32:21+00:00",
+      "request_sha256": "2862dc715c227b5a709707d1dc152399ad744069b3c817311ac0f0178d0aa9fc",
+      "reservation_usd": 0.03718975,
+      "response_id": "chatcmpl-01a19f77-0983-74c8-a129-fe8b65ce3d66",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:31:34+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 6155,
+        "prompt_tokens": 367
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F09": {
+      "cost_usd": 0.02345915,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery drops ~15 to ~7.8 vs bright ~23 to ~20; background_mad_change 0.0 rules out sky. integrated_amplitude_change 0.2646 dominates rms_radius_change 0.1202, pointing to flux loss.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 41.19588130014017,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery drops ~15 to ~7.8 vs bright ~23 to ~20; background_mad_change 0.0 rules out sky. integrated_amplitude_change 0.2646 dominates rms_radius_change 0.1202, pointing to flux loss.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 5389,
+      "recorded_utc": "2026-11-03T03:42:11+00:00",
+      "request_sha256": "6080c482d72143f6e8c8f407eb31427c0b0f4d5bb275ca5b32e05dae4cc07520",
+      "reservation_usd": 0.037226,
+      "response_id": "chatcmpl-01a19f80-0bed-7090-981d-5385d5221cd3",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:41:30+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 5471,
+        "prompt_tokens": 378
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F10": {
+      "cost_usd": 0.01314015,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Bright counts stable A vs B but nominal drops sharply, confirming anomaly. background_mad_change 0.0 rules out sky; integrated_amplitude_change 0.0937 and rms_radius_change 0.0926 are tied, flux vs PSF ambiguous.",
+        "probes": [
+          "probe_flux",
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 21.837871700059623,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\":\"ambiguous\",\"justification\":\"Bright counts stable A vs B but nominal drops sharply, confirming anomaly. background_mad_change 0.0 rules out sky; integrated_amplitude_change 0.0937 and rms_radius_change 0.0926 are tied, flux vs PSF ambiguous.\",\"probes\":[\"probe_flux\",\"probe_psf\"]}",
+      "reasoning_tokens": 2964,
+      "recorded_utc": "2026-11-03T03:53:30+00:00",
+      "request_sha256": "fc0179871412c938db7f44ede5bf28894bb74d02e1ceb09c693866d8a63a9fdd",
+      "reservation_usd": 0.037226,
+      "response_id": "chatcmpl-01a19f8a-665d-71ab-add0-150107835e0b",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:53:08+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 3043,
+        "prompt_tokens": 378
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F11": {
+      "cost_usd": 0.007596899999999999,
+      "decision": {
+        "decision": "abstain",
+        "justification": "Bright and nominal recovery counts overlap strongly between A and B, and background, amplitude, and radius deltas are all near zero, showing no anomaly.",
+        "probes": []
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 9.933131400030106,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\":\"abstain\",\"justification\":\"Bright and nominal recovery counts overlap strongly between A and B, and background, amplitude, and radius deltas are all near zero, showing no anomaly.\",\"probes\":[]}",
+      "reasoning_tokens": 1686,
+      "recorded_utc": "2026-11-03T03:51:45+00:00",
+      "request_sha256": "5bd9451a4e56bc822a3f9774a9725605b67123b8918981c730591731e085bf00",
+      "reservation_usd": 0.03722975,
+      "response_id": "chatcmpl-01a19f88-cbac-7426-bac1-2f337c7db106",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:51:35+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 1739,
+        "prompt_tokens": 377
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F12": {
+      "cost_usd": 0.0221674,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery falls from ~16 to ~3 per 25 and bright 21 to 15-18. Background MAD change 0.0583 is small, weakening sky, while integrated amplitude change 0.1061 is larger and B-bright matches A-nominal, supporting flux loss.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 43.98444649996236,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery falls from ~16 to ~3 per 25 and bright 21 to 15-18. Background MAD change 0.0583 is small, weakening sky, while integrated amplitude change 0.1061 is larger and B-bright matches A-nominal, supporting flux loss.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 5081,
+      "recorded_utc": "2026-11-03T04:06:05+00:00",
+      "request_sha256": "ae0e1009f5ee502b7e5cac95e73960c98e5625e6a0a7a2f46149a59edd06d72d",
+      "reservation_usd": 0.037191,
+      "response_id": "chatcmpl-01a19f95-ec69-735f-a9ea-fb51724d3397",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T04:05:21+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 5170,
+        "prompt_tokens": 368
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F13": {
+      "cost_usd": 0.0068089,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery drops A~15.5 to B~5 while bright drops only 21 to 18.75; background_mad_change 0.2984 dominates amplitude 0.0646 and radius 0.0613, favoring sky.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 11.23072150000371,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery drops A~15.5 to B~5 while bright drops only 21 to 18.75; background_mad_change 0.2984 dominates amplitude 0.0646 and radius 0.0613, favoring sky.\", \"probes\": [\"probe_sky\"]}",
+      "reasoning_tokens": 1472,
+      "recorded_utc": "2026-11-03T03:49:53+00:00",
+      "request_sha256": "3b151ab3c3e434ea1d33c030c44e478d9af328b8935736554267431f136bc863",
+      "reservation_usd": 0.03722975,
+      "response_id": "chatcmpl-01a19f87-1885-705a-9f86-788b883ab5f3",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:49:42+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 1553,
+        "prompt_tokens": 379
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F14": {
+      "cost_usd": 0.016399900000000002,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal A 15-16 drops to B 2-4 while bright A 22-23 drops to B 19-21; background_mad_change 0.0 rules out sky, rms_radius_change 0.1812 dominates integrated_amplitude_change 0.0738, indicating PSF.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 26.322575099999085,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal A 15-16 drops to B 2-4 while bright A 22-23 drops to B 19-21; background_mad_change 0.0 rules out sky, rms_radius_change 0.1812 dominates integrated_amplitude_change 0.0738, indicating PSF.\", \"probes\": [\"probe_psf\"]}",
+      "reasoning_tokens": 3719,
+      "recorded_utc": "2026-11-03T03:59:19+00:00",
+      "request_sha256": "f11ecd0e46c1f1e062cc97f637f553068aca586c440a7c754e3f5d215744d8d6",
+      "reservation_usd": 0.037226,
+      "response_id": "chatcmpl-01a19f8f-bbc2-7659-a6c4-7f10379122f3",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:58:53+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 3810,
+        "prompt_tokens": 378
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F15": {
+      "cost_usd": 0.009328649999999999,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal B 2-5 vs A 10-15 and bright B 16 vs A 18-21 shows faint-dominated loss; background_mad_change 0.0 and rms_radius_change 0.0469 rule out sky/PSF, favoring flux.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 16.18731529987417,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal B 2-5 vs A 10-15 and bright B 16 vs A 18-21 shows faint-dominated loss; background_mad_change 0.0 and rms_radius_change 0.0469 rule out sky/PSF, favoring flux.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 2066,
+      "recorded_utc": "2026-11-03T03:57:45+00:00",
+      "request_sha256": "3da998cee899a52e99b56b7ec98aa871f5039b92b092f7500ad1a2b1e45347c3",
+      "reservation_usd": 0.03717475,
+      "response_id": "chatcmpl-01a19f8e-4bda-7737-9aad-095bd06137bb",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:57:29+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 2150,
+        "prompt_tokens": 365
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F16": {
+      "cost_usd": 0.02846765,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Nominal A 12-13 vs B 4-8 shows large drop while bright A 18-21 vs B 18-19 stable; amplitude 0.1239 and radius 0.13 both elevated similarly so flux and PSF both plausible.",
+        "probes": [
+          "probe_psf",
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 52.566999699920416,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Nominal A 12-13 vs B 4-8 shows large drop while bright A 18-21 vs B 18-19 stable; amplitude 0.1239 and radius 0.13 both elevated similarly so flux and PSF both plausible.\", \"probes\": [\"probe_psf\", \"probe_flux\"]}",
+      "reasoning_tokens": 6568,
+      "recorded_utc": "2026-11-03T03:24:44+00:00",
+      "request_sha256": "50355193ec742a8c366de46e58e7631b1672bab8aca99625b2878869be471cb2",
+      "reservation_usd": 0.0371835,
+      "response_id": "chatcmpl-01a19f70-106c-7429-a5a8-eaf8aa9c834d",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:23:51+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 6653,
+        "prompt_tokens": 366
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F17": {
+      "cost_usd": 0.013684149999999999,
+      "decision": {
+        "decision": "abstain",
+        "justification": "Bright and nominal recovery counts overlap between A and B; background change 0.0, amplitude change 0.0071 and radius change 0.0456 are all near zero, showing no anomaly.",
+        "probes": []
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 24.249931999947876,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\":\"abstain\",\"justification\":\"Bright and nominal recovery counts overlap between A and B; background change 0.0, amplitude change 0.0071 and radius change 0.0456 are all near zero, showing no anomaly.\",\"probes\":[]}",
+      "reasoning_tokens": 3106,
+      "recorded_utc": "2026-11-03T03:52:38+00:00",
+      "request_sha256": "96ee3cb52e0766bced31b676a026104a21df050ea9cc914cae2a718ac7e5d1b1",
+      "reservation_usd": 0.037231,
+      "response_id": "chatcmpl-01a19f89-9a99-73db-86e7-b90df6da6281",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:52:13+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 3171,
+        "prompt_tokens": 378
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F18": {
+      "cost_usd": 0.0111659,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright stable (A 21-24, B 21-22) while nominal collapses (A 18-20, B 6-7): faint-selective loss. Amplitude 0.077 and radius 0.068 changes small, disfavoring flux and PSF, leaving sky.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 18.10220449999906,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Bright stable (A 21-24, B 21-22) while nominal collapses (A 18-20, B 6-7): faint-selective loss. Amplitude 0.077 and radius 0.068 changes small, disfavoring flux and PSF, leaving sky.\", \"probes\": [\"probe_sky\"]}",
+      "reasoning_tokens": 2492,
+      "recorded_utc": "2026-11-03T04:07:40+00:00",
+      "request_sha256": "4c50f4b5450a5c89ad8fd79ed4b3d9a24b178043b2c0a2962372629cbe224a37",
+      "reservation_usd": 0.03718475,
+      "response_id": "chatcmpl-01a19f97-5faf-7279-825b-75646a7816d5",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T04:07:22+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 2582,
+        "prompt_tokens": 366
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F19": {
+      "cost_usd": 0.0108294,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright stable, nominal A 16-21 vs B 8-11. background_mad_change 0.2819 dominates integrated_amplitude_change 0.0021 and rms_radius_change 0.0667, indicating sky.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 15.97053279983811,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Bright stable, nominal A 16-21 vs B 8-11. background_mad_change 0.2819 dominates integrated_amplitude_change 0.0021 and rms_radius_change 0.0667, indicating sky.\", \"probes\": [\"probe_sky\"]}",
+      "reasoning_tokens": 2422,
+      "recorded_utc": "2026-11-03T03:38:13+00:00",
+      "request_sha256": "e35231070f93ea58bf05a66bc6229f8363d48bb33e59569a940d2f847ecbf3b8",
+      "reservation_usd": 0.03723225,
+      "response_id": "chatcmpl-01a19f7c-6a70-70a5-a4b7-36c7917cf5ae",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:37:57+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 2499,
+        "prompt_tokens": 379
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F20": {
+      "cost_usd": 0.0064735,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal B [1,0,1,3] vs A [13,11,13,11] shows faint-selective loss with bright also down; background_mad_change 0.34 exceeds amplitude 0.081 and radius 0.026, supporting sky.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 10.134870399953797,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal B [1,0,1,3] vs A [13,11,13,11] shows faint-selective loss with bright also down; background_mad_change 0.34 exceeds amplitude 0.081 and radius 0.026, supporting sky.\", \"probes\": [\"probe_sky\"]}",
+      "reasoning_tokens": 1327,
+      "recorded_utc": "2026-11-03T03:22:42+00:00",
+      "request_sha256": "f7bf245e9454b2f1b86f59315faa3d56047b11e4cfe0c205f5010821c998bc6e",
+      "reservation_usd": 0.0372285,
+      "response_id": "chatcmpl-01a19f6e-33f4-75b6-9e03-035a2374c6d8",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:22:32+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 1412,
+        "prompt_tokens": 378
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F21": {
+      "cost_usd": 0.0251434,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Nominal 17 to 5 collapse vs bright 24 to 20 is faint-biased; background MAD +27% implicates sky and rms radius +13% implicates PSF while amplitude +6% is small.",
+        "probes": [
+          "probe_sky",
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 41.727883599931374,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Nominal 17 to 5 collapse vs bright 24 to 20 is faint-biased; background MAD +27% implicates sky and rms radius +13% implicates PSF while amplitude +6% is small.\", \"probes\": [\"probe_sky\", \"probe_psf\"]}",
+      "reasoning_tokens": 5789,
+      "recorded_utc": "2026-11-03T03:35:16+00:00",
+      "request_sha256": "860e01125744e7982907c2d233147b72fb23e45d8875b9c0c8c068d77731b2e0",
+      "reservation_usd": 0.03722975,
+      "response_id": "chatcmpl-01a19f79-b5c7-71a6-9c71-e7b05939cc45",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:34:34+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 5867,
+        "prompt_tokens": 379
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F22": {
+      "cost_usd": 0.0078944,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery drops 18-21 to 7-10 while bright stays 23-25. background_mad_change 0.0 and rms_radius_change 0.016 are negligible vs integrated_amplitude_change 0.3024, implicating flux loss.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 11.658439900027588,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery drops 18-21 to 7-10 while bright stays 23-25. background_mad_change 0.0 and rms_radius_change 0.016 are negligible vs integrated_amplitude_change 0.3024, implicating flux loss.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 1727,
+      "recorded_utc": "2026-11-03T03:55:37+00:00",
+      "request_sha256": "b0cec1aa95848b47e406b8b65e67b3f170cc8afa6db2e00d5dc3504af825d2c0",
+      "reservation_usd": 0.037226,
+      "response_id": "chatcmpl-01a19f8c-595a-7428-b705-b5143633d288",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:55:26+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 1809,
+        "prompt_tokens": 377
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F23": {
+      "cost_usd": 0.0350234,
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 74.02043330017477,
+      "finish_reason": "length",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": null,
+      "reasoning_tokens": 8190,
+      "recorded_utc": "2026-11-03T04:02:31+00:00",
+      "request_sha256": "9b43a553161e4f743e8d110b4644ec0c703934d7ee2c3544757fe993877ba5d9",
+      "reservation_usd": 0.037226,
+      "response_id": "chatcmpl-01a19f92-aa6a-752b-bac6-a76958eb22bd",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T04:01:17+00:00",
+      "state": "invalid_response",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 8192,
+        "prompt_tokens": 378
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F24": {
+      "cost_usd": 0.02315315,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery falls to 3,2,7,6 in B from 22,23,21,19 in A while bright stays high; sky change 0.0 rules out sky, rms_radius 0.0657 exceeds amplitude 0.0395, favoring PSF.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 43.32643230003305,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery falls to 3,2,7,6 in B from 22,23,21,19 in A while bright stays high; sky change 0.0 rules out sky, rms_radius 0.0657 exceeds amplitude 0.0395, favoring PSF.\", \"probes\": [\"probe_psf\"]}",
+      "reasoning_tokens": 5311,
+      "recorded_utc": "2026-11-03T03:40:43+00:00",
+      "request_sha256": "ef08e3f539c9d73ef30c1ec543209d8571f8759ecfceb0ac3a0293130ab510bf",
+      "reservation_usd": 0.037226,
+      "response_id": "chatcmpl-01a19f7e-b227-7435-993f-cb74595a51f7",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:39:59+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 5399,
+        "prompt_tokens": 378
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F25": {
+      "cost_usd": 0.0178665,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal completeness fell A~89/100 to B~30/100 while bright stayed 100/100 vs 99/100, so faint-selective anomaly. Sky ruled out by background_mad_change 0.0. rms_radius_change 0.136 exceeds integrated_amplitude_change 0.0677, favoring PSF.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 27.167855500010774,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal completeness fell A~89/100 to B~30/100 while bright stayed 100/100 vs 99/100, so faint-selective anomaly. Sky ruled out by background_mad_change 0.0. rms_radius_change 0.136 exceeds integrated_amplitude_change 0.0677, favoring PSF.\", \"probes\": [\"probe_psf\"]}",
+      "reasoning_tokens": 3996,
+      "recorded_utc": "2026-11-03T03:26:25+00:00",
+      "request_sha256": "d92b6a1751014b64774d1bb3005c4228f9cdfdc880e65b7efc30c2ac21a26404",
+      "reservation_usd": 0.03722475,
+      "response_id": "chatcmpl-01a19f71-9b5d-75e6-9a8a-552953786023",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:25:58+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 4093,
+        "prompt_tokens": 377
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F26": {
+      "cost_usd": 0.00691815,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright A=B ~23/25, nominal drops A 19-22 to B 6-8; background_mad_change 0.298 far exceeds integrated_amplitude_change 0.0318 and rms_radius_change 0.0769, implicating sky.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 11.11676639993675,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Bright A=B ~23/25, nominal drops A 19-22 to B 6-8; background_mad_change 0.298 far exceeds integrated_amplitude_change 0.0318 and rms_radius_change 0.0769, implicating sky.\", \"probes\": [\"probe_sky\"]}",
+      "reasoning_tokens": 1495,
+      "recorded_utc": "2026-11-03T03:49:24+00:00",
+      "request_sha256": "513f7eb7ff4a6de72bc3d5d25f0bac264679f6281e149711d4bd52909778b027",
+      "reservation_usd": 0.0372285,
+      "response_id": "chatcmpl-01a19f86-a7ad-7165-ac4f-31c054f4adef",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:49:13+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 1579,
+        "prompt_tokens": 378
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F27": {
+      "cost_usd": 0.00791565,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal B [11,12,7,10] far below A [19,22,22,20] while bright is stable; amplitude change 0.252 dominates background 0.0 and radius 0.0166, implicating flux.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 12.872532700188458,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\":\"probe\",\"justification\":\"Nominal B [11,12,7,10] far below A [19,22,22,20] while bright is stable; amplitude change 0.252 dominates background 0.0 and radius 0.0166, implicating flux.\",\"probes\":[\"probe_flux\"]}",
+      "reasoning_tokens": 1739,
+      "recorded_utc": "2026-11-03T03:58:08+00:00",
+      "request_sha256": "df6b5a0cde4d6b9052a6028755923fdf73e48e965045c583b5b780812171be14",
+      "reservation_usd": 0.0372285,
+      "response_id": "chatcmpl-01a19f8e-a599-734d-be21-c3cffa318922",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:57:55+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 1814,
+        "prompt_tokens": 377
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F28": {
+      "cost_usd": 0.02160315,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapses A~21/25 to B~6.5/25 while bright stays 24 to 21.75; background_mad_change 0.2819 dominates rms_radius_change 0.1159 and integrated_amplitude_change 0.0218, indicating sky noise.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 41.22947150003165,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery collapses A~21/25 to B~6.5/25 while bright stays 24 to 21.75; background_mad_change 0.2819 dominates rms_radius_change 0.1159 and integrated_amplitude_change 0.0218, indicating sky noise.\", \"probes\": [\"probe_sky\"]}",
+      "reasoning_tokens": 4944,
+      "recorded_utc": "2026-11-03T03:46:06+00:00",
+      "request_sha256": "cf674a79a3e225f51fdbdc06ebcd4a20bd7b40ce032f7d92a01efe9b74020910",
+      "reservation_usd": 0.03722975,
+      "response_id": "chatcmpl-01a19f83-a03c-7404-8541-1d23747a11a2",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:45:24+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 5034,
+        "prompt_tokens": 379
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F29": {
+      "cost_usd": 0.0137669,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal B 3,2,1,3 vs A 18,20,20,20 collapsed while bright fell less; background_mad_change 0.0 excludes sky, integrated_amplitude_change 0.12 shows conserved flux, favoring PSF.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 24.499101100023836,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal B 3,2,1,3 vs A 18,20,20,20 collapsed while bright fell less; background_mad_change 0.0 excludes sky, integrated_amplitude_change 0.12 shows conserved flux, favoring PSF.\", \"probes\": [\"probe_psf\"]}",
+      "reasoning_tokens": 3112,
+      "recorded_utc": "2026-11-03T03:48:38+00:00",
+      "request_sha256": "0e8a4c757b339f41b533eb1f3828cc3a0844069eb777a4c6beadc7cb0a610cf9",
+      "reservation_usd": 0.03718475,
+      "response_id": "chatcmpl-01a19f85-f4a5-72bb-a09c-9616b8fe59da",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:48:14+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 3194,
+        "prompt_tokens": 366
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F30": {
+      "cost_usd": 0.0112254,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal B 9,4,6,7 much lower than A 15,20,17,17 while bright B 20,20,20,20 vs A 22,23,21,22 similar, with background_mad_change 0.0493 and rms_radius_change 0.0791 small, favoring flux.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 17.927334300009534,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal B 9,4,6,7 much lower than A 15,20,17,17 while bright B 20,20,20,20 vs A 22,23,21,22 similar, with background_mad_change 0.0493 and rms_radius_change 0.0791 small, favoring flux.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 2498,
+      "recorded_utc": "2026-11-03T03:33:59+00:00",
+      "request_sha256": "c2005fe117b0f8d89af43c650c0ccf85f89e0d0e68344b5a6edc31e43e338180",
+      "reservation_usd": 0.0371785,
+      "response_id": "chatcmpl-01a19f78-890f-749a-9c20-e967dee7f590",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:33:41+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 2596,
+        "prompt_tokens": 366
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F31": {
+      "cost_usd": 0.01220415,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal counts drop A ~19 to B ~6 per batch while bright stays high; background_mad_change 0.0 rules out sky and integrated_amplitude_change 0.018 rules out flux, leaving PSF as most plausible.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 24.22419480001554,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal counts drop A ~19 to B ~6 per batch while bright stays high; background_mad_change 0.0 rules out sky and integrated_amplitude_change 0.018 rules out flux, leaving PSF as most plausible.\", \"probes\": [\"probe_psf\"]}",
+      "reasoning_tokens": 2750,
+      "recorded_utc": "2026-11-03T03:50:49+00:00",
+      "request_sha256": "93b8f319fb8c8a6acc01261e3cc3597fa17ba4130d49e118f6a35e42bc1bc96d",
+      "reservation_usd": 0.03718725,
+      "response_id": "chatcmpl-01a19f87-f3a4-778b-a9de-acc05be03a2b",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:50:25+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 2826,
+        "prompt_tokens": 367
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F32": {
+      "cost_usd": 0.0105179,
+      "decision": {
+        "decision": "abstain",
+        "justification": "Recovery counts for bright and nominal overlap between A and B with no deficit; indicator changes 0.0, 0.0457, 0.0116 show no anomaly.",
+        "probes": []
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 18.07267739996314,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\":\"abstain\",\"justification\":\"Recovery counts for bright and nominal overlap between A and B with no deficit; indicator changes 0.0, 0.0457, 0.0116 show no anomaly.\",\"probes\":[]}",
+      "reasoning_tokens": 2366,
+      "recorded_utc": "2026-11-03T03:47:15+00:00",
+      "request_sha256": "cdf994742fb4c658e33fd9eb4648e8090d4e59d7e06cad93894870fa0a094ec8",
+      "reservation_usd": 0.037231,
+      "response_id": "chatcmpl-01a19f84-ad67-7487-8158-6e97c6a13878",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:46:57+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 2426,
+        "prompt_tokens": 378
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F33": {
+      "cost_usd": 0.03063215,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Bright preserved (A 23-24, B 21-23) while nominal crashed (A 16-22, B 5-9), faint-selective loss. Integrated amplitude 0.1035 and rms radius 0.1241 both ~0.1, so flux and PSF both plausible.",
+        "probes": [
+          "probe_flux",
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 58.308173900004476,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Bright preserved (A 23-24, B 21-23) while nominal crashed (A 16-22, B 5-9), faint-selective loss. Integrated amplitude 0.1035 and rms radius 0.1241 both ~0.1, so flux and PSF both plausible.\", \"probes\": [\"probe_flux\", \"probe_psf\"]}",
+      "reasoning_tokens": 7065,
+      "recorded_utc": "2026-11-03T04:00:59+00:00",
+      "request_sha256": "c1caebce6f030ceae1256e66eb3a0b2005fa17f5666e4556aeef29769de1a6c6",
+      "reservation_usd": 0.037186,
+      "response_id": "chatcmpl-01a19f91-4374-71a1-a040-15988dbf352a",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T04:00:01+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 7162,
+        "prompt_tokens": 367
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F34": {
+      "cost_usd": 0.0071284,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright recovery identical while nominal falls A~19 to B~8.5; background MAD +25% vs rms radius +2.4%, so elevated sky noise best explains faint-only loss.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 11.701052600052208,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Bright recovery identical while nominal falls A~19 to B~8.5; background MAD +25% vs rms radius +2.4%, so elevated sky noise best explains faint-only loss.\", \"probes\": [\"probe_sky\"]}",
+      "reasoning_tokens": 1564,
+      "recorded_utc": "2026-11-03T03:55:07+00:00",
+      "request_sha256": "0057cbfb45c4bbc3c282bcf0b39f7d5f5cab478d2de83991112950e0117e1c90",
+      "reservation_usd": 0.037181,
+      "response_id": "chatcmpl-01a19f8b-e2fe-730f-947c-6fc41de33504",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:54:55+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 1632,
+        "prompt_tokens": 366
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F35": {
+      "cost_usd": 0.006212649999999999,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright stable (~23 vs ~22) but nominal collapses 17-21 to 4-7; background_mad_change 0.0 excludes sky, rms_radius_change 0.0336 negligible vs integrated_amplitude_change 0.2133 favoring flux loss.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 9.037366000004113,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Bright stable (~23 vs ~22) but nominal collapses 17-21 to 4-7; background_mad_change 0.0 excludes sky, rms_radius_change 0.0336 negligible vs integrated_amplitude_change 0.2133 favoring flux loss.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 1328,
+      "recorded_utc": "2026-11-03T03:32:54+00:00",
+      "request_sha256": "7927f38382a1411e71e0299959c94e0865436b8eec0b7b318d9eb19ddd02c615",
+      "reservation_usd": 0.037226,
+      "response_id": "chatcmpl-01a19f77-8bed-721e-9bf5-96786b74207a",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:32:45+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 1413,
+        "prompt_tokens": 378
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-spark-1.3/F36": {
+      "cost_usd": 0.0047709,
+      "decision": {
+        "decision": "abstain",
+        "justification": "Recovery counts for bright and nominal match between A and B, with zero background change and minimal amplitude change, showing no anomaly.",
+        "probes": []
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 8.39989330014214,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\":\"abstain\",\"justification\":\"Recovery counts for bright and nominal match between A and B, with zero background change and minimal amplitude change, showing no anomaly.\",\"probes\":[]}",
+      "reasoning_tokens": 1029,
+      "recorded_utc": "2026-11-03T03:47:36+00:00",
+      "request_sha256": "a9e9b0a9be28c544d28bd7742fbf0130a1f85bf95e62f49163bcabae83c0e83c",
+      "reservation_usd": 0.03719225,
+      "response_id": "chatcmpl-01a19f85-00c0-70db-a0ca-384874c8668e",
+      "response_model": "muse-spark-1.3",
+      "started_utc": "2026-11-03T03:47:28+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 1077,
+        "prompt_tokens": 367
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F01": {
+      "cost_usd": 0.090148,
+      "decision": {
+        "decision": "probe",
+        "justification": "Recovery drops sharply in B (bright 80 to 53/100; nominal 50 to 8/100), background MAD changes only 0.0423, but RMS radius increases 0.1676, pointing to PSF broadening reducing peak detectability.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 41.387464500032365,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Recovery drops sharply in B (bright 80 to 53/100; nominal 50 to 8/100), background MAD changes only 0.0423, but RMS radius increases 0.1676, pointing to PSF broadening reducing peak detectability.\", \"probes\": [\"probe_psf\"]}",
+      "reasoning_tokens": 4370,
+      "recorded_utc": "2026-11-03T03:56:44+00:00",
+      "request_sha256": "e1662383607852f6e93cb9d9b46449cfee26ccd7c40f70e366d58517aa712bd3",
+      "reservation_usd": 0.1714,
+      "response_id": "chatcmpl-01a19f8d-5bd9-7444-9170-6d79117dc585",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:56:02+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 4452,
+        "prompt_tokens": 277
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F02": {
+      "cost_usd": 0.037544,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapses to 0-3/25 vs 15-20 in A while bright drops only modestly; background MAD change is 0.0 and RMS radius change is only 0.0348, ruling out sky/PSF and pointing to flux loss.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 10.480328900041059,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery collapses to 0-3/25 vs 15-20 in A while bright drops only modestly; background MAD change is 0.0 and RMS radius change is only 0.0348, ruling out sky/PSF and pointing to flux loss.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 1737,
+      "recorded_utc": "2026-11-03T03:40:53+00:00",
+      "request_sha256": "ec7b598394bced5289db6cd5f843ab5404551e764bc5d741e00bf2c30d1a9167",
+      "reservation_usd": 0.171392,
+      "response_id": "chatcmpl-01a19f7e-db27-76e5-89d2-be00d9e0f0e4",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:40:43+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 1822,
+        "prompt_tokens": 276
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F03": {
+      "cost_usd": 0.0813792,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery drops from 60/100 in A to 29/100 in B while bright recovery stays about 90/100. Background MAD is unchanged at 0.0, but rms radius increases by 0.12, pointing to PSF broadening.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 29.817209400003776,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery drops from 60/100 in A to 29/100 in B while bright recovery stays about 90/100. Background MAD is unchanged at 0.0, but rms radius increases by 0.12, pointing to PSF broadening.\", \"probes\": [\"probe_psf\"]}",
+      "reasoning_tokens": 3955,
+      "recorded_utc": "2026-11-03T03:28:51+00:00",
+      "request_sha256": "7ca2c917a36fce2560748966ec3050c2f8eed56b0c6646761dceceb40e407912",
+      "reservation_usd": 0.171384,
+      "response_id": "chatcmpl-01a19f73-d52b-76f9-a045-d695faa5cb3b",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:28:21+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 4036,
+        "prompt_tokens": 275
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F04": {
+      "cost_usd": 0.038815199999999994,
+      "decision": {
+        "decision": "probe",
+        "justification": "Recovery drops for both bright and nominal sources, with rms_radius_change 0.1668 but background_mad_change 0.0 and only 0.0726 integrated amplitude change, indicating PSF broadening.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 11.329155100043863,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Recovery drops for both bright and nominal sources, with rms_radius_change 0.1668 but background_mad_change 0.0 and only 0.0726 integrated amplitude change, indicating PSF broadening.\", \"probes\": [\"probe_psf\"]}",
+      "reasoning_tokens": 1834,
+      "recorded_utc": "2026-11-03T03:37:57+00:00",
+      "request_sha256": "e7ceb3ea6559027668fce46723d95a447d98f1f469c699f776253b3b132b91d1",
+      "reservation_usd": 0.171556,
+      "response_id": "chatcmpl-01a19f7c-2bf3-74c8-858e-211f784ef25d",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:37:46+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 1905,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F05": {
+      "cost_usd": 0.0322192,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery falls from ~18/25 in A to ~6/25 in B while bright remains ~24/25; background_mad_change=0.2825 far exceeds amplitude (0.0669) and radius (0.0455) changes, implicating sky.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 9.08367700013332,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery falls from ~18/25 in A to ~6/25 in B while bright remains ~24/25; background_mad_change=0.2825 far exceeds amplitude (0.0669) and radius (0.0455) changes, implicating sky.\", \"probes\": [\"probe_sky\"]}",
+      "reasoning_tokens": 1489,
+      "recorded_utc": "2026-11-03T03:27:44+00:00",
+      "request_sha256": "ec84af356075b4990a6bd088a167b5978f3bf3d09e6fff4162bf877a5a9b3c81",
+      "reservation_usd": 0.171572,
+      "response_id": "chatcmpl-01a19f72-d1a9-75ba-aaed-2479a34aab1d",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:27:35+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 1575,
+        "prompt_tokens": 290
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F06": {
+      "cost_usd": 0.059451199999999996,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapses (16.8 to 3.8/25) with bright less affected; background MAD is unchanged and integrated amplitude changes 0.237, far more than RMS radius 0.0838, pointing to flux loss.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 17.630482600070536,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery collapses (16.8 to 3.8/25) with bright less affected; background MAD is unchanged and integrated amplitude changes 0.237, far more than RMS radius 0.0838, pointing to flux loss.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 2859,
+      "recorded_utc": "2026-11-03T03:36:01+00:00",
+      "request_sha256": "fe29d3ac08e1ac76a3c071fc788ed23618bcd23a912b599dc991e88be7f3e05c",
+      "reservation_usd": 0.171552,
+      "response_id": "chatcmpl-01a19f7a-654b-76b8-ac57-d0e9b61fbb75",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:35:43+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 2937,
+        "prompt_tokens": 288
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F07": {
+      "cost_usd": 0.070476,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery halves (14.8 to 7.8/25) while bright is near-stable, background change is 0.0, and integrated amplitude change 0.2884 dominates radius change 0.0861, indicating flux loss.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 21.72706439998001,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery halves (14.8 to 7.8/25) while bright is near-stable, background change is 0.0, and integrated amplitude change 0.2884 dominates radius change 0.0861, indicating flux loss.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 3387,
+      "recorded_utc": "2026-11-03T03:29:37+00:00",
+      "request_sha256": "5de5fac1a93b5a7c8fb22bd019156f8076e1b78603478a78c7ae24b2cc5d4933",
+      "reservation_usd": 0.17156,
+      "response_id": "chatcmpl-01a19f74-8b0e-7751-9be9-b099a68bf732",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:29:15+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 3466,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F08": {
+      "cost_usd": 0.16451120000000002,
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 62.19164070021361,
+      "finish_reason": "length",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": null,
+      "reasoning_tokens": 8190,
+      "recorded_utc": "2026-11-03T03:31:34+00:00",
+      "request_sha256": "9f10c572dbe472521e1480acb052cd842711f303bc15477d120c3025d81fb699",
+      "reservation_usd": 0.17144,
+      "response_id": "chatcmpl-01a19f76-542f-7127-8c44-4b8918a79101",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:30:32+00:00",
+      "state": "invalid_response",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 8192,
+        "prompt_tokens": 278
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F09": {
+      "cost_usd": 0.081976,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Nominal recovery falls sharply versus bright, background change is 0.0, but integrated amplitude change is 0.2646 and rms radius change is 0.1202, leaving flux and PSF both plausible.",
+        "probes": [
+          "probe_flux",
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 67.5900361998938,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Nominal recovery falls sharply versus bright, background change is 0.0, but integrated amplitude change is 0.2646 and rms radius change is 0.1202, leaving flux and PSF both plausible.\", \"probes\": [\"probe_flux\", \"probe_psf\"]}",
+      "reasoning_tokens": 3965,
+      "recorded_utc": "2026-11-03T03:44:09+00:00",
+      "request_sha256": "5d0c6facbb20a47884560ca60ca5dd227675740392e0de85067557276831695d",
+      "reservation_usd": 0.171556,
+      "response_id": "chatcmpl-01a19f81-d699-7019-96d1-9f3b37dbb776",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:43:01+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 4041,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F10": {
+      "cost_usd": 0.033516,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Nominal recovery falls sharply while bright recovery is unchanged and background is stable, but both integrated amplitude and RMS radius change by about 0.09, so PSF broadening and flux loss are both plausible.",
+        "probes": [
+          "probe_psf",
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 14.839758099988103,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Nominal recovery falls sharply while bright recovery is unchanged and background is stable, but both integrated amplitude and RMS radius change by about 0.09, so PSF broadening and flux loss are both plausible.\", \"probes\": [\"probe_psf\", \"probe_flux\"]}",
+      "reasoning_tokens": 1546,
+      "recorded_utc": "2026-11-03T03:53:08+00:00",
+      "request_sha256": "29fe4889b5c1daf674fa9b88499a7b9f70014c9ae2292c276f5428a694a65bc6",
+      "reservation_usd": 0.171556,
+      "response_id": "chatcmpl-01a19f8a-10ea-7489-80fe-2dd01350988c",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:52:53+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 1618,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F11": {
+      "cost_usd": 0.0326712,
+      "decision": {
+        "decision": "abstain",
+        "justification": "Recovery counts for bright and nominal sources are similar in A and B, and background, amplitude and radius changes are near zero, showing no anomaly.",
+        "probes": []
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 10.650841899914667,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"abstain\", \"justification\": \"Recovery counts for bright and nominal sources are similar in A and B, and background, amplitude and radius changes are near zero, showing no anomaly.\", \"probes\": []}",
+      "reasoning_tokens": 1541,
+      "recorded_utc": "2026-11-03T03:51:16+00:00",
+      "request_sha256": "042f6517b47d4b6892c4479bc42a17744e31b883eb125909df50e3783c4b0ad9",
+      "reservation_usd": 0.171568,
+      "response_id": "chatcmpl-01a19f88-5b7d-7744-bad4-0c14d5d0ce2d",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:51:05+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 1598,
+        "prompt_tokens": 288
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F12": {
+      "cost_usd": 0.040476,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapses from ~15.8 to 3.5/25 and bright from 21 to 16.5/25, while background MAD changes only 0.058 and integrated amplitude 0.106. Large peak-detection loss with near-conserved integrated flux suggests PSF broadening.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 18.702041199896485,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery collapses from ~15.8 to 3.5/25 and bright from 21 to 16.5/25, while background MAD changes only 0.058 and integrated amplitude 0.106. Large peak-detection loss with near-conserved integrated flux suggests PSF broadening.\", \"probes\": [\"probe_psf\"]}",
+      "reasoning_tokens": 1878,
+      "recorded_utc": "2026-11-03T04:06:24+00:00",
+      "request_sha256": "fbd268f71df28533c068f1153d14804d5b83263792b3fe8b776f7dfc4cfc86d3",
+      "reservation_usd": 0.171444,
+      "response_id": "chatcmpl-01a19f96-358a-742f-86e3-9ba7170209ea",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T04:06:05+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 1968,
+        "prompt_tokens": 279
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F13": {
+      "cost_usd": 0.0289192,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery drops sharply in B while bright largely persists; background_mad_change 0.2984 far exceeds amplitude 0.0646 and radius 0.0613 changes, pointing to sky.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 9.563140699872747,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery drops sharply in B while bright largely persists; background_mad_change 0.2984 far exceeds amplitude 0.0646 and radius 0.0613 changes, pointing to sky.\", \"probes\": [\"probe_sky\"]}",
+      "reasoning_tokens": 1340,
+      "recorded_utc": "2026-11-03T03:49:42+00:00",
+      "request_sha256": "73305c75c9ca26d63dd3b81b0621dca9189a0eccf3218d1186a5b7fee54533d7",
+      "reservation_usd": 0.171568,
+      "response_id": "chatcmpl-01a19f86-ecab-7348-995f-1d29ec18154f",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:49:32+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 1410,
+        "prompt_tokens": 290
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F14": {
+      "cost_usd": 0.051215199999999995,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapses while bright falls modestly, background MAD is unchanged, and rms radius change (0.1812) exceeds integrated amplitude change (0.0738), pointing to PSF broadening.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 20.18012009980157,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery collapses while bright falls modestly, background MAD is unchanged, and rms radius change (0.1812) exceeds integrated amplitude change (0.0738), pointing to PSF broadening.\", \"probes\": [\"probe_psf\"]}",
+      "reasoning_tokens": 2456,
+      "recorded_utc": "2026-11-03T03:58:53+00:00",
+      "request_sha256": "967300452b980c389b05585e1ddb1b46e84ca692f7f8d309efc350e0a1081ffb",
+      "reservation_usd": 0.171556,
+      "response_id": "chatcmpl-01a19f8f-54de-7493-ba02-506f1970059e",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:58:33+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 2525,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F15": {
+      "cost_usd": 0.023524,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery falls ~12.5 to 3.3 per 25 while bright falls only ~19.3 to 16; background MAD change is 0.0 and rms radius change is only 0.0469, pointing to flux loss over sky/PSF.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 10.073453400051221,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery falls ~12.5 to 3.3 per 25 while bright falls only ~19.3 to 16; background MAD change is 0.0 and rms radius change is only 0.0469, pointing to flux loss over sky/PSF.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 1036,
+      "recorded_utc": "2026-11-03T03:57:55+00:00",
+      "request_sha256": "02006d15495da23294212d7b24cbc50e390e1a5dd5d950437de2dfaf8493649a",
+      "reservation_usd": 0.171392,
+      "response_id": "chatcmpl-01a19f8e-7353-7211-a027-b9213b9aa877",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:57:45+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 1121,
+        "prompt_tokens": 276
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F16": {
+      "cost_usd": 0.1211072,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Nominal recovery falls from ~12.8 to ~5.8 per 25 while bright stays ~20 to ~18.5, and integrated amplitude and rms radius both change by ~0.12-0.13, so PSF broadening and flux loss are both plausible.",
+        "probes": [
+          "probe_psf",
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 44.155645000049844,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Nominal recovery falls from ~12.8 to ~5.8 per 25 while bright stays ~20 to ~18.5, and integrated amplitude and rms radius both change by ~0.12-0.13, so PSF broadening and flux loss are both plausible.\", \"probes\": [\"probe_psf\", \"probe_flux\"]}",
+      "reasoning_tokens": 5934,
+      "recorded_utc": "2026-11-03T03:23:51+00:00",
+      "request_sha256": "07632355c315b64d05c1b6efd1ee9c232b69881cc41457a95485e98dd0c9edd5",
+      "reservation_usd": 0.17142,
+      "response_id": "chatcmpl-01a19f6f-42ed-7504-a869-698cb141e816",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:23:07+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 6022,
+        "prompt_tokens": 277
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F17": {
+      "cost_usd": 0.038056,
+      "decision": {
+        "decision": "abstain",
+        "justification": "No anomaly: bright recovery 23 vs 23 and nominal ~16.8 vs 16.3 per 25 are within batch variation, and background, amplitude and radius changes are near zero.",
+        "probes": []
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 15.351665300084278,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"abstain\", \"justification\": \"No anomaly: bright recovery 23 vs 23 and nominal ~16.8 vs 16.3 per 25 are within batch variation, and background, amplitude and radius changes are near zero.\", \"probes\": []}",
+      "reasoning_tokens": 1777,
+      "recorded_utc": "2026-11-03T03:52:53+00:00",
+      "request_sha256": "3ccd927658df20c8fa143a3c72a8872f15a9d76519507825312d4026912301c0",
+      "reservation_usd": 0.171572,
+      "response_id": "chatcmpl-01a19f89-d6d3-711d-8b7f-12a7f6b1dd49",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:52:38+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 1845,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F18": {
+      "cost_usd": 0.031788,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery falls from ~19/25 in A to ~6.8/25 in B while bright stays ~22.5 vs 21.3, with integrated amplitude change 0.0772 and rms radius change 0.068 both small, pointing to sky noise rather than flux or PSF change.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 12.024827900109813,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery falls from ~19/25 in A to ~6.8/25 in B while bright stays ~22.5 vs 21.3, with integrated amplitude change 0.0772 and rms radius change 0.068 both small, pointing to sky noise rather than flux or PSF change.\", \"probes\": [\"probe_sky\"]}",
+      "reasoning_tokens": 1442,
+      "recorded_utc": "2026-11-03T04:07:22+00:00",
+      "request_sha256": "2fee44b9695757ff407740d8c21e1122bfaa6186b7991e654ae49647d5322deb",
+      "reservation_usd": 0.171424,
+      "response_id": "chatcmpl-01a19f97-18d3-7682-a946-6d089a69457a",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T04:07:10+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 1534,
+        "prompt_tokens": 277
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F19": {
+      "cost_usd": 0.0458,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery falls ~18.5 to 9.5 per 25 while bright stays ~22.5, with background_mad_change 0.2819 large versus rms_radius_change 0.0667 and integrated_amplitude_change 0.0021.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 14.231005199952051,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery falls ~18.5 to 9.5 per 25 while bright stays ~22.5, with background_mad_change 0.2819 large versus rms_radius_change 0.0667 and integrated_amplitude_change 0.0021.\", \"probes\": [\"probe_sky\"]}",
+      "reasoning_tokens": 2149,
+      "recorded_utc": "2026-11-03T03:38:27+00:00",
+      "request_sha256": "f3b5048dcff369aad1c2f62dba94fe537dd214933a95650214de7e321da031d5",
+      "reservation_usd": 0.171576,
+      "response_id": "chatcmpl-01a19f7c-a266-72ec-95aa-a23412bb2f80",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:38:13+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 2232,
+        "prompt_tokens": 290
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F20": {
+      "cost_usd": 0.027636,
+      "decision": {
+        "decision": "probe",
+        "justification": "Background MAD change (0.341) far exceeds amplitude (0.081) and radius (0.026) changes, and nominal-source recovery collapses, consistent with elevated sky noise.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 6.913297999883071,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Background MAD change (0.341) far exceeds amplitude (0.081) and radius (0.026) changes, and nominal-source recovery collapses, consistent with elevated sky noise.\", \"probes\": [\"probe_sky\"]}",
+      "reasoning_tokens": 1257,
+      "recorded_utc": "2026-11-03T03:22:49+00:00",
+      "request_sha256": "5b374775cb839566ca5121125387b20589d44ae02f36100eaddb5f31929c0eb5",
+      "reservation_usd": 0.171564,
+      "response_id": "chatcmpl-01a19f6e-4f08-756a-a2cf-962108344441",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:22:42+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 1324,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F21": {
+      "cost_usd": 0.1076192,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Nominal recovery falls sharply (about 17/25 to 5/25) while bright remains high, with both background MAD (+27%) and RMS radius (+13%) elevated but flux amplitude nearly unchanged (+6%), so sky and PSF mechanisms are both plausible.",
+        "probes": [
+          "probe_sky",
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 35.20334010012448,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Nominal recovery falls sharply (about 17/25 to 5/25) while bright remains high, with both background MAD (+27%) and RMS radius (+13%) elevated but flux amplitude nearly unchanged (+6%), so sky and PSF mechanisms are both plausible.\", \"probes\": [\"probe_sky\", \"probe_psf\"]}",
+      "reasoning_tokens": 5259,
+      "recorded_utc": "2026-11-03T03:34:34+00:00",
+      "request_sha256": "462d19e9c51e38e50621149ed65f680c6c36d0523a5247a02aca4e06d8b4bf45",
+      "reservation_usd": 0.171568,
+      "response_id": "chatcmpl-01a19f79-12a1-7613-9cd0-b2c7bb834108",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:33:59+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 5345,
+        "prompt_tokens": 290
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F22": {
+      "cost_usd": 0.0296312,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery drops from ~20 to ~8 per 25 while bright stays ~24; background MAD change is 0.0 and rms radius change only 0.016, but integrated amplitude changes 0.3024, indicating flux loss.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 11.662681699963287,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery drops from ~20 to ~8 per 25 while bright stays ~24; background MAD change is 0.0 and rms radius change only 0.016, but integrated amplitude changes 0.3024, indicating flux loss.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 1368,
+      "recorded_utc": "2026-11-03T03:55:49+00:00",
+      "request_sha256": "79c475dadec452e3a86f096dba00503194dd75cc493ff51d8f0c9db1dc567eea",
+      "reservation_usd": 0.171556,
+      "response_id": "chatcmpl-01a19f8c-8725-77d0-b2ef-25db617bcb05",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:55:37+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 1446,
+        "prompt_tokens": 288
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F23": {
+      "cost_usd": 0.149616,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery falls from ~19/25 in A to ~6.5/25 in B while bright recovery is unchanged and background MAD change is 0.0; the largest indicator is integrated amplitude (0.2441), consistent with a flux loss affecting marginal sources.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 79.57080570003018,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery falls from ~19/25 in A to ~6.5/25 in B while bright recovery is unchanged and background MAD change is 0.0; the largest indicator is integrated amplitude (0.2441), consistent with a flux loss affecting marginal sources.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 7340,
+      "recorded_utc": "2026-11-03T04:03:51+00:00",
+      "request_sha256": "83b970f42ff9e0fa386805ba5ea109b34f83120d937f527985b9c2e790f9c3e8",
+      "reservation_usd": 0.171556,
+      "response_id": "chatcmpl-01a19f93-e13d-73c2-8238-c0ac65ea1eca",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T04:02:31+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 7423,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F24": {
+      "cost_usd": 0.0757952,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Nominal recovery collapses in B (3,2,7,6 vs 22,23,21,19 per 25) while bright sources persist, so an anomaly is present. Background change is 0.0, but integrated amplitude (0.0395) and rms radius (0.0657) both change, making flux and PSF plausible.",
+        "probes": [
+          "probe_psf",
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 26.12096600001678,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Nominal recovery collapses in B (3,2,7,6 vs 22,23,21,19 per 25) while bright sources persist, so an anomaly is present. Background change is 0.0, but integrated amplitude (0.0395) and rms radius (0.0657) both change, making flux and PSF plausible.\", \"probes\": [\"probe_psf\", \"probe_flux\"]}",
+      "reasoning_tokens": 3648,
+      "recorded_utc": "2026-11-03T03:39:12+00:00",
+      "request_sha256": "e99afde20e7ba74e03e7f68ee2db57c080942db8bba23161f590474f9a192d39",
+      "reservation_usd": 0.171556,
+      "response_id": "chatcmpl-01a19f7d-4f1a-7625-9587-fc4b5e77d36d",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:38:46+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 3754,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F25": {
+      "cost_usd": 0.106472,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery drops sharply while bright sources remain recovered and background MAD is unchanged; the largest indicator is rms_radius_change (0.136), consistent with PSF broadening reducing peak detectability.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 40.04498749994673,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery drops sharply while bright sources remain recovered and background MAD is unchanged; the largest indicator is rms_radius_change (0.136), consistent with PSF broadening reducing peak detectability.\", \"probes\": [\"probe_psf\"]}",
+      "reasoning_tokens": 5201,
+      "recorded_utc": "2026-11-03T03:27:05+00:00",
+      "request_sha256": "9287ba88cc864ad49cd547c69548af613739d22ec599475bb414b03ed58b1452",
+      "reservation_usd": 0.171552,
+      "response_id": "chatcmpl-01a19f72-37f7-7729-acae-981f32e6b2e3",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:26:25+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 5266,
+        "prompt_tokens": 288
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F26": {
+      "cost_usd": 0.027536,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapses from ~20.5 to ~6.8/25 while bright stays ~23.5, and background MAD rises 0.298 versus 0.032 amplitude and 0.077 radius changes, implicating sky noise.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 8.016228700056672,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery collapses from ~20.5 to ~6.8/25 while bright stays ~23.5, and background MAD rises 0.298 versus 0.032 amplitude and 0.077 radius changes, implicating sky noise.\", \"probes\": [\"probe_sky\"]}",
+      "reasoning_tokens": 1239,
+      "recorded_utc": "2026-11-03T03:49:32+00:00",
+      "request_sha256": "8ae60fd0fbb8bd433216229afc50ba13aa427632acbe66ab4cdc0ef40f7aa0bd",
+      "reservation_usd": 0.171564,
+      "response_id": "chatcmpl-01a19f86-c716-7152-b6fa-616d5c441b81",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:49:24+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 1319,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F27": {
+      "cost_usd": 0.029491200000000002,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery falls from 19-22 to 7-12/25 while bright stays 21-24/25. Background change is 0.0 and rms radius change is 0.0166, but integrated amplitude change is 0.252, implicating flux.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 11.84543909993954,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery falls from 19-22 to 7-12/25 while bright stays 21-24/25. Background change is 0.0 and rms radius change is 0.0166, but integrated amplitude change is 0.252, implicating flux.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 1354,
+      "recorded_utc": "2026-11-03T03:58:33+00:00",
+      "request_sha256": "f41dd032692f7c3bf56b89494f40373a12bda5c84a6cbc77be6393479365e389",
+      "reservation_usd": 0.171564,
+      "response_id": "chatcmpl-01a19f8f-05d6-7444-b368-1696885806d3",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:58:21+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 1439,
+        "prompt_tokens": 288
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F28": {
+      "cost_usd": 0.08307919999999999,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Nominal recovery drops to 6-7 from 19-22 per 25, while integrated amplitude changes only 0.0218. Background MAD rises 0.2819 and rms radius rises 0.1159, leaving sky and PSF both plausible.",
+        "probes": [
+          "probe_sky",
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 47.709271600004286,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Nominal recovery drops to 6-7 from 19-22 per 25, while integrated amplitude changes only 0.0218. Background MAD rises 0.2819 and rms radius rises 0.1159, leaving sky and PSF both plausible.\", \"probes\": [\"probe_sky\", \"probe_psf\"]}",
+      "reasoning_tokens": 4031,
+      "recorded_utc": "2026-11-03T03:44:56+00:00",
+      "request_sha256": "a100971a66ae5de5e34cf2bf33ebb96fdada4692258ec405e3a4a3b325fb4095",
+      "reservation_usd": 0.171568,
+      "response_id": "chatcmpl-01a19f82-913a-7501-b0d6-1af4009f7e9a",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:44:09+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 4118,
+        "prompt_tokens": 290
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F29": {
+      "cost_usd": 0.052848,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapses while bright falls modestly; background MAD change is 0.0 and integrated amplitude changes only 0.12, ruling out sky/flux and pointing to PSF peak dilution.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 28.434865300077945,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery collapses while bright falls modestly; background MAD change is 0.0 and integrated amplitude changes only 0.12, ruling out sky/flux and pointing to PSF peak dilution.\", \"probes\": [\"probe_psf\"]}",
+      "reasoning_tokens": 2518,
+      "recorded_utc": "2026-11-03T03:48:14+00:00",
+      "request_sha256": "8933cf47f79e86bde36f9305552d2c4644a254e2aa83438b874a14c2d8ab6a0e",
+      "reservation_usd": 0.171424,
+      "response_id": "chatcmpl-01a19f85-94db-7353-bb22-46a5443bb042",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:47:45+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 2587,
+        "prompt_tokens": 277
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F30": {
+      "cost_usd": 0.044948,
+      "decision": {
+        "decision": "probe",
+        "justification": "probe_flux: Nominal counts drop from 15-20 in A to 4-9 in B, while bright counts change only slightly (21-23 to 20). Background MAD change 0.0493 and RMS radius change 0.0791 are both small, implicating flux.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 13.440266599878669,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\":\"probe\",\"justification\":\"probe_flux: Nominal counts drop from 15-20 in A to 4-9 in B, while bright counts change only slightly (21-23 to 20). Background MAD change 0.0493 and RMS radius change 0.0791 are both small, implicating flux.\" ,\"probes\":[\"probe_flux\"]}",
+      "reasoning_tokens": 2108,
+      "recorded_utc": "2026-11-03T03:33:41+00:00",
+      "request_sha256": "b389766dc414f22cfe15aedaf1fdd4b1510115cb0937652f2408eabd7070b84d",
+      "reservation_usd": 0.171404,
+      "response_id": "chatcmpl-01a19f78-42f8-7376-b416-f75271a964dd",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:33:27+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 2192,
+        "prompt_tokens": 277
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F31": {
+      "cost_usd": 0.034872,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery falls ~19 to ~6/25 while bright stays ~24 to ~22/25; background MAD change is 0.0 and integrated amplitude change only 0.0179, matching PSF broadening that lowers peaks but preserves flux.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 15.898658500052989,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery falls ~19 to ~6/25 while bright stays ~24 to ~22/25; background MAD change is 0.0 and integrated amplitude change only 0.0179, matching PSF broadening that lowers peaks but preserves flux.\", \"probes\": [\"probe_psf\"]}",
+      "reasoning_tokens": 1609,
+      "recorded_utc": "2026-11-03T03:51:05+00:00",
+      "request_sha256": "5fda925f404f1323604de01d87cbc265ac5e034cb86de4a8ccd78d59760a5d96",
+      "reservation_usd": 0.171432,
+      "response_id": "chatcmpl-01a19f88-31c0-719d-a635-bfa1ae18eeaf",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:50:49+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 1688,
+        "prompt_tokens": 278
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F32": {
+      "cost_usd": 0.045556,
+      "decision": {
+        "decision": "abstain",
+        "justification": "No recovery deficit: nominal B 76/100 vs A 71/100 and bright 96 vs 95; background, amplitude and radius changes are near zero (0.00, 0.046, 0.012), so no mechanism is indicated.",
+        "probes": []
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 24.65718420012854,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"abstain\", \"justification\": \"No recovery deficit: nominal B 76/100 vs A 71/100 and bright 96 vs 95; background, amplitude and radius changes are near zero (0.00, 0.046, 0.012), so no mechanism is indicated.\", \"probes\": []}",
+      "reasoning_tokens": 2138,
+      "recorded_utc": "2026-11-03T03:46:30+00:00",
+      "request_sha256": "7eff52e58fa1bf21c04a25f51ff4571ffeb953608a0133b1f0ed0dc8728811f2",
+      "reservation_usd": 0.171572,
+      "response_id": "chatcmpl-01a19f84-0072-72f5-b8b0-4e9b53c38706",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:46:06+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 2220,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F33": {
+      "cost_usd": 0.061952,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Nominal recovery falls from mean 19.0 to 7.8/25 while bright is 23.5 to 22.0/25. Integrated amplitude change 0.104 and rms radius change 0.124 are comparable, making flux reduction and PSF broadening both plausible.",
+        "probes": [
+          "probe_psf",
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 27.6062976999674,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Nominal recovery falls from mean 19.0 to 7.8/25 while bright is 23.5 to 22.0/25. Integrated amplitude change 0.104 and rms radius change 0.124 are comparable, making flux reduction and PSF broadening both plausible.\", \"probes\": [\"probe_psf\", \"probe_flux\"]}",
+      "reasoning_tokens": 2951,
+      "recorded_utc": "2026-11-03T04:00:01+00:00",
+      "request_sha256": "0c9a10805a8ab8869874b8b3831aff5d7939caf46835599699de5f3e2aeca847",
+      "reservation_usd": 0.171428,
+      "response_id": "chatcmpl-01a19f90-5f9e-75be-b194-4912061d8cf2",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:59:34+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 3042,
+        "prompt_tokens": 278
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F34": {
+      "cost_usd": 0.039248,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery falls ~19.3 to 8.5/25 while bright stays 23.5/25; background MAD rises 25.01% versus rms radius only 2.37%, implicating raised sky noise.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 14.394365000072867,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery falls ~19.3 to 8.5/25 while bright stays 23.5/25; background MAD rises 25.01% versus rms radius only 2.37%, implicating raised sky noise.\", \"probes\": [\"probe_sky\"]}",
+      "reasoning_tokens": 1831,
+      "recorded_utc": "2026-11-03T03:54:55+00:00",
+      "request_sha256": "c16c4f694ca25beb0867220f916c8f55aecf395f279371671ae9ba0eb6facf9d",
+      "reservation_usd": 0.171412,
+      "response_id": "chatcmpl-01a19f8b-b559-7760-a7ae-8bd79f8e521a",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:54:41+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 1907,
+        "prompt_tokens": 277
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F35": {
+      "cost_usd": 0.0314952,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapses in B while bright stays intact, with 21% integrated amplitude change, near-zero background MAD and only 3% radius change, pointing to flux loss.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 8.121918299933895,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery collapses in B while bright stays intact, with 21% integrated amplitude change, near-zero background MAD and only 3% radius change, pointing to flux loss.\", \"probes\": [\"probe_flux\"]}",
+      "reasoning_tokens": 1475,
+      "recorded_utc": "2026-11-03T03:32:45+00:00",
+      "request_sha256": "e665f86e129165b1664dc4b3f6f2326b4d3434b60be2004592e9c959325eaf57",
+      "reservation_usd": 0.171556,
+      "response_id": "chatcmpl-01a19f77-68a3-71d4-9865-c40d471537ab",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:32:37+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 1539,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "muse-wonder-1.0/F36": {
+      "cost_usd": 0.029772,
+      "decision": {
+        "decision": "abstain",
+        "justification": "Recovery is essentially identical: bright 98/100 in both, nominal 79 vs 81/100, with background MAD change 0.0 and only 2.04% amplitude change, showing no anomaly.",
+        "probes": []
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 9.42539650015533,
+      "finish_reason": "stop",
+      "provider_base_url": "https://api.meta.ai/v1",
+      "raw_output": "{\"decision\": \"abstain\", \"justification\": \"Recovery is essentially identical: bright 98/100 in both, nominal 79 vs 81/100, with background MAD change 0.0 and only 2.04% amplitude change, showing no anomaly.\", \"probes\": []}",
+      "reasoning_tokens": 1361,
+      "recorded_utc": "2026-11-03T03:47:45+00:00",
+      "request_sha256": "c88bf110b6601969f97ac40ff9fd9d98d157927caa097d591dcb41f72dbfed3f",
+      "reservation_usd": 0.171448,
+      "response_id": "chatcmpl-01a19f85-25cf-7182-9af5-ecd5710947a1",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-03T03:47:36+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 1433,
+        "prompt_tokens": 278
+      },
+      "usage_exceeded_reservation": false
+    }
+  },
+  "availability": {
+    "muse-spark-1.1": true,
+    "muse-spark-1.3": true,
+    "muse-wonder-1.0": true
+  },
+  "catalog_models": [
+    "muse-image-1.0",
+    "muse-spark-1.1",
+    "muse-spark-1.2",
+    "muse-spark-1.2-contributor",
+    "muse-spark-1.3",
+    "muse-spark-1.3-contributor",
+    "muse-voice-transcribe-1.0",
+    "muse-wonder-1.0",
+    "sam-3.1"
+  ],
+  "mode": "live",
+  "protocol_sha256": "92b2cfd084440e2b72e1df4eaa31db4a147898187340c25978ec01c227a385f0",
+  "seal_sha256": "f54c0f7201724360393554d7b6f32397d04040508d8fa6f179473e930895ca8e"
+}

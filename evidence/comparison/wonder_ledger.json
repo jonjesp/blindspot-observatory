@@ -1,0 +1,985 @@
+{
+  "attempts": {
+    "F01": {
+      "cost_usd": 0.008828,
+      "decision": {
+        "decision": "probe",
+        "justification": "rms_radius_change 0.1676 is substantial versus background_mad_change 0.0423, and nominal recovery falls sharply, consistent with PSF broadening.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 5.636889999965206,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"rms_radius_change 0.1676 is substantial versus background_mad_change 0.0423, and nominal recovery falls sharply, consistent with PSF broadening.\", \"probes\": [\"probe_psf\"]}",
+      "recorded_utc": "2026-11-02T01:56:15+00:00",
+      "request_sha256": "36c8ed65ce45fd06c4655caf1965d4fde3e7ed659c2e060694c54daebb00f97c",
+      "reservation_usd": 0.068944,
+      "response_id": "chatcmpl-01a199f8-b36b-740c-b903-12ad00e04312",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:56:09+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 386,
+        "prompt_tokens": 277
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F02": {
+      "cost_usd": 0.005984,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal sources collapse in B (0-3 vs 15-20) while bright sources largely recover (15-19 vs 21-23) and background MAD is unchanged, pointing to a flux-related loss near threshold.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 3.5383256999775767,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal sources collapse in B (0-3 vs 15-20) while bright sources largely recover (15-19 vs 21-23) and background MAD is unchanged, pointing to a flux-related loss near threshold.\", \"probes\": [\"probe_flux\"]}",
+      "recorded_utc": "2026-11-02T01:56:18+00:00",
+      "request_sha256": "25a0d0765fb96b8f92a526cbb7d459056ba72fed37a6f5a252a532f42f585b46",
+      "reservation_usd": 0.068936,
+      "response_id": "chatcmpl-01a199f8-c1ba-7205-a8dd-8e54a28757ab",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:56:15+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 244,
+        "prompt_tokens": 276
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F03": {
+      "cost_usd": 0.0071,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal sources fall from ~15 to ~7 per 25 while bright recovery is unchanged and background MAD is unchanged. rms_radius_change of 0.12 points to PSF broadening spreading faint flux below detection.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 3.0424903000239283,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal sources fall from ~15 to ~7 per 25 while bright recovery is unchanged and background MAD is unchanged. rms_radius_change of 0.12 points to PSF broadening spreading faint flux below detection.\", \"probes\": [\"probe_psf\"]}",
+      "recorded_utc": "2026-11-02T01:56:21+00:00",
+      "request_sha256": "9063a9d129c98a7611b60d89fe621741709436211a0b7ed07d796e170a225bd2",
+      "reservation_usd": 0.068928,
+      "response_id": "chatcmpl-01a199f8-cda5-740b-b369-dded2efb6e1d",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:56:18+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 300,
+        "prompt_tokens": 275
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F04": {
+      "cost_usd": 0.0063352,
+      "decision": {
+        "decision": "probe",
+        "justification": "Recovery drops in both bright and nominal sources with zero background change, near-preserved integrated amplitude (0.0726) but increased rms radius (0.1668), indicating PSF broadening rather than flux or sky effects.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 3.4519697001669556,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Recovery drops in both bright and nominal sources with zero background change, near-preserved integrated amplitude (0.0726) but increased rms radius (0.1668), indicating PSF broadening rather than flux or sky effects.\", \"probes\": [\"probe_psf\"]}",
+      "recorded_utc": "2026-11-02T01:56:25+00:00",
+      "request_sha256": "1438aa1fc71612aac80c6e2c760ca993664a3b270f609055b9839ae8268be18f",
+      "reservation_usd": 0.0691,
+      "response_id": "chatcmpl-01a199f8-db25-7101-8886-a99e903ceee4",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:56:21+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 281,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F05": {
+      "cost_usd": 0.00502,
+      "decision": {
+        "decision": "probe",
+        "justification": "Background MAD rose 0.2825 while amplitude and radius changes are small; nominal recovery fell sharply but bright sources were unchanged, pointing to a sky/background effect.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 1.811438900185749,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Background MAD rose 0.2825 while amplitude and radius changes are small; nominal recovery fell sharply but bright sources were unchanged, pointing to a sky/background effect.\", \"probes\": [\"probe_sky\"]}",
+      "recorded_utc": "2026-11-02T01:56:27+00:00",
+      "request_sha256": "2400a0ae1b5ada94108071691591dd08b687effefffcadef1b31f9867b5a1bc0",
+      "reservation_usd": 0.069116,
+      "response_id": "chatcmpl-01a199f8-e262-7037-9f72-8bde964c9aa5",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:56:25+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 193,
+        "prompt_tokens": 290
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F06": {
+      "cost_usd": 0.006512,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal sources collapse in B (17 to ~4/25) while bright drop moderately, background MAD unchanged and radius change small; integrated amplitude down 0.237 points to flux loss.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 3.042955000186339,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal sources collapse in B (17 to ~4/25) while bright drop moderately, background MAD unchanged and radius change small; integrated amplitude down 0.237 points to flux loss.\", \"probes\": [\"probe_flux\"]}",
+      "recorded_utc": "2026-11-02T01:56:30+00:00",
+      "request_sha256": "e121f4f3d62f2db67f6958a0468e1a3b3a3e177f2ee2cf6bd38c42e5189c0446",
+      "reservation_usd": 0.069096,
+      "response_id": "chatcmpl-01a199f8-ee5b-72e6-9a28-bcb518f57267",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:56:27+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 268,
+        "prompt_tokens": 288
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F07": {
+      "cost_usd": 0.0054551999999999995,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery halves in B while bright recovery is nearly preserved and background is unchanged; integrated amplitude rises 0.288 with only small radius change, pointing to flux.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 3.655977000016719,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery halves in B while bright recovery is nearly preserved and background is unchanged; integrated amplitude rises 0.288 with only small radius change, pointing to flux.\", \"probes\": [\"probe_flux\"]}",
+      "recorded_utc": "2026-11-02T01:56:33+00:00",
+      "request_sha256": "293aa3e9181ed8797beae6cb0891836c6257450e08211a4fc7d8610f7ef14207",
+      "reservation_usd": 0.069104,
+      "response_id": "chatcmpl-01a199f8-fcff-7742-a807-1320c147f03a",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:56:30+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 237,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F08": {
+      "cost_usd": 0.0066511999999999995,
+      "decision": {
+        "decision": "probe",
+        "justification": "B recovery collapses for nominal sources (13-14 to 1-4/25) but only partly for bright sources, with 0.298 higher background MAD and small 0.108 amplitude change, pointing to elevated sky background.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 3.9617602999787778,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"B recovery collapses for nominal sources (13-14 to 1-4/25) but only partly for bright sources, with 0.298 higher background MAD and small 0.108 amplitude change, pointing to elevated sky background.\", \"probes\": [\"probe_sky\"]}",
+      "recorded_utc": "2026-11-02T01:56:37+00:00",
+      "request_sha256": "35407c5bddc459b97264e66cb464a5841cf5f2d695e86b2843db3918a5cc8346",
+      "reservation_usd": 0.068984,
+      "response_id": "chatcmpl-01a199f9-0c31-76b6-96a6-3c903c05c567",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:56:33+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 299,
+        "prompt_tokens": 278
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F09": {
+      "cost_usd": 0.008896,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Background unchanged, but both integrated amplitude (+0.2646) and rms radius (+0.1202) changed, with faint sources lost more than bright; flux and PSF mechanisms are both plausible.",
+        "probes": [
+          "probe_flux",
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 3.7559585000853986,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Background unchanged, but both integrated amplitude (+0.2646) and rms radius (+0.1202) changed, with faint sources lost more than bright; flux and PSF mechanisms are both plausible.\", \"probes\": [\"probe_flux\", \"probe_psf\"]}",
+      "recorded_utc": "2026-11-02T01:56:41+00:00",
+      "request_sha256": "366e94d70f79faa89f6ef65a9db3351216abc17d050517f6ab441a04fec21f2d",
+      "reservation_usd": 0.0691,
+      "response_id": "chatcmpl-01a199f9-1b48-7454-bea5-1db1a07c1b00",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:56:37+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 387,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F10": {
+      "cost_usd": 0.006696,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Nominal recovery drops in B while bright is unchanged; both integrated_amplitude_change (0.0937) and rms_radius_change (0.0926) are elevated with no background change, consistent with either flux loss or PSF broadening.",
+        "probes": [
+          "probe_psf",
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 2.939610500121489,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Nominal recovery drops in B while bright is unchanged; both integrated_amplitude_change (0.0937) and rms_radius_change (0.0926) are elevated with no background change, consistent with either flux loss or PSF broadening.\", \"probes\": [\"probe_psf\", \"probe_flux\"]}",
+      "recorded_utc": "2026-11-02T01:56:44+00:00",
+      "request_sha256": "685984c169291971770ed7cb2afaa5bc1b1142b255ea336a5cc17d375a6fd00c",
+      "reservation_usd": 0.0691,
+      "response_id": "chatcmpl-01a199f9-26e7-772b-9d44-ca5d5a7a3b49",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:56:41+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 277,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F11": {
+      "cost_usd": 0.0056711999999999995,
+      "decision": {
+        "decision": "abstain",
+        "justification": "Recovery counts are similar in bright (A~20.5 vs B~21) and nominal (A~14.3 vs B~13.5) batches, with near-zero background, amplitude, and rms-radius changes, showing no anomaly.",
+        "probes": []
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 3.257574599934742,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"abstain\", \"justification\": \"Recovery counts are similar in bright (A~20.5 vs B~21) and nominal (A~14.3 vs B~13.5) batches, with near-zero background, amplitude, and rms-radius changes, showing no anomaly.\", \"probes\": []}",
+      "recorded_utc": "2026-11-02T01:56:47+00:00",
+      "request_sha256": "3c5524d6c81ebf9c3ffc3bab0d929d0b8e714f17237307c2c3ac2a5def0a609a",
+      "reservation_usd": 0.069112,
+      "response_id": "chatcmpl-01a199f9-3375-7472-8c19-c06c68b20fbd",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:56:44+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 248,
+        "prompt_tokens": 288
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F12": {
+      "cost_usd": 0.010635200000000001,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Nominal recovery collapses (16 to 3.5/25) with bright also reduced, indicating a threshold effect. Both background_mad_change 0.058 and integrated_amplitude_change 0.106 are modestly nonzero, making sky and flux mechanisms both plausible.",
+        "probes": [
+          "probe_sky",
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 5.309671099996194,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Nominal recovery collapses (16 to 3.5/25) with bright also reduced, indicating a threshold effect. Both background_mad_change 0.058 and integrated_amplitude_change 0.106 are modestly nonzero, making sky and flux mechanisms both plausible.\", \"probes\": [\"probe_sky\", \"probe_flux\"]}",
+      "recorded_utc": "2026-11-02T01:56:53+00:00",
+      "request_sha256": "f7c118591102c225b802d4eda61beebf380eb64ba939803f5062890354539f32",
+      "reservation_usd": 0.068988,
+      "response_id": "chatcmpl-01a199f9-4873-722a-a126-e2d7da68b472",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:56:48+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 498,
+        "prompt_tokens": 279
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F13": {
+      "cost_usd": 0.0054792,
+      "decision": {
+        "decision": "probe",
+        "justification": "Background MAD rises ~30% while amplitude and radius change only ~6%; nominal sources drop sharply but bright sources are largely recovered, indicating increased sky noise.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 2.2267346000298858,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Background MAD rises ~30% while amplitude and radius change only ~6%; nominal sources drop sharply but bright sources are largely recovered, indicating increased sky noise.\", \"probes\": [\"probe_sky\"]}",
+      "recorded_utc": "2026-11-02T01:56:55+00:00",
+      "request_sha256": "720e5219871bca96f97373f1221abed37d83cf0e5cdcd9e032dc3ec042f7b457",
+      "reservation_usd": 0.069112,
+      "response_id": "chatcmpl-01a199f9-5160-7330-a831-ea4b2bc42ef7",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:56:53+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 238,
+        "prompt_tokens": 290
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F14": {
+      "cost_usd": 0.0058151999999999995,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapses (15-16 to 2-4) while bright sources mostly persist, with rms_radius_change=0.1812, background_mad_change=0.0 and small amplitude change, pointing to PSF broadening.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 3.449840100016445,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery collapses (15-16 to 2-4) while bright sources mostly persist, with rms_radius_change=0.1812, background_mad_change=0.0 and small amplitude change, pointing to PSF broadening.\", \"probes\": [\"probe_psf\"]}",
+      "recorded_utc": "2026-11-02T01:56:59+00:00",
+      "request_sha256": "c4109a5d3eeafed678ffd8efdfc91c835cd7469a2fb5c5b7b3067b4ced031c2f",
+      "reservation_usd": 0.0691,
+      "response_id": "chatcmpl-01a199f9-5d41-7370-a8b7-da98c88d6ec0",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:56:55+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 255,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F15": {
+      "cost_usd": 0.007903199999999999,
+      "decision": {
+        "decision": "probe",
+        "justification": "Background MAD unchanged 0.0 and rms radius change only 0.0469, while recovery falls sharply for nominal (10-15 to 2-5) and moderately for bright (18-21 to 16), consistent with flux attenuation affecting faint sources most.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 3.3469589999876916,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Background MAD unchanged 0.0 and rms radius change only 0.0469, while recovery falls sharply for nominal (10-15 to 2-5) and moderately for bright (18-21 to 16), consistent with flux attenuation affecting faint sources most.\", \"probes\": [\"probe_flux\"]}",
+      "recorded_utc": "2026-11-02T01:57:02+00:00",
+      "request_sha256": "af573291ebc2d1d2522f01ca6f1c3b74be8cf4b4b7b67363284e278e5bbdf123",
+      "reservation_usd": 0.068936,
+      "response_id": "chatcmpl-01a199f9-6bfe-74d9-b655-425eaff30f77",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:56:59+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 362,
+        "prompt_tokens": 276
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F16": {
+      "cost_usd": 0.0086472,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Nominal recovery falls sharply (~13 to ~6/25) while bright stays high, with both integrated_amplitude_change=0.1239 and rms_radius_change=0.13 elevated; flux scaling and PSF broadening are both plausible.",
+        "probes": [
+          "probe_psf",
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 4.983422900084406,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Nominal recovery falls sharply (~13 to ~6/25) while bright stays high, with both integrated_amplitude_change=0.1239 and rms_radius_change=0.13 elevated; flux scaling and PSF broadening are both plausible.\", \"probes\": [\"probe_psf\", \"probe_flux\"]}",
+      "recorded_utc": "2026-11-02T01:57:07+00:00",
+      "request_sha256": "ea82fbad92458bfad72d8f57b2911dc78396a9932382cdf60110a53f5d996956",
+      "reservation_usd": 0.068964,
+      "response_id": "chatcmpl-01a199f9-7fb6-7766-83d6-3a9bce256a09",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:57:02+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 399,
+        "prompt_tokens": 277
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F17": {
+      "cost_usd": 0.0054951999999999996,
+      "decision": {
+        "decision": "probe",
+        "justification": "RMS radius increased 0.0456 with negligible background (0.0) and amplitude (0.0071) changes, isolating PSF broadening as the likely mechanism.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 1.8643521000631154,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"RMS radius increased 0.0456 with negligible background (0.0) and amplitude (0.0071) changes, isolating PSF broadening as the likely mechanism.\", \"probes\": [\"probe_psf\"]}",
+      "recorded_utc": "2026-11-02T01:57:09+00:00",
+      "request_sha256": "3bbec608e1901b0b1ba53bda031e89d87b8b450e86a406db4a7147451dc84594",
+      "reservation_usd": 0.069116,
+      "response_id": "chatcmpl-01a199f9-8762-763f-bcb8-d09601393d1b",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:57:07+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 239,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F18": {
+      "cost_usd": 0.0073472,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Nominal recovery falls sharply from ~19/25 to ~7/25 while bright stays ~22/25, a threshold loss for faint sources. Small amplitude and radius changes make elevated sky or reduced flux both plausible.",
+        "probes": [
+          "probe_sky",
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 4.417124799918383,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Nominal recovery falls sharply from ~19/25 to ~7/25 while bright stays ~22/25, a threshold loss for faint sources. Small amplitude and radius changes make elevated sky or reduced flux both plausible.\", \"probes\": [\"probe_sky\", \"probe_flux\"]}",
+      "recorded_utc": "2026-11-02T01:57:13+00:00",
+      "request_sha256": "7181de44ac5f5968d19b69438934af8cd586fc38f34942ca6e450facc887609e",
+      "reservation_usd": 0.068968,
+      "response_id": "chatcmpl-01a199f9-985d-70ee-82e3-44044a00012d",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:57:09+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 334,
+        "prompt_tokens": 277
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F19": {
+      "cost_usd": 0.005239199999999999,
+      "decision": {
+        "decision": "probe",
+        "justification": "Background MAD rises 0.2819 while amplitude and radius changes are near zero; nominal recovery falls in B but bright recovery is unchanged, consistent with elevated sky noise.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 2.3230617998633534,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Background MAD rises 0.2819 while amplitude and radius changes are near zero; nominal recovery falls in B but bright recovery is unchanged, consistent with elevated sky noise.\", \"probes\": [\"probe_sky\"]}",
+      "recorded_utc": "2026-11-02T01:57:16+00:00",
+      "request_sha256": "aed56b7bfb251f26d8d71d1b1f9857a5bab105ba2a606022630249374be778b3",
+      "reservation_usd": 0.06912,
+      "response_id": "chatcmpl-01a199f9-a1fa-7763-a6a7-fef2f9c09e78",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:57:13+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 226,
+        "prompt_tokens": 290
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F20": {
+      "cost_usd": 0.0051151999999999994,
+      "decision": {
+        "decision": "probe",
+        "justification": "Background MAD rises 34% while amplitude (8%) and radius (2.6%) change little, and faint nominal sources collapse most, pointing to a sky/background effect.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 4.007172700017691,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Background MAD rises 34% while amplitude (8%) and radius (2.6%) change little, and faint nominal sources collapse most, pointing to a sky/background effect.\", \"probes\": [\"probe_sky\"]}",
+      "recorded_utc": "2026-11-02T01:57:20+00:00",
+      "request_sha256": "43026e3f0c4eb0364d403f9021c17d2aa41e5f74eb617cd0a3c649b19605824a",
+      "reservation_usd": 0.069108,
+      "response_id": "chatcmpl-01a199f9-b19e-729b-a5f2-1717661b19e6",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:57:16+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 220,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F21": {
+      "cost_usd": 0.0077992,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Nominal recovery collapses while bright sources persist. Background MAD rises 27% and rms radius 13%, both substantial; integrated amplitude changes only 5.5%, making sky and PSF mechanisms both plausible.",
+        "probes": [
+          "probe_sky",
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 4.228007499827072,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Nominal recovery collapses while bright sources persist. Background MAD rises 27% and rms radius 13%, both substantial; integrated amplitude changes only 5.5%, making sky and PSF mechanisms both plausible.\", \"probes\": [\"probe_sky\", \"probe_psf\"]}",
+      "recorded_utc": "2026-11-02T01:57:24+00:00",
+      "request_sha256": "c5c6cdedddb269af1eb27d83ab7ce141e3c3c47bbf7e7e473156b107d57ab917",
+      "reservation_usd": 0.069112,
+      "response_id": "chatcmpl-01a199f9-c1ee-7166-bc47-f9bb8dff33b5",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:57:20+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 354,
+        "prompt_tokens": 290
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F22": {
+      "cost_usd": 0.0052312,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery drops ~20 to ~8 while bright sources unchanged; background MAD change 0 and radius change 0.016 are negligible, but integrated amplitude change 0.302 is large, indicating flux scaling.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 2.8327363999560475,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery drops ~20 to ~8 while bright sources unchanged; background MAD change 0 and radius change 0.016 are negligible, but integrated amplitude change 0.302 is large, indicating flux scaling.\", \"probes\": [\"probe_flux\"]}",
+      "recorded_utc": "2026-11-02T01:57:27+00:00",
+      "request_sha256": "d1b916f1faba8ff535fac816454ff0cf5a3ee8a8bec57534db2b444c38479a38",
+      "reservation_usd": 0.0691,
+      "response_id": "chatcmpl-01a199f9-cd72-7247-80c4-86aa1ef55872",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:57:24+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 226,
+        "prompt_tokens": 288
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F23": {
+      "cost_usd": 0.0080152,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Nominal recovery falls sharply while bright recovery is unchanged. Background MAD is unchanged, but integrated amplitude (+0.2441) and RMS radius (+0.1007) both change, making flux and PSF mechanisms plausible.",
+        "probes": [
+          "probe_flux",
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 3.1100758998654783,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Nominal recovery falls sharply while bright recovery is unchanged. Background MAD is unchanged, but integrated amplitude (+0.2441) and RMS radius (+0.1007) both change, making flux and PSF mechanisms plausible.\", \"probes\": [\"probe_flux\", \"probe_psf\"]}",
+      "recorded_utc": "2026-11-02T01:57:30+00:00",
+      "request_sha256": "464a211fe7a7a6544fc8bbb91ecad9a0a22ed256e936800d78b5e66c970a73e6",
+      "reservation_usd": 0.0691,
+      "response_id": "chatcmpl-01a199f9-d988-729b-8de0-72d2e21139ff",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:57:27+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 365,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F24": {
+      "cost_usd": 0.0075752,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "No background change excludes sky, but nominal recovery collapses while bright is mostly retained, consistent with either reduced flux/amplitude or PSF broadening lowering peak signal; both small indicator changes are present.",
+        "probes": [
+          "probe_psf",
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 4.514573099790141,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"No background change excludes sky, but nominal recovery collapses while bright is mostly retained, consistent with either reduced flux/amplitude or PSF broadening lowering peak signal; both small indicator changes are present.\", \"probes\": [\"probe_psf\", \"probe_flux\"]}",
+      "recorded_utc": "2026-11-02T01:57:34+00:00",
+      "request_sha256": "15b3537343691d148186a16fea7bf053b577e84c10a35c4610732a5ccab95838",
+      "reservation_usd": 0.0691,
+      "response_id": "chatcmpl-01a199f9-eae8-738b-80a8-d22a227d6a2c",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:57:30+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 343,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F25": {
+      "cost_usd": 0.0057712,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Background MAD unchanged, ruling out sky. Nominal sources drop sharply while bright recover, consistent with either PSF broadening (rms radius +0.136) or reduced flux (integrated amplitude +0.0677); both remain plausible.",
+        "probes": [
+          "probe_psf",
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 2.3192585001233965,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Background MAD unchanged, ruling out sky. Nominal sources drop sharply while bright recover, consistent with either PSF broadening (rms radius +0.136) or reduced flux (integrated amplitude +0.0677); both remain plausible.\", \"probes\": [\"probe_psf\", \"probe_flux\"]}",
+      "recorded_utc": "2026-11-02T01:57:37+00:00",
+      "request_sha256": "9262852e64bbed51b5de6760ea2e64b7b620e9ea6a182aa4da0ff0861b08d178",
+      "reservation_usd": 0.069096,
+      "response_id": "chatcmpl-01a199f9-f477-7313-bd5d-10562b6f4c61",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:57:35+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 253,
+        "prompt_tokens": 288
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F26": {
+      "cost_usd": 0.0041752,
+      "decision": {
+        "decision": "probe",
+        "justification": "Background MAD rises 0.298 while amplitude (0.032) and radius (0.077) barely change; nominal sources drop in B but bright sources are unaffected, indicating elevated sky background.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 2.2450621998868883,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Background MAD rises 0.298 while amplitude (0.032) and radius (0.077) barely change; nominal sources drop in B but bright sources are unaffected, indicating elevated sky background.\", \"probes\": [\"probe_sky\"]}",
+      "recorded_utc": "2026-11-02T01:57:39+00:00",
+      "request_sha256": "85d5a766323e343dc71830f0de388f1349f483bb472e95e6f1aee0733c949e6d",
+      "reservation_usd": 0.069108,
+      "response_id": "chatcmpl-01a199f9-fd89-7664-b59b-db91085cf93b",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:57:37+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 173,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F27": {
+      "cost_usd": 0.0064112,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright recovery unchanged but nominal recovery halves, with 0.252 integrated amplitude change, near-zero background change and small radius change, indicating flux scaling.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 2.5034137000329792,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Bright recovery unchanged but nominal recovery halves, with 0.252 integrated amplitude change, near-zero background change and small radius change, indicating flux scaling.\", \"probes\": [\"probe_flux\"]}",
+      "recorded_utc": "2026-11-02T01:57:42+00:00",
+      "request_sha256": "b6e0d166c25d24c142d64548e06739150ef3b3d9448ccc29a50e99318d7673fc",
+      "reservation_usd": 0.069108,
+      "response_id": "chatcmpl-01a199fa-0788-7739-9e07-cd1d13a641a5",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:57:39+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 285,
+        "prompt_tokens": 288
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F28": {
+      "cost_usd": 0.0083992,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Nominal recovery collapses (21 to 6.5/25) while bright sources persist, with background MAD up 0.28 and RMS radius up 0.12 but amplitude nearly unchanged (0.02); both elevated sky and PSF broadening could cause faint-source loss.",
+        "probes": [
+          "probe_sky",
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 3.5476776000577956,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Nominal recovery collapses (21 to 6.5/25) while bright sources persist, with background MAD up 0.28 and RMS radius up 0.12 but amplitude nearly unchanged (0.02); both elevated sky and PSF broadening could cause faint-source loss.\", \"probes\": [\"probe_sky\", \"probe_psf\"]}",
+      "recorded_utc": "2026-11-02T01:57:45+00:00",
+      "request_sha256": "165df30bce0478a2e77783daa4d25b829dd2cae77e3bff2fe7e01e72acebf9fa",
+      "reservation_usd": 0.069112,
+      "response_id": "chatcmpl-01a199fa-1520-7242-bf28-c8f0a3126e1d",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:57:42+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 384,
+        "prompt_tokens": 290
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F29": {
+      "cost_usd": 0.0063472,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapses (19.5 to 2.25/25) while bright partly survives and integrated amplitude changes only 0.12 with background MAD unchanged, indicating peak dilution from PSF broadening rather than flux or sky loss.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 2.9330945999827236,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery collapses (19.5 to 2.25/25) while bright partly survives and integrated amplitude changes only 0.12 with background MAD unchanged, indicating peak dilution from PSF broadening rather than flux or sky loss.\", \"probes\": [\"probe_psf\"]}",
+      "recorded_utc": "2026-11-02T01:57:48+00:00",
+      "request_sha256": "5d4079c54e3a9fa73d8f812b32f280250646c73f2a1167c47ad20bc477ab4e67",
+      "reservation_usd": 0.068968,
+      "response_id": "chatcmpl-01a199fa-20b2-73e9-bf7a-1cf66776c921",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:57:45+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 284,
+        "prompt_tokens": 277
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F30": {
+      "cost_usd": 0.0067472,
+      "decision": {
+        "decision": "probe",
+        "justification": "Background and RMS radius changes are small (0.049, 0.079), while nominal sources drop sharply (17.25 to 6.5 per batch) but bright sources are largely retained (22 to 20), most consistent with a flux sensitivity loss.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 4.266990800155327,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Background and RMS radius changes are small (0.049, 0.079), while nominal sources drop sharply (17.25 to 6.5 per batch) but bright sources are largely retained (22 to 20), most consistent with a flux sensitivity loss.\", \"probes\": [\"probe_flux\"]}",
+      "recorded_utc": "2026-11-02T01:57:53+00:00",
+      "request_sha256": "39647dbf4ed82ba60d08ae1a9180efc4f2317e71f7b495cd79fb9624adbbb9bf",
+      "reservation_usd": 0.068948,
+      "response_id": "chatcmpl-01a199fa-31b8-7254-9e34-91a482df17b3",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:57:48+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 304,
+        "prompt_tokens": 277
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F31": {
+      "cost_usd": 0.0070912,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapses from ~19 to ~6 while bright sources stay ~22/25; background MAD unchanged and integrated amplitude change is only 0.0179, consistent with PSF broadening spreading flux.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 3.9719090000726283,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery collapses from ~19 to ~6 while bright sources stay ~22/25; background MAD unchanged and integrated amplitude change is only 0.0179, consistent with PSF broadening spreading flux.\", \"probes\": [\"probe_psf\"]}",
+      "recorded_utc": "2026-11-02T01:57:57+00:00",
+      "request_sha256": "bfe10c401bc7fb95296f309f7d5ebba33448f94afa6f632d502dabaf41eff81a",
+      "reservation_usd": 0.068976,
+      "response_id": "chatcmpl-01a199fa-418b-760a-b0ad-f1429d416c94",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:57:53+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 321,
+        "prompt_tokens": 278
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F32": {
+      "cost_usd": 0.0054751999999999995,
+      "decision": {
+        "decision": "abstain",
+        "justification": "Recovery counts for bright and nominal sources overlap between A and B, and all indicator changes are near zero, showing no anomaly.",
+        "probes": []
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 2.7047828000504524,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"abstain\", \"justification\": \"Recovery counts for bright and nominal sources overlap between A and B, and all indicator changes are near zero, showing no anomaly.\", \"probes\": []}",
+      "recorded_utc": "2026-11-02T01:57:59+00:00",
+      "request_sha256": "1228a76d6d5c43aac8cbff113f3b1d7ab6de4eb5da328fed4aeeca5168ed9955",
+      "reservation_usd": 0.069116,
+      "response_id": "chatcmpl-01a199fa-4bfe-7188-884a-863f2df33488",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:57:57+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 238,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F33": {
+      "cost_usd": 0.0077312,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Nominal recovery falls sharply (A ~19 to B ~8) while bright is near-stable, and both rms_radius_change (0.1241) and integrated_amplitude_change (0.1035) are elevated, making PSF broadening and flux loss both plausible.",
+        "probes": [
+          "probe_psf",
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 5.081424100091681,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Nominal recovery falls sharply (A ~19 to B ~8) while bright is near-stable, and both rms_radius_change (0.1241) and integrated_amplitude_change (0.1035) are elevated, making PSF broadening and flux loss both plausible.\", \"probes\": [\"probe_psf\", \"probe_flux\"]}",
+      "recorded_utc": "2026-11-02T01:58:04+00:00",
+      "request_sha256": "65096ef54f02087e9b5b522dfe1dd6f665f55a659d02521229d3eb8493ee555a",
+      "reservation_usd": 0.068972,
+      "response_id": "chatcmpl-01a199fa-5fd2-7632-95c5-e56c24cc7d2f",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:57:59+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 353,
+        "prompt_tokens": 278
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F34": {
+      "cost_usd": 0.0057272,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery drops in B while bright recovery is unchanged, with elevated background_MAD (+0.2501) but minimal rms_radius change (+0.0237), indicating higher sky background suppressing faint sources.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 2.4126775001641363,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery drops in B while bright recovery is unchanged, with elevated background_MAD (+0.2501) but minimal rms_radius change (+0.0237), indicating higher sky background suppressing faint sources.\", \"probes\": [\"probe_sky\"]}",
+      "recorded_utc": "2026-11-02T01:58:07+00:00",
+      "request_sha256": "1ebb89c54c4912945a67338096dca30d68223a335f5212a12b306e8b421c5ff3",
+      "reservation_usd": 0.068956,
+      "response_id": "chatcmpl-01a199fa-69b1-7405-a2ac-c59414553f65",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:58:04+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 253,
+        "prompt_tokens": 277
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F35": {
+      "cost_usd": 0.0051752,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery drops from ~19 to ~5 while bright recovery is unchanged and background MAD change is 0. A 0.2133 integrated amplitude change plausibly pushes faint sources below threshold.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 2.7289783998858184,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery drops from ~19 to ~5 while bright recovery is unchanged and background MAD change is 0. A 0.2133 integrated amplitude change plausibly pushes faint sources below threshold.\", \"probes\": [\"probe_flux\"]}",
+      "recorded_utc": "2026-11-02T01:58:10+00:00",
+      "request_sha256": "935b410c95c5d2c183a42e36454d9052d811f895eede3e170b2672fe987837e7",
+      "reservation_usd": 0.0691,
+      "response_id": "chatcmpl-01a199fa-746e-707b-b10b-281b59dfb387",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:58:07+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 223,
+        "prompt_tokens": 289
+      },
+      "usage_exceeded_reservation": false
+    },
+    "F36": {
+      "cost_usd": 0.0050712,
+      "decision": {
+        "decision": "abstain",
+        "justification": "Recovery counts for bright and nominal sources are essentially identical between A and B, with no background MAD change and only 2% amplitude change; no anomaly is evident.",
+        "probes": []
+      },
+      "elapsed_scope": "Client HTTP/generation only; not full pipeline",
+      "elapsed_seconds": 2.4112868001684546,
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"abstain\", \"justification\": \"Recovery counts for bright and nominal sources are essentially identical between A and B, with no background MAD change and only 2% amplitude change; no anomaly is evident.\", \"probes\": []}",
+      "recorded_utc": "2026-11-02T01:58:12+00:00",
+      "request_sha256": "247163dc519ca519cbf464ee3ec67a0162b27de5cf2f25e49fa0b1c2fadac07c",
+      "reservation_usd": 0.068992,
+      "response_id": "chatcmpl-01a199fa-7dee-7534-8516-b44e378ef884",
+      "response_model": "muse-wonder-1.0",
+      "started_utc": "2026-11-02T01:58:10+00:00",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 116,
+        "completion_tokens": 220,
+        "prompt_tokens": 278
+      },
+      "usage_exceeded_reservation": false
+    }
+  },
+  "mode": "live",
+  "model": "muse-wonder-1.0",
+  "plan_sha256": "359cdb3febcfbd140b958dd33f948924b6451505d93c1dd8893fd12cabfbf742",
+  "seal_sha256": "ac7b5a0f4e7ff8ede3ab1e20b54a5bd8626d1ae8932a6867e0ce57c7a3ed8e6b"
+}

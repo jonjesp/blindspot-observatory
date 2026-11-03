@@ -1,0 +1,52 @@
+{
+  "configs_sha256": {
+    "detector.yaml": "82969edf99e570f066b462b66db99b3462844b1672d52025b9cea935ea6e0940",
+    "experiment.yaml": "b3be4ef88d0fa531fc15504de0f8f6c8a1c6cb164149039d6d88db1b54697c6f"
+  },
+  "experimental_parameters_sha256": "9fb0a63bd15157a08c963229bda3ec31b94378214c8eea51c735ba2f5151054f",
+  "fits_sha256": {
+    "E4_r": "51f8a813654603f26b7c6db47960479db520ac51de7cee87d6803b51729fab61",
+    "E5_g": "a8cc7164b81be22e72f75d9bc4db892c974f65b28c15fe1fcc3ef7491f323a8c"
+  },
+  "implementation_sha256": {
+    "__init__.py": "bddffebba3f7d7a3d2a5a030d3f60c41ca97bde5eba11a50fca80c00dbe45bad",
+    "agent/__init__.py": "1c5723788e135d98debd2836a6ce208dbf43ea9000ece79cb3b56d3a0af1e0f6",
+    "agent/client.py": "23c3c635a1cf7c557e23cd4302df780331cca9abdc249e38d3b0260657b41484",
+    "agent/muse.py": "fe22f6c35ac9dee326fe6c8c09904efc3790d429794df02953f86d8e0f4ee780",
+    "agent/observation.py": "724f691d236df7cf041c6211b8799ae445a4ae8a6cb9416c78cf085c3748de8c",
+    "agent/offline.py": "c2d7aa1428b8ee4d48f80cbc8544a84baf0f74a5cae7ef400ab39128a55d797f",
+    "agent/schemas.py": "1958e36c28a8b5c3d29cbfd32378aa79429068f7e393aee12fb8da7f04e5af70",
+    "benchmark/__init__.py": "3fc8642f9a0e97395590c317603103c1bf93400fe761515372400abad40d82c0",
+    "benchmark/baselines.py": "56366d7eee15f994409d2e9ed4161fc3b9d74dbc289cc6d8f4beeebbce3dcf34",
+    "benchmark/calibration.py": "8889a221fb94e9aa3d1c5b5f0a7caa17e76e49fe8cc219c7880c964d38f803bc",
+    "benchmark/design.py": "4e30522b9f84258416c75115b976ac87b839a088487ffbb73680c8f28079bed4",
+    "benchmark/freeze.py": "09b90fe2b6a0537df3ed3e7eff639f9a4e83d5c02086c9930b41a1ba24de6302",
+    "benchmark/generator.py": "c26ea254cd67c6989354a9f7cdc56cbff4f2e50c94ced04d86964e0a264266ab",
+    "benchmark/interventions.py": "5652c87cb4297fc1eca54bf30898e64557fd9c3dddfb5e5e40d89b2be38d2b05",
+    "benchmark/measurement.py": "c5a86b972df0e55c1579352df8af5e07cf4c2ae75a406010748ee7da9b2e9b7c",
+    "benchmark/observations.py": "b079b9e79566a7ae02ddc2d9052d76b4b175ced46cc48867f0d3c1f2ac349899",
+    "benchmark/report.py": "b684591a5b9104ab35edd7f174b91d3a5bc832b62dfa89e7f06cc18184691032",
+    "benchmark/runner.py": "f0800406a8b5d1b5cb862c63553510bb707d3081d790e082db35c7d47ad09611",
+    "benchmark/scoring.py": "fef5b3c1a8331d2fa5a57e1507b2f05cbba94dbcf665a5fada4bfd5583d89ecc",
+    "cli.py": "ee7018fa58347aa50ba6c47b4f53bdc8c5dadaa025f8d96e1809b783fbd46b72",
+    "config.py": "6da3741db7e325f5ea190c272d453eba77a593dc23883f5f20756b2bf99f948c",
+    "configs/__init__.py": "01848a7cb6a76262f1304d96ee7657ca6d9f5d9bb2ad2c7c19224d414e1f4ab3",
+    "configs/detector.yaml": "82969edf99e570f066b462b66db99b3462844b1672d52025b9cea935ea6e0940",
+    "configs/experiment.yaml": "b3be4ef88d0fa531fc15504de0f8f6c8a1c6cb164149039d6d88db1b54697c6f",
+    "data/__init__.py": "91ad3aa8d2db7eb6cbea6ebcb8e30cafae8fbcebcab6c2858ccaae51dd6786dd",
+    "data/manifest.json": "a6504b752dbaa42feb860f6cc5f791f3986ab23e8811671bc79c5cb7eb5b9004",
+    "datasets/__init__.py": "e3018081587fd8af9a5a5f6adb6677138ac3706c0b6217ec746609551002083c",
+    "datasets/ztf.py": "86b51e959fdb488196b9c1bccf69f0a8b381e575cdde14afbac65b0bc98dad2e",
+    "detection/__init__.py": "b94371d0b8904c5e8b75b8baaba6bb1575a1cddb9a40352803b6786daba88e8c",
+    "detection/detector.py": "e0b5ba50899b360d315d24e52b25f0402872c70510195ce5f8d5d0fbe6bcc7cd",
+    "injection/__init__.py": "48f59adee68569f8400cffa521ab13bc32cb6853ee42d87b594b3670416f869b",
+    "injection/psf.py": "fe9692abaabc7de9070683676bd44225ef6877e968d128e55970eec1c02f3cd6",
+    "metrics/__init__.py": "5c7c8946cb20fae40c4c75fea07538270dcc8a769c1a0282262134c8d092a42e",
+    "metrics/completeness.py": "f8c1bd353f86053d1988b1c4a616de0ac7a97be2f722a65516a726707de4c69a",
+    "provenance/__init__.py": "8bf1d8573a17d7243ea8d530cea903df6e182dc870d552c6f8977423ca684943",
+    "provenance/ledger.py": "d4aa591ce24eda67e46618b830f8cb9664780c7e4c2933aaf72fb61443862533"
+  },
+  "plan_sha256": "96fadc5a7c7f92016810dcf5c6155e9de4855d02b8e625493c5455a4b09ba7ff",
+  "request_contract_sha256": "69ed9452925d26225507c1bdf071cf9460c78dbd12397e961d0678fc9e6ddb49",
+  "version": "0.4.1"
+}

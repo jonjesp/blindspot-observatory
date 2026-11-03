@@ -1,0 +1,1019 @@
+{
+  "cases": [
+    {
+      "causes": [
+        "probe_psf",
+        "probe_sky"
+      ],
+      "closures": {
+        "probe_flux": false,
+        "probe_psf": true,
+        "probe_sky": false
+      },
+      "dominant": "probe_psf",
+      "field": "E4_r",
+      "gains": {
+        "probe_flux": -0.03,
+        "probe_psf": 0.48,
+        "probe_sky": 0.02
+      },
+      "id": "F01",
+      "indicators": {
+        "background_mad_change": 0.0423,
+        "integrated_amplitude_change": 0.0101,
+        "rms_radius_change": 0.1676
+      },
+      "kind": "two_causes",
+      "masked": [],
+      "pilot_recovery_A": 0.5,
+      "pilot_recovery_B": 0.08
+    },
+    {
+      "causes": [
+        "probe_flux",
+        "probe_psf"
+      ],
+      "closures": {
+        "probe_flux": true,
+        "probe_psf": false,
+        "probe_sky": false
+      },
+      "dominant": "probe_flux",
+      "field": "E4_r",
+      "gains": {
+        "probe_flux": 0.31,
+        "probe_psf": 0.13,
+        "probe_sky": 0.03
+      },
+      "id": "F02",
+      "indicators": {
+        "background_mad_change": 0.0,
+        "integrated_amplitude_change": 0.2388,
+        "rms_radius_change": 0.0348
+      },
+      "kind": "two_causes",
+      "masked": [],
+      "pilot_recovery_A": 0.69,
+      "pilot_recovery_B": 0.05
+    },
+    {
+      "causes": [
+        "probe_flux"
+      ],
+      "closures": {
+        "probe_flux": true,
+        "probe_psf": false,
+        "probe_sky": false
+      },
+      "dominant": "probe_flux",
+      "field": "E4_r",
+      "gains": {
+        "probe_flux": 0.43,
+        "probe_psf": 0.05,
+        "probe_sky": 0.05
+      },
+      "id": "F03",
+      "indicators": {
+        "background_mad_change": 0.0,
+        "integrated_amplitude_change": 0.2038,
+        "rms_radius_change": 0.12
+      },
+      "kind": "single_cause",
+      "masked": [],
+      "pilot_recovery_A": 0.6,
+      "pilot_recovery_B": 0.29
+    },
+    {
+      "causes": [
+        "probe_flux",
+        "probe_psf"
+      ],
+      "closures": {
+        "probe_flux": false,
+        "probe_psf": true,
+        "probe_sky": false
+      },
+      "dominant": "probe_psf",
+      "field": "E4_r",
+      "gains": {
+        "probe_flux": 0.08,
+        "probe_psf": 0.52,
+        "probe_sky": -0.05
+      },
+      "id": "F04",
+      "indicators": {
+        "background_mad_change": 0.0,
+        "integrated_amplitude_change": 0.0726,
+        "rms_radius_change": 0.1668
+      },
+      "kind": "two_causes",
+      "masked": [],
+      "pilot_recovery_A": 0.62,
+      "pilot_recovery_B": 0.25
+    },
+    {
+      "causes": [
+        "probe_sky"
+      ],
+      "closures": {
+        "probe_flux": false,
+        "probe_psf": false,
+        "probe_sky": true
+      },
+      "dominant": "probe_sky",
+      "field": "E4_r",
+      "gains": {
+        "probe_flux": -0.01,
+        "probe_psf": -0.01,
+        "probe_sky": 0.33
+      },
+      "id": "F05",
+      "indicators": {
+        "integrated_amplitude_change": 0.0669,
+        "rms_radius_change": 0.0455
+      },
+      "kind": "single_cause",
+      "masked": [
+        "probe_sky"
+      ],
+      "pilot_recovery_A": 0.71,
+      "pilot_recovery_B": 0.26
+    },
+    {
+      "causes": [
+        "probe_flux",
+        "probe_psf"
+      ],
+      "closures": {
+        "probe_flux": true,
+        "probe_psf": true,
+        "probe_sky": false
+      },
+      "dominant": "probe_flux",
+      "field": "E4_r",
+      "gains": {
+        "probe_flux": 0.34,
+        "probe_psf": 0.18,
+        "probe_sky": 0.03
+      },
+      "id": "F06",
+      "indicators": {
+        "background_mad_change": 0.0,
+        "integrated_amplitude_change": 0.237,
+        "rms_radius_change": 0.0838
+      },
+      "kind": "two_causes",
+      "masked": [],
+      "pilot_recovery_A": 0.67,
+      "pilot_recovery_B": 0.15
+    },
+    {
+      "causes": [
+        "probe_flux"
+      ],
+      "closures": {
+        "probe_flux": true,
+        "probe_psf": false,
+        "probe_sky": false
+      },
+      "dominant": "probe_flux",
+      "field": "E4_r",
+      "gains": {
+        "probe_flux": 0.39,
+        "probe_psf": -0.01,
+        "probe_sky": -0.01
+      },
+      "id": "F07",
+      "indicators": {
+        "background_mad_change": 0.0,
+        "integrated_amplitude_change": 0.2884,
+        "rms_radius_change": 0.0861
+      },
+      "kind": "single_cause",
+      "masked": [],
+      "pilot_recovery_A": 0.59,
+      "pilot_recovery_B": 0.31
+    },
+    {
+      "causes": [
+        "probe_psf",
+        "probe_sky"
+      ],
+      "closures": {
+        "probe_flux": false,
+        "probe_psf": false,
+        "probe_sky": true
+      },
+      "dominant": "probe_sky",
+      "field": "E4_r",
+      "gains": {
+        "probe_flux": -0.04,
+        "probe_psf": 0.06,
+        "probe_sky": 0.33
+      },
+      "id": "F08",
+      "indicators": {
+        "background_mad_change": 0.298,
+        "integrated_amplitude_change": 0.1079,
+        "rms_radius_change": 0.1334
+      },
+      "kind": "two_causes",
+      "masked": [],
+      "pilot_recovery_A": 0.54,
+      "pilot_recovery_B": 0.09
+    },
+    {
+      "causes": [
+        "probe_flux"
+      ],
+      "closures": {
+        "probe_flux": true,
+        "probe_psf": false,
+        "probe_sky": false
+      },
+      "dominant": "probe_flux",
+      "field": "E4_r",
+      "gains": {
+        "probe_flux": 0.31,
+        "probe_psf": 0.03,
+        "probe_sky": 0.03
+      },
+      "id": "F09",
+      "indicators": {
+        "background_mad_change": 0.0,
+        "integrated_amplitude_change": 0.2646,
+        "rms_radius_change": 0.1202
+      },
+      "kind": "single_cause",
+      "masked": [],
+      "pilot_recovery_A": 0.6,
+      "pilot_recovery_B": 0.31
+    },
+    {
+      "causes": [
+        "probe_flux",
+        "probe_psf"
+      ],
+      "closures": {
+        "probe_flux": true,
+        "probe_psf": true,
+        "probe_sky": false
+      },
+      "dominant": "probe_flux",
+      "field": "E4_r",
+      "gains": {
+        "probe_flux": 0.42,
+        "probe_psf": 0.12,
+        "probe_sky": 0.04
+      },
+      "id": "F10",
+      "indicators": {
+        "background_mad_change": 0.0,
+        "integrated_amplitude_change": 0.0937,
+        "rms_radius_change": 0.0926
+      },
+      "kind": "two_causes",
+      "masked": [],
+      "pilot_recovery_A": 0.57,
+      "pilot_recovery_B": 0.19
+    },
+    {
+      "causes": [],
+      "closures": {
+        "probe_flux": false,
+        "probe_psf": false,
+        "probe_sky": false
+      },
+      "dominant": null,
+      "field": "E4_r",
+      "gains": {
+        "probe_flux": -0.04,
+        "probe_psf": -0.04,
+        "probe_sky": -0.04
+      },
+      "id": "F11",
+      "indicators": {
+        "background_mad_change": 0.0,
+        "integrated_amplitude_change": 0.0005,
+        "rms_radius_change": 0.019
+      },
+      "kind": "no_intervention",
+      "masked": [],
+      "pilot_recovery_A": 0.57,
+      "pilot_recovery_B": 0.54
+    },
+    {
+      "causes": [
+        "probe_psf",
+        "probe_sky"
+      ],
+      "closures": {
+        "probe_flux": false,
+        "probe_psf": true,
+        "probe_sky": false
+      },
+      "dominant": "probe_psf",
+      "field": "E4_r",
+      "gains": {
+        "probe_flux": 0.06,
+        "probe_psf": 0.49,
+        "probe_sky": 0.15
+      },
+      "id": "F12",
+      "indicators": {
+        "background_mad_change": 0.0583,
+        "integrated_amplitude_change": 0.1061,
+        "rms_radius_change": 0.0313
+      },
+      "kind": "two_causes",
+      "masked": [],
+      "pilot_recovery_A": 0.63,
+      "pilot_recovery_B": 0.14
+    },
+    {
+      "causes": [
+        "probe_flux",
+        "probe_sky"
+      ],
+      "closures": {
+        "probe_flux": false,
+        "probe_psf": false,
+        "probe_sky": true
+      },
+      "dominant": "probe_sky",
+      "field": "E4_r",
+      "gains": {
+        "probe_flux": 0.0,
+        "probe_psf": -0.08,
+        "probe_sky": 0.35
+      },
+      "id": "F13",
+      "indicators": {
+        "background_mad_change": 0.2984,
+        "integrated_amplitude_change": 0.0646,
+        "rms_radius_change": 0.0613
+      },
+      "kind": "two_causes",
+      "masked": [],
+      "pilot_recovery_A": 0.62,
+      "pilot_recovery_B": 0.2
+    },
+    {
+      "causes": [
+        "probe_psf"
+      ],
+      "closures": {
+        "probe_flux": false,
+        "probe_psf": true,
+        "probe_sky": false
+      },
+      "dominant": "probe_psf",
+      "field": "E4_r",
+      "gains": {
+        "probe_flux": 0.0,
+        "probe_psf": 0.48,
+        "probe_sky": 0.0
+      },
+      "id": "F14",
+      "indicators": {
+        "background_mad_change": 0.0,
+        "integrated_amplitude_change": 0.0738
+      },
+      "kind": "single_cause",
+      "masked": [
+        "probe_psf"
+      ],
+      "pilot_recovery_A": 0.62,
+      "pilot_recovery_B": 0.11
+    },
+    {
+      "causes": [
+        "probe_psf"
+      ],
+      "closures": {
+        "probe_flux": false,
+        "probe_psf": true,
+        "probe_sky": false
+      },
+      "dominant": "probe_psf",
+      "field": "E4_r",
+      "gains": {
+        "probe_flux": 0.04,
+        "probe_psf": 0.33,
+        "probe_sky": 0.04
+      },
+      "id": "F15",
+      "indicators": {
+        "background_mad_change": 0.0,
+        "integrated_amplitude_change": 0.0002,
+        "rms_radius_change": 0.0469
+      },
+      "kind": "single_cause",
+      "masked": [],
+      "pilot_recovery_A": 0.5,
+      "pilot_recovery_B": 0.13
+    },
+    {
+      "causes": [
+        "probe_flux"
+      ],
+      "closures": {
+        "probe_flux": true,
+        "probe_psf": false,
+        "probe_sky": false
+      },
+      "dominant": "probe_flux",
+      "field": "E4_r",
+      "gains": {
+        "probe_flux": 0.3,
+        "probe_psf": -0.01,
+        "probe_sky": -0.01
+      },
+      "id": "F16",
+      "indicators": {
+        "background_mad_change": 0.0,
+        "rms_radius_change": 0.13
+      },
+      "kind": "single_cause",
+      "masked": [
+        "probe_flux"
+      ],
+      "pilot_recovery_A": 0.51,
+      "pilot_recovery_B": 0.23
+    },
+    {
+      "causes": [],
+      "closures": {
+        "probe_flux": false,
+        "probe_psf": false,
+        "probe_sky": false
+      },
+      "dominant": null,
+      "field": "E4_r",
+      "gains": {
+        "probe_flux": -0.01,
+        "probe_psf": -0.01,
+        "probe_sky": -0.01
+      },
+      "id": "F17",
+      "indicators": {
+        "background_mad_change": 0.0,
+        "integrated_amplitude_change": 0.0071,
+        "rms_radius_change": 0.0456
+      },
+      "kind": "no_intervention",
+      "masked": [],
+      "pilot_recovery_A": 0.67,
+      "pilot_recovery_B": 0.65
+    },
+    {
+      "causes": [
+        "probe_psf"
+      ],
+      "closures": {
+        "probe_flux": false,
+        "probe_psf": true,
+        "probe_sky": false
+      },
+      "dominant": "probe_psf",
+      "field": "E4_r",
+      "gains": {
+        "probe_flux": -0.02,
+        "probe_psf": 0.41,
+        "probe_sky": -0.02
+      },
+      "id": "F18",
+      "indicators": {
+        "background_mad_change": 0.0,
+        "integrated_amplitude_change": 0.0772
+      },
+      "kind": "single_cause",
+      "masked": [
+        "probe_psf"
+      ],
+      "pilot_recovery_A": 0.76,
+      "pilot_recovery_B": 0.27
+    },
+    {
+      "causes": [
+        "probe_sky"
+      ],
+      "closures": {
+        "probe_flux": false,
+        "probe_psf": false,
+        "probe_sky": true
+      },
+      "dominant": "probe_sky",
+      "field": "E5_g",
+      "gains": {
+        "probe_flux": -0.06,
+        "probe_psf": -0.06,
+        "probe_sky": 0.42
+      },
+      "id": "F19",
+      "indicators": {
+        "integrated_amplitude_change": 0.0021,
+        "rms_radius_change": 0.0667
+      },
+      "kind": "single_cause",
+      "masked": [
+        "probe_sky"
+      ],
+      "pilot_recovery_A": 0.74,
+      "pilot_recovery_B": 0.38
+    },
+    {
+      "causes": [
+        "probe_flux",
+        "probe_sky"
+      ],
+      "closures": {
+        "probe_flux": false,
+        "probe_psf": false,
+        "probe_sky": true
+      },
+      "dominant": "probe_sky",
+      "field": "E5_g",
+      "gains": {
+        "probe_flux": 0.09,
+        "probe_psf": 0.06,
+        "probe_sky": 0.34
+      },
+      "id": "F20",
+      "indicators": {
+        "background_mad_change": 0.3406,
+        "integrated_amplitude_change": 0.081,
+        "rms_radius_change": 0.0257
+      },
+      "kind": "two_causes",
+      "masked": [],
+      "pilot_recovery_A": 0.48,
+      "pilot_recovery_B": 0.05
+    },
+    {
+      "causes": [
+        "probe_psf",
+        "probe_sky"
+      ],
+      "closures": {
+        "probe_flux": false,
+        "probe_psf": false,
+        "probe_sky": true
+      },
+      "dominant": "probe_sky",
+      "field": "E5_g",
+      "gains": {
+        "probe_flux": -0.01,
+        "probe_psf": 0.15,
+        "probe_sky": 0.42
+      },
+      "id": "F21",
+      "indicators": {
+        "background_mad_change": 0.2726,
+        "integrated_amplitude_change": 0.0554,
+        "rms_radius_change": 0.1295
+      },
+      "kind": "two_causes",
+      "masked": [],
+      "pilot_recovery_A": 0.67,
+      "pilot_recovery_B": 0.21
+    },
+    {
+      "causes": [
+        "probe_flux"
+      ],
+      "closures": {
+        "probe_flux": true,
+        "probe_psf": false,
+        "probe_sky": false
+      },
+      "dominant": "probe_flux",
+      "field": "E5_g",
+      "gains": {
+        "probe_flux": 0.4,
+        "probe_psf": 0.04,
+        "probe_sky": 0.04
+      },
+      "id": "F22",
+      "indicators": {
+        "background_mad_change": 0.0,
+        "integrated_amplitude_change": 0.3024,
+        "rms_radius_change": 0.016
+      },
+      "kind": "single_cause",
+      "masked": [],
+      "pilot_recovery_A": 0.79,
+      "pilot_recovery_B": 0.33
+    },
+    {
+      "causes": [
+        "probe_flux"
+      ],
+      "closures": {
+        "probe_flux": true,
+        "probe_psf": false,
+        "probe_sky": false
+      },
+      "dominant": "probe_flux",
+      "field": "E5_g",
+      "gains": {
+        "probe_flux": 0.4,
+        "probe_psf": -0.03,
+        "probe_sky": -0.03
+      },
+      "id": "F23",
+      "indicators": {
+        "background_mad_change": 0.0,
+        "integrated_amplitude_change": 0.2441,
+        "rms_radius_change": 0.1007
+      },
+      "kind": "single_cause",
+      "masked": [],
+      "pilot_recovery_A": 0.76,
+      "pilot_recovery_B": 0.26
+    },
+    {
+      "causes": [
+        "probe_flux",
+        "probe_psf"
+      ],
+      "closures": {
+        "probe_flux": false,
+        "probe_psf": true,
+        "probe_sky": false
+      },
+      "dominant": "probe_psf",
+      "field": "E5_g",
+      "gains": {
+        "probe_flux": 0.12,
+        "probe_psf": 0.44,
+        "probe_sky": 0.05
+      },
+      "id": "F24",
+      "indicators": {
+        "background_mad_change": 0.0,
+        "integrated_amplitude_change": 0.0395,
+        "rms_radius_change": 0.0657
+      },
+      "kind": "two_causes",
+      "masked": [],
+      "pilot_recovery_A": 0.85,
+      "pilot_recovery_B": 0.18
+    },
+    {
+      "causes": [
+        "probe_psf"
+      ],
+      "closures": {
+        "probe_flux": false,
+        "probe_psf": true,
+        "probe_sky": false
+      },
+      "dominant": "probe_psf",
+      "field": "E5_g",
+      "gains": {
+        "probe_flux": -0.07,
+        "probe_psf": 0.38,
+        "probe_sky": -0.07
+      },
+      "id": "F25",
+      "indicators": {
+        "background_mad_change": 0.0,
+        "integrated_amplitude_change": 0.0677,
+        "rms_radius_change": 0.136
+      },
+      "kind": "single_cause",
+      "masked": [],
+      "pilot_recovery_A": 0.89,
+      "pilot_recovery_B": 0.3
+    },
+    {
+      "causes": [
+        "probe_sky"
+      ],
+      "closures": {
+        "probe_flux": false,
+        "probe_psf": false,
+        "probe_sky": true
+      },
+      "dominant": "probe_sky",
+      "field": "E5_g",
+      "gains": {
+        "probe_flux": -0.02,
+        "probe_psf": -0.02,
+        "probe_sky": 0.5
+      },
+      "id": "F26",
+      "indicators": {
+        "background_mad_change": 0.298,
+        "integrated_amplitude_change": 0.0318,
+        "rms_radius_change": 0.0769
+      },
+      "kind": "single_cause",
+      "masked": [],
+      "pilot_recovery_A": 0.82,
+      "pilot_recovery_B": 0.27
+    },
+    {
+      "causes": [
+        "probe_flux"
+      ],
+      "closures": {
+        "probe_flux": true,
+        "probe_psf": false,
+        "probe_sky": false
+      },
+      "dominant": "probe_flux",
+      "field": "E5_g",
+      "gains": {
+        "probe_flux": 0.35,
+        "probe_psf": 0.0,
+        "probe_sky": 0.0
+      },
+      "id": "F27",
+      "indicators": {
+        "background_mad_change": 0.0,
+        "rms_radius_change": 0.0166
+      },
+      "kind": "single_cause",
+      "masked": [
+        "probe_flux"
+      ],
+      "pilot_recovery_A": 0.83,
+      "pilot_recovery_B": 0.4
+    },
+    {
+      "causes": [
+        "probe_psf",
+        "probe_sky"
+      ],
+      "closures": {
+        "probe_flux": false,
+        "probe_psf": false,
+        "probe_sky": true
+      },
+      "dominant": "probe_sky",
+      "field": "E5_g",
+      "gains": {
+        "probe_flux": -0.03,
+        "probe_psf": 0.11,
+        "probe_sky": 0.32
+      },
+      "id": "F28",
+      "indicators": {
+        "background_mad_change": 0.2819,
+        "integrated_amplitude_change": 0.0218,
+        "rms_radius_change": 0.1159
+      },
+      "kind": "two_causes",
+      "masked": [],
+      "pilot_recovery_A": 0.84,
+      "pilot_recovery_B": 0.26
+    },
+    {
+      "causes": [
+        "probe_flux",
+        "probe_psf"
+      ],
+      "closures": {
+        "probe_flux": false,
+        "probe_psf": true,
+        "probe_sky": false
+      },
+      "dominant": "probe_psf",
+      "field": "E5_g",
+      "gains": {
+        "probe_flux": 0.08,
+        "probe_psf": 0.45,
+        "probe_sky": -0.06
+      },
+      "id": "F29",
+      "indicators": {
+        "background_mad_change": 0.0,
+        "integrated_amplitude_change": 0.12,
+        "rms_radius_change": 0.1158
+      },
+      "kind": "two_causes",
+      "masked": [],
+      "pilot_recovery_A": 0.78,
+      "pilot_recovery_B": 0.09
+    },
+    {
+      "causes": [
+        "probe_flux",
+        "probe_sky"
+      ],
+      "closures": {
+        "probe_flux": true,
+        "probe_psf": false,
+        "probe_sky": false
+      },
+      "dominant": "probe_flux",
+      "field": "E5_g",
+      "gains": {
+        "probe_flux": 0.29,
+        "probe_psf": -0.02,
+        "probe_sky": 0.03
+      },
+      "id": "F30",
+      "indicators": {
+        "background_mad_change": 0.0493,
+        "integrated_amplitude_change": 0.205,
+        "rms_radius_change": 0.0791
+      },
+      "kind": "two_causes",
+      "masked": [],
+      "pilot_recovery_A": 0.69,
+      "pilot_recovery_B": 0.26
+    },
+    {
+      "causes": [
+        "probe_flux",
+        "probe_psf"
+      ],
+      "closures": {
+        "probe_flux": false,
+        "probe_psf": true,
+        "probe_sky": false
+      },
+      "dominant": "probe_psf",
+      "field": "E5_g",
+      "gains": {
+        "probe_flux": 0.1,
+        "probe_psf": 0.39,
+        "probe_sky": -0.03
+      },
+      "id": "F31",
+      "indicators": {
+        "background_mad_change": 0.0,
+        "integrated_amplitude_change": 0.0179,
+        "rms_radius_change": 0.1112
+      },
+      "kind": "two_causes",
+      "masked": [],
+      "pilot_recovery_A": 0.76,
+      "pilot_recovery_B": 0.24
+    },
+    {
+      "causes": [],
+      "closures": {
+        "probe_flux": false,
+        "probe_psf": false,
+        "probe_sky": false
+      },
+      "dominant": null,
+      "field": "E5_g",
+      "gains": {
+        "probe_flux": -0.05,
+        "probe_psf": -0.05,
+        "probe_sky": -0.05
+      },
+      "id": "F32",
+      "indicators": {
+        "background_mad_change": 0.0,
+        "integrated_amplitude_change": 0.0457,
+        "rms_radius_change": 0.0116
+      },
+      "kind": "no_intervention",
+      "masked": [],
+      "pilot_recovery_A": 0.71,
+      "pilot_recovery_B": 0.76
+    },
+    {
+      "causes": [
+        "probe_sky"
+      ],
+      "closures": {
+        "probe_flux": false,
+        "probe_psf": false,
+        "probe_sky": true
+      },
+      "dominant": "probe_sky",
+      "field": "E5_g",
+      "gains": {
+        "probe_flux": 0.0,
+        "probe_psf": 0.0,
+        "probe_sky": 0.42
+      },
+      "id": "F33",
+      "indicators": {
+        "integrated_amplitude_change": 0.1035,
+        "rms_radius_change": 0.1241
+      },
+      "kind": "single_cause",
+      "masked": [
+        "probe_sky"
+      ],
+      "pilot_recovery_A": 0.76,
+      "pilot_recovery_B": 0.31
+    },
+    {
+      "causes": [
+        "probe_sky"
+      ],
+      "closures": {
+        "probe_flux": false,
+        "probe_psf": false,
+        "probe_sky": true
+      },
+      "dominant": "probe_sky",
+      "field": "E5_g",
+      "gains": {
+        "probe_flux": 0.03,
+        "probe_psf": 0.03,
+        "probe_sky": 0.47
+      },
+      "id": "F34",
+      "indicators": {
+        "background_mad_change": 0.2501,
+        "integrated_amplitude_change": 0.0732,
+        "rms_radius_change": 0.0237
+      },
+      "kind": "single_cause",
+      "masked": [],
+      "pilot_recovery_A": 0.77,
+      "pilot_recovery_B": 0.34
+    },
+    {
+      "causes": [
+        "probe_flux",
+        "probe_psf"
+      ],
+      "closures": {
+        "probe_flux": true,
+        "probe_psf": false,
+        "probe_sky": false
+      },
+      "dominant": "probe_flux",
+      "field": "E5_g",
+      "gains": {
+        "probe_flux": 0.36,
+        "probe_psf": 0.07,
+        "probe_sky": -0.07
+      },
+      "id": "F35",
+      "indicators": {
+        "background_mad_change": 0.0,
+        "integrated_amplitude_change": 0.2133,
+        "rms_radius_change": 0.0336
+      },
+      "kind": "two_causes",
+      "masked": [],
+      "pilot_recovery_A": 0.75,
+      "pilot_recovery_B": 0.19
+    },
+    {
+      "causes": [],
+      "closures": {
+        "probe_flux": false,
+        "probe_psf": false,
+        "probe_sky": false
+      },
+      "dominant": null,
+      "field": "E5_g",
+      "gains": {
+        "probe_flux": -0.01,
+        "probe_psf": -0.01,
+        "probe_sky": -0.01
+      },
+      "id": "F36",
+      "indicators": {
+        "background_mad_change": 0.0,
+        "integrated_amplitude_change": 0.0204,
+        "rms_radius_change": 0.0422
+      },
+      "kind": "no_intervention",
+      "masked": [],
+      "pilot_recovery_A": 0.79,
+      "pilot_recovery_B": 0.81
+    }
+  ],
+  "plan_sha256": "781433aed89a72807c0ec3a32952dacb459310ec6344702ef0224c8333ce6a1d",
+  "summary": {
+    "no_intervention": {
+      "cases": 4,
+      "false_closures": 0,
+      "max_indicator": 0.0457
+    },
+    "single_cause": {
+      "cases": 16,
+      "other_probe_false_closures": 0,
+      "other_probe_gain_max": 0.05,
+      "other_probe_trials": 32,
+      "pilot_recovery_A": 0.703125,
+      "pilot_recovery_B": 0.28125,
+      "true_probe_closed": 16,
+      "true_probe_gain_mean": 0.395,
+      "true_probe_gain_min": 0.3
+    },
+    "two_causes": {
+      "cases": 16,
+      "dominant_closed": 16,
+      "dominant_gain_mean": 0.390625,
+      "max_gain_probe_is_dominant": 16,
+      "minor_closed": 2,
+      "minor_gain_mean": 0.093125
+    }
+  },
+  "version": "0.3.0"
+}

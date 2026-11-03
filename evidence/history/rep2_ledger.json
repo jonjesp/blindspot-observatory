@@ -1,0 +1,723 @@
+{
+  "attempts": {
+    "F01": {
+      "cost_usd": 0.0012345,
+      "decision": {
+        "decision": "probe",
+        "justification": "Large rms_radius change with small sky and flux changes, plus steep faint-source loss, points to PSF broadening.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Large rms_radius change with small sky and flux changes, plus steep faint-source loss, points to PSF broadening.\", \"probes\": [\"probe_psf\"]}",
+      "request_sha256": "1fb88e2d6c1af53b773ce9cec491705fb16190255ef2c296d5ecfee5248e8d62",
+      "response_id": "chatcmpl-01a1925e-c884-772e-994c-bd2bf45d624d",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 179,
+        "prompt_tokens": 379
+      }
+    },
+    "F02": {
+      "cost_usd": 0.00232125,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapses A~17 to B~1 while bright modestly drops, indicating faint-end loss. Sky MAD unchanged 0.0 and radius change tiny 0.0348 rule out sky/PSF, leaving flux dimming consistent with amplitude change 0.2388.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery collapses A~17 to B~1 while bright modestly drops, indicating faint-end loss. Sky MAD unchanged 0.0 and radius change tiny 0.0348 rule out sky/PSF, leaving flux dimming consistent with amplitude change 0.2388.\", \"probes\": [\"probe_flux\"]}",
+      "request_sha256": "c5a10504b71cf705b4904138054ee538d0bacd8a39530b25537dd81a124d1ae5",
+      "response_id": "chatcmpl-01a1925e-e674-7642-b4c4-6b44dfc6b1d6",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 435,
+        "prompt_tokens": 378
+      }
+    },
+    "F03": {
+      "cost_usd": 0.00157625,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery drops sharply while bright stays stable, background unchanged, amplitude drops ~20% with small radius change, favoring flux dimming.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery drops sharply while bright stays stable, background unchanged, amplitude drops ~20% with small radius change, favoring flux dimming.\", \"probes\": [\"probe_flux\"]}",
+      "request_sha256": "62a6187174529c73675ad277b0607a659258a34680187a78ed5c10928cc8c179",
+      "response_id": "chatcmpl-01a1925f-0094-7455-b082-5ec8927c9ab2",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 260,
+        "prompt_tokens": 377
+      }
+    },
+    "F04": {
+      "cost_usd": 0.00153925,
+      "decision": {
+        "decision": "probe",
+        "justification": "Background MAD unchanged and amplitude change small, while rms radius increased. Recovery drops in both bins but stronger for nominal, consistent with PSF broadening reducing detectability.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Background MAD unchanged and amplitude change small, while rms radius increased. Recovery drops in both bins but stronger for nominal, consistent with PSF broadening reducing detectability.\", \"probes\": [\"probe_psf\"]}",
+      "request_sha256": "26342f9e6dc59667133d19b88332fe89cf071ebb3ef22b98ed0b9b3e6462fbb9",
+      "response_id": "chatcmpl-01a1925f-1d0b-705a-b5b6-52e8734d44d1",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 251,
+        "prompt_tokens": 378
+      }
+    },
+    "F05": {
+      "cost_usd": 0.0018825,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright recoveries unchanged (~23/25) while nominal collapse 17-18 to 5-10 indicates faint-only loss. Amplitude and radius changes are small, disfavoring flux/PSF shifts; elevated sky background best explains it.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Bright recoveries unchanged (~23/25) while nominal collapse 17-18 to 5-10 indicates faint-only loss. Amplitude and radius changes are small, disfavoring flux/PSF shifts; elevated sky background best explains it.\", \"probes\": [\"probe_sky\"]}",
+      "request_sha256": "cad244a198d69a4b6fbff2dca7960fa2c077fb7a6fe15f8e45e3ffcab66652f3",
+      "response_id": "chatcmpl-01a1925f-46d0-76ab-9eab-abcb61bc4059",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 335,
+        "prompt_tokens": 367
+      }
+    },
+    "F06": {
+      "cost_usd": 0.00187375,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapses A~16 to B~4 while bright drops modestly; background_mad_change=0.0 rules out sky, amplitude change 0.237 dominates radius 0.0838, favoring flux loss.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery collapses A~16 to B~4 while bright drops modestly; background_mad_change=0.0 rules out sky, amplitude change 0.237 dominates radius 0.0838, favoring flux loss.\", \"probes\": [\"probe_flux\"]}",
+      "request_sha256": "e2bc003c5c12d118a3500e8b73209b3f57c69a4aec5aeff869bc52fe2924e493",
+      "response_id": "chatcmpl-01a1925f-600f-751a-8fec-a74feab67681",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 330,
+        "prompt_tokens": 377
+      }
+    },
+    "F07": {
+      "cost_usd": 0.00150525,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery drops strongly in B vs A while bright drops slightly; background_mad_change ~0 with large integrated_amplitude_change 0.29, favoring flux loss.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery drops strongly in B vs A while bright drops slightly; background_mad_change ~0 with large integrated_amplitude_change 0.29, favoring flux loss.\", \"probes\": [\"probe_flux\"]}",
+      "request_sha256": "70d127f572530c8848aed238f964f20364adede54d65b62d62553ae5e101bd7b",
+      "response_id": "chatcmpl-01a1925f-7947-77be-857a-5a4b2deee372",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 243,
+        "prompt_tokens": 378
+      }
+    },
+    "F08": {
+      "cost_usd": 0.00236375,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapsed A~13-15 to B~1-4 with bright also down, and background_mad_change 0.298 dominates amplitude 0.108 and radius 0.133, favoring sky background increase.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery collapsed A~13-15 to B~1-4 with bright also down, and background_mad_change 0.298 dominates amplitude 0.108 and radius 0.133, favoring sky background increase.\", \"probes\": [\"probe_sky\"]}",
+      "request_sha256": "181a7ca3f733ea42107414e9a820732fcab2dd2f161d28eca22d780201fdb2e6",
+      "response_id": "chatcmpl-01a1925f-a29c-74ed-8d86-978e3f6a2bbf",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 445,
+        "prompt_tokens": 378
+      }
+    },
+    "F09": {
+      "cost_usd": 0.00200675,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery halved while bright mildly down, background MAD unchanged, RMS radius +12% suggests PSF broadening reduces faint detectability.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery halved while bright mildly down, background MAD unchanged, RMS radius +12% suggests PSF broadening reduces faint detectability.\", \"probes\": [\"probe_psf\"]}",
+      "request_sha256": "4cc9f6bbe24e1ef4afc301670fa3d1c567f7d0c6f5134c3928f25d045637184a",
+      "response_id": "chatcmpl-01a1925f-be8f-72e4-93f9-b05a70e2407d",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 361,
+        "prompt_tokens": 378
+      }
+    },
+    "F10": {
+      "cost_usd": 0.00153765,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Nominal recovery collapses while bright stable and sky MAD unchanged. Both amplitude and radius shift ~9%, supporting flux dimming or PSF broadening.",
+        "probes": [
+          "probe_psf",
+          "probe_flux"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Nominal recovery collapses while bright stable and sky MAD unchanged. Both amplitude and radius shift ~9%, supporting flux dimming or PSF broadening.\", \"probes\": [\"probe_psf\", \"probe_flux\"]}",
+      "request_sha256": "072402971664a3795cd28f7570cec6ea39675dd814bf22de0fac0cc7ed1e175f",
+      "response_id": "chatcmpl-01a1925f-dc00-7410-94b0-503b6e96c8f7",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 313,
+        "prompt_tokens": 378
+      }
+    },
+    "F11": {
+      "cost_usd": 0.00126175,
+      "decision": {
+        "decision": "abstain",
+        "justification": "Recovery counts for bright and nominal sources overlap between A and B; background, amplitude, radius changes near zero indicate no detectable anomaly.",
+        "probes": []
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"abstain\", \"justification\": \"Recovery counts for bright and nominal sources overlap between A and B; background, amplitude, radius changes near zero indicate no detectable anomaly.\", \"probes\": []}",
+      "request_sha256": "00364faca7caf56674599ec22950718af6c465a6cbdc2cbe6cf396cd96f047f0",
+      "response_id": "chatcmpl-01a1925f-f485-770d-9146-4513c3fb767e",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 186,
+        "prompt_tokens": 377
+      }
+    },
+    "F12": {
+      "cost_usd": 0.001481,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapses 16 to ~3 while bright drops 21 to ~16; background and radius stable but integrated amplitude down, favoring flux loss.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery collapses 16 to ~3 while bright drops 21 to ~16; background and radius stable but integrated amplitude down, favoring flux loss.\", \"probes\": [\"probe_flux\"]}",
+      "request_sha256": "24e9be84138041e12b8058e313e63a6f1efe7900ecf2c7040ec20b5a3dccbe1f",
+      "response_id": "chatcmpl-01a19260-1a90-769f-9834-0bad23010d78",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 237,
+        "prompt_tokens": 379
+      }
+    },
+    "F13": {
+      "cost_usd": 0.00127275,
+      "decision": {
+        "decision": "probe",
+        "justification": "Large background MAD change (~0.30) with small amplitude and radius changes, plus strong loss of nominal sources while bright persist, points to sky background anomaly.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Large background MAD change (~0.30) with small amplitude and radius changes, plus strong loss of nominal sources while bright persist, points to sky background anomaly.\", \"probes\": [\"probe_sky\"]}",
+      "request_sha256": "71758afa05e8ade5870a1fa65664b93b14eedf5becc6abe22d95bf014e7f7d03",
+      "response_id": "chatcmpl-01a19260-3f28-75ae-8cb5-d17a4f71e9a2",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 188,
+        "prompt_tokens": 379
+      }
+    },
+    "F14": {
+      "cost_usd": 0.0013836500000000002,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapses 15-16 to 2-4 while bright stays high, background MAD unchanged 0.0 and integrated amplitude nearly conserved 0.07, favoring PSF broadening.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery collapses 15-16 to 2-4 while bright stays high, background MAD unchanged 0.0 and integrated amplitude nearly conserved 0.07, favoring PSF broadening.\", \"probes\": [\"probe_psf\"]}",
+      "request_sha256": "b023fc8c8d3deccc902a667fb0d0badfb5c00cdc2baa0df99ac00924ab4e45c8",
+      "response_id": "chatcmpl-01a19260-5a47-734b-937b-f14caa065c10",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 280,
+        "prompt_tokens": 367
+      }
+    },
+    "F15": {
+      "cost_usd": 0.001858,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapses A~12.5 to B~3.25 with bright drop 19 to 16; background_mad_change 0.0 and amplitude_change 0.0002 rule out sky/flux, rms_radius up 0.0469 implicates PSF.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery collapses A~12.5 to B~3.25 with bright drop 19 to 16; background_mad_change 0.0 and amplitude_change 0.0002 rule out sky/flux, rms_radius up 0.0469 implicates PSF.\", \"probes\": [\"probe_psf\"]}",
+      "request_sha256": "0eecf89fab12fe87d22b0987c208478bff6d0831637e129e4c355c3bb8587c80",
+      "response_id": "chatcmpl-01a19260-741f-7108-bf6c-9ca35bfe88b0",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 326,
+        "prompt_tokens": 378
+      }
+    },
+    "F16": {
+      "cost_usd": 0.00118865,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery drops ~13 to ~6 while bright stays ~20 to ~18, with rms_radius up 0.13 and background MAD 0.0, favoring PSF broadening.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery drops ~13 to ~6 while bright stays ~20 to ~18, with rms_radius up 0.13 and background MAD 0.0, favoring PSF broadening.\", \"probes\": [\"probe_psf\"]}",
+      "request_sha256": "a2e598b5118060a0eb0c4c0f95c5141654cfb9effe42047d0c8d304e7dc76100",
+      "response_id": "chatcmpl-01a19260-8d58-71ae-b50f-97f562a9a0b0",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 235,
+        "prompt_tokens": 364
+      }
+    },
+    "F17": {
+      "cost_usd": 0.001195,
+      "decision": {
+        "decision": "abstain",
+        "justification": "No anomaly: bright and nominal recovery counts overlap A vs B, and sky/PSF/flux indicators all near zero.",
+        "probes": []
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"abstain\", \"justification\": \"No anomaly: bright and nominal recovery counts overlap A vs B, and sky/PSF/flux indicators all near zero.\", \"probes\": []}",
+      "request_sha256": "bac65fad1898cf1723da45794b19fc9162343ec533633aa9f99715e3c587d22d",
+      "response_id": "chatcmpl-01a19260-a425-7022-841f-cefbceab7013",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 170,
+        "prompt_tokens": 378
+      }
+    },
+    "F18": {
+      "cost_usd": 0.00237975,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapses 19 to ~7 while bright holds ~22 and background MAD unchanged 0.0, with small 7.7% integrated amplitude change favoring PSF broadening over flux loss.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery collapses 19 to ~7 while bright holds ~22 and background MAD unchanged 0.0, with small 7.7% integrated amplitude change favoring PSF broadening over flux loss.\", \"probes\": [\"probe_psf\"]}",
+      "request_sha256": "94fbf49355a7872720983d489b25da8f63a9c8062c516d5d589249df42654761",
+      "response_id": "chatcmpl-01a19260-c46b-7593-82dc-b36d8de40430",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 452,
+        "prompt_tokens": 367
+      }
+    },
+    "F19": {
+      "cost_usd": 0.0025354,
+      "decision": {
+        "decision": "probe",
+        "justification": "Faint recovery halved while bright unchanged; amplitude conserved ~0.002 with radius +0.067, matching PSF broadening conserving flux.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Faint recovery halved while bright unchanged; amplitude conserved ~0.002 with radius +0.067, matching PSF broadening conserving flux.\", \"probes\": [\"probe_psf\"]}",
+      "request_sha256": "38543286bd75531f82bcac7a07c26423d24170cf962dc2f2a565c0ba3644dd67",
+      "response_id": "chatcmpl-01a19260-f335-7378-98a4-8e6a4ead8997",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 551,
+        "prompt_tokens": 367
+      }
+    },
+    "F20": {
+      "cost_usd": 0.0016455,
+      "decision": {
+        "decision": "probe",
+        "justification": "Faint nominal recovery collapses A~12 to B~1 while bright drops less, with large background_mad_change 0.34 and small flux and radius changes, favoring sky noise.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Faint nominal recovery collapses A~12 to B~1 while bright drops less, with large background_mad_change 0.34 and small flux and radius changes, favoring sky noise.\", \"probes\": [\"probe_sky\"]}",
+      "request_sha256": "325d6345a01550811a0fc4ee82fe9d1ef0a674a75e9dca57d62b03bf189a0147",
+      "response_id": "chatcmpl-01a19261-19cb-772a-ab07-7172e0ed8247",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 276,
+        "prompt_tokens": 378
+      }
+    },
+    "F21": {
+      "cost_usd": 0.0014555,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapsed A~17 to B~5 while bright only slightly dropped, with large background_mad_change 0.27 and small amplitude change, implicating increased sky noise.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery collapsed A~17 to B~5 while bright only slightly dropped, with large background_mad_change 0.27 and small amplitude change, implicating increased sky noise.\", \"probes\": [\"probe_sky\"]}",
+      "request_sha256": "29f09accb2888cfce509f8e8c421305dbdd44702a04a8afa959ee3498eb42a67",
+      "response_id": "chatcmpl-01a19261-3f3e-7414-8ac7-806e4ea70cec",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 231,
+        "prompt_tokens": 379
+      }
+    },
+    "F22": {
+      "cost_usd": 0.00140625,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright counts unchanged but nominal drops ~20 to ~8. background_mad_change 0.0 rules out sky, rms_radius_change 0.016 rules out PSF, while integrated_amplitude_change 0.30 indicates flux loss.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Bright counts unchanged but nominal drops ~20 to ~8. background_mad_change 0.0 rules out sky, rms_radius_change 0.016 rules out PSF, while integrated_amplitude_change 0.30 indicates flux loss.\", \"probes\": [\"probe_flux\"]}",
+      "request_sha256": "9fc1aa8e0c073d627c13421515e239872fde9e67ca4146d60dc192b6248d6879",
+      "response_id": "chatcmpl-01a19261-597e-75b8-89e4-e7676cb3b815",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 220,
+        "prompt_tokens": 377
+      }
+    },
+    "F23": {
+      "cost_usd": 0.0017629000000000002,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright counts unchanged while nominal collapses, background MAD unchanged so not sky. Large integrated amplitude drop dominates small radius change, favoring flux loss.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Bright counts unchanged while nominal collapses, background MAD unchanged so not sky. Large integrated amplitude drop dominates small radius change, favoring flux loss.\", \"probes\": [\"probe_flux\"]}",
+      "request_sha256": "b68588e8c28a312840d320533476f54d522951c29ec95de9b6ccdb1beca5974b",
+      "response_id": "chatcmpl-01a19261-74f0-7723-b5f7-be91f2bfc193",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 366,
+        "prompt_tokens": 378
+      }
+    },
+    "F24": {
+      "cost_usd": 0.0028695,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Nominal recovery collapses in B while bright stays high and background_mad_change is 0.0, ruling out sky. Small amplitude and radius shifts leave both flux dimming and PSF broadening plausible.",
+        "probes": [
+          "probe_psf",
+          "probe_flux"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Nominal recovery collapses in B while bright stays high and background_mad_change is 0.0, ruling out sky. Small amplitude and radius shifts leave both flux dimming and PSF broadening plausible.\", \"probes\": [\"probe_psf\", \"probe_flux\"]}",
+      "request_sha256": "5de8b786481765d0f6d7f812bac0fc9da26f98b76b8c2a2e8b3ff4efa3bd6425",
+      "response_id": "chatcmpl-01a19261-9330-769d-864f-2b10428071aa",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 564,
+        "prompt_tokens": 378
+      }
+    },
+    "F25": {
+      "cost_usd": 0.00172925,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright counts preserved while nominal dropped ~22 to ~7, background unchanged, integrated flux stable but rms radius increased, consistent with PSF broadening.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Bright counts preserved while nominal dropped ~22 to ~7, background unchanged, integrated flux stable but rms radius increased, consistent with PSF broadening.\", \"probes\": [\"probe_psf\"]}",
+      "request_sha256": "d07f129d65e87ab54e75373332253bce1e4b56f2e6520dd4be2cccb16a08fc15",
+      "response_id": "chatcmpl-01a19261-ae1b-71a0-a2df-6472c5503fc6",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 296,
+        "prompt_tokens": 377
+      }
+    },
+    "F26": {
+      "cost_usd": 0.0013395,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery drops 20 to 7 while bright stable; background_mad_change 0.298 dominates vs small radius and amplitude changes, indicating raised sky hiding faint sources.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery drops 20 to 7 while bright stable; background_mad_change 0.298 dominates vs small radius and amplitude changes, indicating raised sky hiding faint sources.\", \"probes\": [\"probe_sky\"]}",
+      "request_sha256": "e167b6c330a70ee930e972509c5dab6ba8c4577f269837d020220cd92158cf24",
+      "response_id": "chatcmpl-01a19261-d35f-770f-8bcf-7c89e4cd9ad0",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 204,
+        "prompt_tokens": 378
+      }
+    },
+    "F27": {
+      "cost_usd": 0.00142365,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright counts preserved while nominal counts drop ~50%, background_mad_change=0 and rms_radius_change tiny, so sky and PSF unlikely; flux dimming best explains faint-only loss.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Bright counts preserved while nominal counts drop ~50%, background_mad_change=0 and rms_radius_change tiny, so sky and PSF unlikely; flux dimming best explains faint-only loss.\", \"probes\": [\"probe_flux\"]}",
+      "request_sha256": "ca3e25f31f6289d3bbb794b7395c658e165cb2abd76b1c3b04168b434e1e0035",
+      "response_id": "chatcmpl-01a19261-ee07-713f-be15-cf0c9ca68df0",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 290,
+        "prompt_tokens": 365
+      }
+    },
+    "F28": {
+      "cost_usd": 0.0020871500000000003,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Nominal recovery collapsed (21->6) while bright preserved, with large background MAD increase and moderate radius growth, so sky noise and PSF broadening both plausible.",
+        "probes": [
+          "probe_sky",
+          "probe_psf"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Nominal recovery collapsed (21->6) while bright preserved, with large background MAD increase and moderate radius growth, so sky noise and PSF broadening both plausible.\", \"probes\": [\"probe_sky\", \"probe_psf\"]}",
+      "request_sha256": "378b964e5270baddd90e2fdd858f99e336b5036fbf942c751149302036b453e4",
+      "response_id": "chatcmpl-01a19262-1871-762e-b093-183164a51a3e",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 442,
+        "prompt_tokens": 379
+      }
+    },
+    "F29": {
+      "cost_usd": 0.00183975,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Nominal recovery collapses A~19 to B~2 while bright drops modestly; sky MAD unchanged 0.0 so sky ruled out, but both amplitude 0.12 and radius 0.1158 changed.",
+        "probes": [
+          "probe_psf",
+          "probe_flux"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Nominal recovery collapses A~19 to B~2 while bright drops modestly; sky MAD unchanged 0.0 so sky ruled out, but both amplitude 0.12 and radius 0.1158 changed.\", \"probes\": [\"probe_psf\", \"probe_flux\"]}",
+      "request_sha256": "2b7651bd5ee8644e9a035ecc9114da3389558acc836074a627a1e4b5f6c9d230",
+      "response_id": "chatcmpl-01a19262-32f5-7062-8d8a-88c8cd506e7e",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 322,
+        "prompt_tokens": 377
+      }
+    },
+    "F30": {
+      "cost_usd": 0.00165825,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapses A~17 to B~6.5 while bright stays ~22 to 20, with large amplitude drop 0.205 but small sky 0.049 and radius 0.079 changes, favoring flux dimming.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery collapses A~17 to B~6.5 while bright stays ~22 to 20, with large amplitude drop 0.205 but small sky 0.049 and radius 0.079 changes, favoring flux dimming.\", \"probes\": [\"probe_flux\"]}",
+      "request_sha256": "d4e8f8474aeff1754832f307e315a6e461f899e784b95d8b0be17357ad8cd580",
+      "response_id": "chatcmpl-01a19262-5897-742e-b9cb-85dd15d4b974",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 279,
+        "prompt_tokens": 378
+      }
+    },
+    "F31": {
+      "cost_usd": 0.00136075,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapses while bright slightly drops, background MAD and amplitude unchanged, but rms radius increased ~0.11 indicating PSF broadening.",
+        "probes": [
+          "probe_psf"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery collapses while bright slightly drops, background MAD and amplitude unchanged, but rms radius increased ~0.11 indicating PSF broadening.\", \"probes\": [\"probe_psf\"]}",
+      "request_sha256": "7b5ac2388916a4ffce866d5493dd58bb13cd18f27fdee4f85ac2857d24ca85e4",
+      "response_id": "chatcmpl-01a19262-71ff-7771-b588-9d358d2f4bac",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 209,
+        "prompt_tokens": 378
+      }
+    },
+    "F32": {
+      "cost_usd": 0.0013039000000000002,
+      "decision": {
+        "decision": "abstain",
+        "justification": "No clear deficit: bright recoveries identical, nominal B slightly higher, indicators near zero for sky, amplitude, and radius.",
+        "probes": []
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"abstain\", \"justification\": \"No clear deficit: bright recoveries identical, nominal B slightly higher, indicators near zero for sky, amplitude, and radius.\", \"probes\": []}",
+      "request_sha256": "54b27bdde97a63c884a826f59f8c77757b5fbde779ac4f5a70b186e9c14b5dc3",
+      "response_id": "chatcmpl-01a19262-907e-7796-ae1c-3dfc6d391c72",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 258,
+        "prompt_tokens": 378
+      }
+    },
+    "F33": {
+      "cost_usd": 0.00213165,
+      "decision": {
+        "decision": "ambiguous",
+        "justification": "Nominal recovery collapses A~19 to B~8 while bright stays high, indicating faint-end sensitivity loss. Both rms_radius and amplitude shifts are ~0.1, supporting sky-noise and PSF-broadening explanations.",
+        "probes": [
+          "probe_sky",
+          "probe_psf"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"ambiguous\", \"justification\": \"Nominal recovery collapses A~19 to B~8 while bright stays high, indicating faint-end sensitivity loss. Both rms_radius and amplitude shifts are ~0.1, supporting sky-noise and PSF-broadening explanations.\", \"probes\": [\"probe_sky\", \"probe_psf\"]}",
+      "request_sha256": "ca599fd473411945841dbe08a2200ac7c9947fa947a9eca7f5e714941d97333f",
+      "response_id": "chatcmpl-01a19262-bc94-70d8-aad6-5471f65c2546",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 456,
+        "prompt_tokens": 367
+      }
+    },
+    "F34": {
+      "cost_usd": 0.0013476500000000001,
+      "decision": {
+        "decision": "probe",
+        "justification": "Bright recoveries identical, nominal sharply lower in B; background MAD +25% while rms radius and amplitude changes are small, implicating elevated sky noise.",
+        "probes": [
+          "probe_sky"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Bright recoveries identical, nominal sharply lower in B; background MAD +25% while rms radius and amplitude changes are small, implicating elevated sky noise.\", \"probes\": [\"probe_sky\"]}",
+      "request_sha256": "afafd2152fe0f09cbff682a37d591bd908c91387c7273bab93871c9b1f1a712a",
+      "response_id": "chatcmpl-01a19262-e489-7686-b6a1-287f602bce1d",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 268,
+        "prompt_tokens": 379
+      }
+    },
+    "F35": {
+      "cost_usd": 0.00170075,
+      "decision": {
+        "decision": "probe",
+        "justification": "Nominal recovery collapses B~5 vs A~19 while bright unchanged and background_mad_change=0.0 rules out sky. Amplitude drop 0.213 with tiny radius change favors flux loss.",
+        "probes": [
+          "probe_flux"
+        ]
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"probe\", \"justification\": \"Nominal recovery collapses B~5 vs A~19 while bright unchanged and background_mad_change=0.0 rules out sky. Amplitude drop 0.213 with tiny radius change favors flux loss.\", \"probes\": [\"probe_flux\"]}",
+      "request_sha256": "2c879c4975d3a6cf4ecd41c36e4f35315578ba90db0ab68f8fd744bed0d55b67",
+      "response_id": "chatcmpl-01a19262-fedf-71b8-a79c-ab7292e17092",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 0,
+        "completion_tokens": 289,
+        "prompt_tokens": 378
+      }
+    },
+    "F36": {
+      "cost_usd": 0.0011084,
+      "decision": {
+        "decision": "abstain",
+        "justification": "Recovery counts for bright and nominal are essentially identical between A and B, and indicator changes are near zero, showing no anomaly.",
+        "probes": []
+      },
+      "finish_reason": "stop",
+      "raw_output": "{\"decision\": \"abstain\", \"justification\": \"Recovery counts for bright and nominal are essentially identical between A and B, and indicator changes are near zero, showing no anomaly.\", \"probes\": []}",
+      "request_sha256": "a9a14fc66876ca53e47fcfd3794e67ab0994fb6839d3cf0960af22bb5c1752f4",
+      "response_id": "chatcmpl-01a19263-17d6-74bd-bafc-05a2b406231f",
+      "state": "completed",
+      "usage": {
+        "cached_tokens": 241,
+        "completion_tokens": 212,
+        "prompt_tokens": 378
+      }
+    }
+  },
+  "model": "muse-spark-1.3",
+  "seal_sha256": "cec14583d56ca90230b6330ad5a18baceb90b855821fe05dfb7ad536f72e9611"
+}

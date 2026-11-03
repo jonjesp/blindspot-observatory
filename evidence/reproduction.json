@@ -1,0 +1,2490 @@
+{
+  "api_calls": 0,
+  "created_utc": "2026-11-01T15:28:35+00:00",
+  "environment": {
+    "numpy": "2.4.6",
+    "python": "3.11.9",
+    "pyyaml": "6.0.3",
+    "scipy": "1.17.1"
+  },
+  "input_sha256": {
+    "ledger": "54ca9cd0460af985405b7a843210338cc878d05840d883d2c12900ae23eb19e0",
+    "results": "989c21a6989f88ac4858c57b25c6545b02899affb7edb4d8a6bd3de864017c9a"
+  },
+  "pixel_reproduction": {
+    "api_calls": 0,
+    "case_ids": [
+      "F01",
+      "F02",
+      "F03",
+      "F04",
+      "F05",
+      "F06",
+      "F07",
+      "F08",
+      "F09",
+      "F10",
+      "F11",
+      "F12",
+      "F13",
+      "F14",
+      "F15",
+      "F16",
+      "F17",
+      "F18",
+      "F19",
+      "F20",
+      "F21",
+      "F22",
+      "F23",
+      "F24",
+      "F25",
+      "F26",
+      "F27",
+      "F28",
+      "F29",
+      "F30",
+      "F31",
+      "F32",
+      "F33",
+      "F34",
+      "F35",
+      "F36"
+    ],
+    "cases": [
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 14,
+            "before": 17,
+            "closed": false,
+            "gain": -0.03,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 65,
+            "before": 17,
+            "closed": true,
+            "gain": 0.48,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 19,
+            "before": 17,
+            "closed": false,
+            "gain": 0.02,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "bf7e780f5570521e84f64c804348b8ca9de07dc36aba54b562ff731bd26d76c8",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 14,
+            "before": 17,
+            "closed": false,
+            "gain": -0.03,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 65,
+            "before": 17,
+            "closed": true,
+            "gain": 0.48,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 19,
+            "before": 17,
+            "closed": false,
+            "gain": 0.02,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "bf7e780f5570521e84f64c804348b8ca9de07dc36aba54b562ff731bd26d76c8",
+        "id": "F01",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 46,
+            "before": 15,
+            "closed": true,
+            "gain": 0.31,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 28,
+            "before": 15,
+            "closed": false,
+            "gain": 0.13,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 18,
+            "before": 15,
+            "closed": false,
+            "gain": 0.03,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "c6d2733f800b87221a4e1ac027566162a8149cccecf35960d49b6b57fa862b8a",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 46,
+            "before": 15,
+            "closed": true,
+            "gain": 0.31,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 28,
+            "before": 15,
+            "closed": false,
+            "gain": 0.13,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 18,
+            "before": 15,
+            "closed": false,
+            "gain": 0.03,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "c6d2733f800b87221a4e1ac027566162a8149cccecf35960d49b6b57fa862b8a",
+        "id": "F02",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 67,
+            "before": 24,
+            "closed": true,
+            "gain": 0.43,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 29,
+            "before": 24,
+            "closed": false,
+            "gain": 0.05,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 29,
+            "before": 24,
+            "closed": false,
+            "gain": 0.05,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "7557086ff9a6bddfcedb8ee2e7bcd77ba7866d76ab70e61e92eb150a2da2ed9c",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 67,
+            "before": 24,
+            "closed": true,
+            "gain": 0.43,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 29,
+            "before": 24,
+            "closed": false,
+            "gain": 0.05,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 29,
+            "before": 24,
+            "closed": false,
+            "gain": 0.05,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "7557086ff9a6bddfcedb8ee2e7bcd77ba7866d76ab70e61e92eb150a2da2ed9c",
+        "id": "F03",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 27,
+            "before": 19,
+            "closed": false,
+            "gain": 0.08,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 71,
+            "before": 19,
+            "closed": true,
+            "gain": 0.52,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 14,
+            "before": 19,
+            "closed": false,
+            "gain": -0.05,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "26342f9e6dc59667133d19b88332fe89cf071ebb3ef22b98ed0b9b3e6462fbb9",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 27,
+            "before": 19,
+            "closed": false,
+            "gain": 0.08,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 71,
+            "before": 19,
+            "closed": true,
+            "gain": 0.52,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 14,
+            "before": 19,
+            "closed": false,
+            "gain": -0.05,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "26342f9e6dc59667133d19b88332fe89cf071ebb3ef22b98ed0b9b3e6462fbb9",
+        "id": "F04",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 42,
+            "before": 43,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 42,
+            "before": 43,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 76,
+            "before": 43,
+            "closed": true,
+            "gain": 0.33,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "3bc1c0eba6c58b460d846eb06e73d02cea7d23475495bc9746db16828dd220c2",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 42,
+            "before": 43,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 42,
+            "before": 43,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 76,
+            "before": 43,
+            "closed": true,
+            "gain": 0.33,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "3bc1c0eba6c58b460d846eb06e73d02cea7d23475495bc9746db16828dd220c2",
+        "id": "F05",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 53,
+            "before": 19,
+            "closed": true,
+            "gain": 0.34,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 37,
+            "before": 19,
+            "closed": true,
+            "gain": 0.18,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 22,
+            "before": 19,
+            "closed": false,
+            "gain": 0.03,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "e2bc003c5c12d118a3500e8b73209b3f57c69a4aec5aeff869bc52fe2924e493",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 53,
+            "before": 19,
+            "closed": true,
+            "gain": 0.34,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 37,
+            "before": 19,
+            "closed": true,
+            "gain": 0.18,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 22,
+            "before": 19,
+            "closed": false,
+            "gain": 0.03,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "e2bc003c5c12d118a3500e8b73209b3f57c69a4aec5aeff869bc52fe2924e493",
+        "id": "F06",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 70,
+            "before": 31,
+            "closed": true,
+            "gain": 0.39,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 30,
+            "before": 31,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 30,
+            "before": 31,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "70d127f572530c8848aed238f964f20364adede54d65b62d62553ae5e101bd7b",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 70,
+            "before": 31,
+            "closed": true,
+            "gain": 0.39,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 30,
+            "before": 31,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 30,
+            "before": 31,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "70d127f572530c8848aed238f964f20364adede54d65b62d62553ae5e101bd7b",
+        "id": "F07",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 20,
+            "before": 24,
+            "closed": false,
+            "gain": -0.04,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 30,
+            "before": 24,
+            "closed": false,
+            "gain": 0.06,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 57,
+            "before": 24,
+            "closed": true,
+            "gain": 0.33,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "27cddfa2018291b97b0968eb4fbe2942a503b8262b2cd9120db3f8338d87f9d6",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 20,
+            "before": 24,
+            "closed": false,
+            "gain": -0.04,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 30,
+            "before": 24,
+            "closed": false,
+            "gain": 0.06,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 57,
+            "before": 24,
+            "closed": true,
+            "gain": 0.33,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "27cddfa2018291b97b0968eb4fbe2942a503b8262b2cd9120db3f8338d87f9d6",
+        "id": "F08",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 51,
+            "before": 20,
+            "closed": true,
+            "gain": 0.31,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 23,
+            "before": 20,
+            "closed": false,
+            "gain": 0.03,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 23,
+            "before": 20,
+            "closed": false,
+            "gain": 0.03,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "4cc9f6bbe24e1ef4afc301670fa3d1c567f7d0c6f5134c3928f25d045637184a",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 51,
+            "before": 20,
+            "closed": true,
+            "gain": 0.31,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 23,
+            "before": 20,
+            "closed": false,
+            "gain": 0.03,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 23,
+            "before": 20,
+            "closed": false,
+            "gain": 0.03,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "4cc9f6bbe24e1ef4afc301670fa3d1c567f7d0c6f5134c3928f25d045637184a",
+        "id": "F09",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 46,
+            "before": 4,
+            "closed": true,
+            "gain": 0.42,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 16,
+            "before": 4,
+            "closed": true,
+            "gain": 0.12,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 8,
+            "before": 4,
+            "closed": false,
+            "gain": 0.04,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "072402971664a3795cd28f7570cec6ea39675dd814bf22de0fac0cc7ed1e175f",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 46,
+            "before": 4,
+            "closed": true,
+            "gain": 0.42,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 16,
+            "before": 4,
+            "closed": true,
+            "gain": 0.12,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 8,
+            "before": 4,
+            "closed": false,
+            "gain": 0.04,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "072402971664a3795cd28f7570cec6ea39675dd814bf22de0fac0cc7ed1e175f",
+        "id": "F10",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 63,
+            "before": 67,
+            "closed": false,
+            "gain": -0.04,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 63,
+            "before": 67,
+            "closed": false,
+            "gain": -0.04,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 63,
+            "before": 67,
+            "closed": false,
+            "gain": -0.04,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "00364faca7caf56674599ec22950718af6c465a6cbdc2cbe6cf396cd96f047f0",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 63,
+            "before": 67,
+            "closed": false,
+            "gain": -0.04,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 63,
+            "before": 67,
+            "closed": false,
+            "gain": -0.04,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 63,
+            "before": 67,
+            "closed": false,
+            "gain": -0.04,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "00364faca7caf56674599ec22950718af6c465a6cbdc2cbe6cf396cd96f047f0",
+        "id": "F11",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 23,
+            "before": 17,
+            "closed": false,
+            "gain": 0.06,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 66,
+            "before": 17,
+            "closed": true,
+            "gain": 0.49,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 32,
+            "before": 17,
+            "closed": false,
+            "gain": 0.15,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "8ba7047ecb346017ab826b2ff09fc9df695953b30b11281abc08ad086ded086e",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 23,
+            "before": 17,
+            "closed": false,
+            "gain": 0.06,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 66,
+            "before": 17,
+            "closed": true,
+            "gain": 0.49,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 32,
+            "before": 17,
+            "closed": false,
+            "gain": 0.15,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "8ba7047ecb346017ab826b2ff09fc9df695953b30b11281abc08ad086ded086e",
+        "id": "F12",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 10,
+            "before": 10,
+            "closed": false,
+            "gain": 0.0,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 2,
+            "before": 10,
+            "closed": false,
+            "gain": -0.08,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 45,
+            "before": 10,
+            "closed": true,
+            "gain": 0.35,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "71758afa05e8ade5870a1fa65664b93b14eedf5becc6abe22d95bf014e7f7d03",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 10,
+            "before": 10,
+            "closed": false,
+            "gain": 0.0,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 2,
+            "before": 10,
+            "closed": false,
+            "gain": -0.08,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 45,
+            "before": 10,
+            "closed": true,
+            "gain": 0.35,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "71758afa05e8ade5870a1fa65664b93b14eedf5becc6abe22d95bf014e7f7d03",
+        "id": "F13",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 20,
+            "before": 20,
+            "closed": false,
+            "gain": 0.0,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 68,
+            "before": 20,
+            "closed": true,
+            "gain": 0.48,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 20,
+            "before": 20,
+            "closed": false,
+            "gain": 0.0,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "266fa3e1cfe49e7c831c3e0970686661ac321a8b538d2905382fe0bbbdcc442d",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 20,
+            "before": 20,
+            "closed": false,
+            "gain": 0.0,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 68,
+            "before": 20,
+            "closed": true,
+            "gain": 0.48,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 20,
+            "before": 20,
+            "closed": false,
+            "gain": 0.0,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "266fa3e1cfe49e7c831c3e0970686661ac321a8b538d2905382fe0bbbdcc442d",
+        "id": "F14",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 16,
+            "before": 12,
+            "closed": false,
+            "gain": 0.04,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 45,
+            "before": 12,
+            "closed": true,
+            "gain": 0.33,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 16,
+            "before": 12,
+            "closed": false,
+            "gain": 0.04,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "85ebac3fa160accab0d4e38db78ed2b5fda52e96af39598d32afdf3ad0d0c1e1",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 16,
+            "before": 12,
+            "closed": false,
+            "gain": 0.04,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 45,
+            "before": 12,
+            "closed": true,
+            "gain": 0.33,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 16,
+            "before": 12,
+            "closed": false,
+            "gain": 0.04,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "85ebac3fa160accab0d4e38db78ed2b5fda52e96af39598d32afdf3ad0d0c1e1",
+        "id": "F15",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 68,
+            "before": 38,
+            "closed": true,
+            "gain": 0.3,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 37,
+            "before": 38,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 37,
+            "before": 38,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "5d82dbaf28b98614f6f54be23997b82bcf95a0dfbe13d60f6c647aca2e61abb6",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 68,
+            "before": 38,
+            "closed": true,
+            "gain": 0.3,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 37,
+            "before": 38,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 37,
+            "before": 38,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "5d82dbaf28b98614f6f54be23997b82bcf95a0dfbe13d60f6c647aca2e61abb6",
+        "id": "F16",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 76,
+            "before": 77,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 76,
+            "before": 77,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 76,
+            "before": 77,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "bac65fad1898cf1723da45794b19fc9162343ec533633aa9f99715e3c587d22d",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 76,
+            "before": 77,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 76,
+            "before": 77,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 76,
+            "before": 77,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "bac65fad1898cf1723da45794b19fc9162343ec533633aa9f99715e3c587d22d",
+        "id": "F17",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 13,
+            "before": 15,
+            "closed": false,
+            "gain": -0.02,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 56,
+            "before": 15,
+            "closed": true,
+            "gain": 0.41,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 13,
+            "before": 15,
+            "closed": false,
+            "gain": -0.02,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "15e4896293ac44cb58e078da2fba229a0d10e28760c6164cbe637a4d67eefb44",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 13,
+            "before": 15,
+            "closed": false,
+            "gain": -0.02,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 56,
+            "before": 15,
+            "closed": true,
+            "gain": 0.41,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 13,
+            "before": 15,
+            "closed": false,
+            "gain": -0.02,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "15e4896293ac44cb58e078da2fba229a0d10e28760c6164cbe637a4d67eefb44",
+        "id": "F18",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 39,
+            "before": 45,
+            "closed": false,
+            "gain": -0.06,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 39,
+            "before": 45,
+            "closed": false,
+            "gain": -0.06,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 87,
+            "before": 45,
+            "closed": true,
+            "gain": 0.42,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "7a3e2d2706299dea2e2b5db244141ed3745eb9bcfaa991809e6d80b29bcb0abe",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 39,
+            "before": 45,
+            "closed": false,
+            "gain": -0.06,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 39,
+            "before": 45,
+            "closed": false,
+            "gain": -0.06,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 87,
+            "before": 45,
+            "closed": true,
+            "gain": 0.42,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "7a3e2d2706299dea2e2b5db244141ed3745eb9bcfaa991809e6d80b29bcb0abe",
+        "id": "F19",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 10,
+            "before": 1,
+            "closed": false,
+            "gain": 0.09,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 7,
+            "before": 1,
+            "closed": false,
+            "gain": 0.06,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 35,
+            "before": 1,
+            "closed": true,
+            "gain": 0.34,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "325d6345a01550811a0fc4ee82fe9d1ef0a674a75e9dca57d62b03bf189a0147",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 10,
+            "before": 1,
+            "closed": false,
+            "gain": 0.09,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 7,
+            "before": 1,
+            "closed": false,
+            "gain": 0.06,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 35,
+            "before": 1,
+            "closed": true,
+            "gain": 0.34,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "325d6345a01550811a0fc4ee82fe9d1ef0a674a75e9dca57d62b03bf189a0147",
+        "id": "F20",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 24,
+            "before": 25,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 40,
+            "before": 25,
+            "closed": false,
+            "gain": 0.15,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 67,
+            "before": 25,
+            "closed": true,
+            "gain": 0.42,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "29f09accb2888cfce509f8e8c421305dbdd44702a04a8afa959ee3498eb42a67",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 24,
+            "before": 25,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 40,
+            "before": 25,
+            "closed": false,
+            "gain": 0.15,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 67,
+            "before": 25,
+            "closed": true,
+            "gain": 0.42,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "29f09accb2888cfce509f8e8c421305dbdd44702a04a8afa959ee3498eb42a67",
+        "id": "F21",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 75,
+            "before": 35,
+            "closed": true,
+            "gain": 0.4,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 39,
+            "before": 35,
+            "closed": false,
+            "gain": 0.04,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 39,
+            "before": 35,
+            "closed": false,
+            "gain": 0.04,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "9fc1aa8e0c073d627c13421515e239872fde9e67ca4146d60dc192b6248d6879",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 75,
+            "before": 35,
+            "closed": true,
+            "gain": 0.4,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 39,
+            "before": 35,
+            "closed": false,
+            "gain": 0.04,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 39,
+            "before": 35,
+            "closed": false,
+            "gain": 0.04,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "9fc1aa8e0c073d627c13421515e239872fde9e67ca4146d60dc192b6248d6879",
+        "id": "F22",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 72,
+            "before": 32,
+            "closed": true,
+            "gain": 0.4,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 29,
+            "before": 32,
+            "closed": false,
+            "gain": -0.03,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 29,
+            "before": 32,
+            "closed": false,
+            "gain": -0.03,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "b68588e8c28a312840d320533476f54d522951c29ec95de9b6ccdb1beca5974b",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 72,
+            "before": 32,
+            "closed": true,
+            "gain": 0.4,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 29,
+            "before": 32,
+            "closed": false,
+            "gain": -0.03,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 29,
+            "before": 32,
+            "closed": false,
+            "gain": -0.03,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "b68588e8c28a312840d320533476f54d522951c29ec95de9b6ccdb1beca5974b",
+        "id": "F23",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 34,
+            "before": 22,
+            "closed": false,
+            "gain": 0.12,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 66,
+            "before": 22,
+            "closed": true,
+            "gain": 0.44,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 27,
+            "before": 22,
+            "closed": false,
+            "gain": 0.05,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "5de8b786481765d0f6d7f812bac0fc9da26f98b76b8c2a2e8b3ff4efa3bd6425",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 34,
+            "before": 22,
+            "closed": false,
+            "gain": 0.12,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 66,
+            "before": 22,
+            "closed": true,
+            "gain": 0.44,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 27,
+            "before": 22,
+            "closed": false,
+            "gain": 0.05,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "5de8b786481765d0f6d7f812bac0fc9da26f98b76b8c2a2e8b3ff4efa3bd6425",
+        "id": "F24",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 41,
+            "before": 48,
+            "closed": false,
+            "gain": -0.07,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 86,
+            "before": 48,
+            "closed": true,
+            "gain": 0.38,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 41,
+            "before": 48,
+            "closed": false,
+            "gain": -0.07,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "d07f129d65e87ab54e75373332253bce1e4b56f2e6520dd4be2cccb16a08fc15",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 41,
+            "before": 48,
+            "closed": false,
+            "gain": -0.07,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 86,
+            "before": 48,
+            "closed": true,
+            "gain": 0.38,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 41,
+            "before": 48,
+            "closed": false,
+            "gain": -0.07,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "d07f129d65e87ab54e75373332253bce1e4b56f2e6520dd4be2cccb16a08fc15",
+        "id": "F25",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 22,
+            "before": 24,
+            "closed": false,
+            "gain": -0.02,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 22,
+            "before": 24,
+            "closed": false,
+            "gain": -0.02,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 74,
+            "before": 24,
+            "closed": true,
+            "gain": 0.5,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "e167b6c330a70ee930e972509c5dab6ba8c4577f269837d020220cd92158cf24",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 22,
+            "before": 24,
+            "closed": false,
+            "gain": -0.02,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 22,
+            "before": 24,
+            "closed": false,
+            "gain": -0.02,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 74,
+            "before": 24,
+            "closed": true,
+            "gain": 0.5,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "e167b6c330a70ee930e972509c5dab6ba8c4577f269837d020220cd92158cf24",
+        "id": "F26",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 72,
+            "before": 37,
+            "closed": true,
+            "gain": 0.35,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 37,
+            "before": 37,
+            "closed": false,
+            "gain": 0.0,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 37,
+            "before": 37,
+            "closed": false,
+            "gain": 0.0,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "43b78f288b7ca8389f9877cb85d86b393486517493fe01768cf800f3fb6670ee",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 72,
+            "before": 37,
+            "closed": true,
+            "gain": 0.35,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 37,
+            "before": 37,
+            "closed": false,
+            "gain": 0.0,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 37,
+            "before": 37,
+            "closed": false,
+            "gain": 0.0,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "43b78f288b7ca8389f9877cb85d86b393486517493fe01768cf800f3fb6670ee",
+        "id": "F27",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 28,
+            "before": 31,
+            "closed": false,
+            "gain": -0.03,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 42,
+            "before": 31,
+            "closed": false,
+            "gain": 0.11,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 63,
+            "before": 31,
+            "closed": true,
+            "gain": 0.32,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "378b964e5270baddd90e2fdd858f99e336b5036fbf942c751149302036b453e4",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 28,
+            "before": 31,
+            "closed": false,
+            "gain": -0.03,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 42,
+            "before": 31,
+            "closed": false,
+            "gain": 0.11,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 63,
+            "before": 31,
+            "closed": true,
+            "gain": 0.32,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "378b964e5270baddd90e2fdd858f99e336b5036fbf942c751149302036b453e4",
+        "id": "F28",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 38,
+            "before": 30,
+            "closed": false,
+            "gain": 0.08,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 75,
+            "before": 30,
+            "closed": true,
+            "gain": 0.45,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 24,
+            "before": 30,
+            "closed": false,
+            "gain": -0.06,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "24a2ec9057b85e21e2aba306db48baad82bb861d287001591f7cfa3226a322a0",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 38,
+            "before": 30,
+            "closed": false,
+            "gain": 0.08,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 75,
+            "before": 30,
+            "closed": true,
+            "gain": 0.45,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 24,
+            "before": 30,
+            "closed": false,
+            "gain": -0.06,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "24a2ec9057b85e21e2aba306db48baad82bb861d287001591f7cfa3226a322a0",
+        "id": "F29",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 56,
+            "before": 27,
+            "closed": true,
+            "gain": 0.29,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 25,
+            "before": 27,
+            "closed": false,
+            "gain": -0.02,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 30,
+            "before": 27,
+            "closed": false,
+            "gain": 0.03,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "9a2ee53765e15b0d0741ac54156df9ee9052c5f979b8a548e4175a692b547006",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 56,
+            "before": 27,
+            "closed": true,
+            "gain": 0.29,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 25,
+            "before": 27,
+            "closed": false,
+            "gain": -0.02,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 30,
+            "before": 27,
+            "closed": false,
+            "gain": 0.03,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "9a2ee53765e15b0d0741ac54156df9ee9052c5f979b8a548e4175a692b547006",
+        "id": "F30",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 31,
+            "before": 21,
+            "closed": false,
+            "gain": 0.1,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 60,
+            "before": 21,
+            "closed": true,
+            "gain": 0.39,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 18,
+            "before": 21,
+            "closed": false,
+            "gain": -0.03,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "2cf013f120a3579565e1112e0837513a0db892caeef0129beac7168f0964bed9",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 31,
+            "before": 21,
+            "closed": false,
+            "gain": 0.1,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 60,
+            "before": 21,
+            "closed": true,
+            "gain": 0.39,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 18,
+            "before": 21,
+            "closed": false,
+            "gain": -0.03,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "2cf013f120a3579565e1112e0837513a0db892caeef0129beac7168f0964bed9",
+        "id": "F31",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 73,
+            "before": 78,
+            "closed": false,
+            "gain": -0.05,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 73,
+            "before": 78,
+            "closed": false,
+            "gain": -0.05,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 73,
+            "before": 78,
+            "closed": false,
+            "gain": -0.05,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "54b27bdde97a63c884a826f59f8c77757b5fbde779ac4f5a70b186e9c14b5dc3",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 73,
+            "before": 78,
+            "closed": false,
+            "gain": -0.05,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 73,
+            "before": 78,
+            "closed": false,
+            "gain": -0.05,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 73,
+            "before": 78,
+            "closed": false,
+            "gain": -0.05,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "54b27bdde97a63c884a826f59f8c77757b5fbde779ac4f5a70b186e9c14b5dc3",
+        "id": "F32",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 24,
+            "before": 24,
+            "closed": false,
+            "gain": 0.0,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 24,
+            "before": 24,
+            "closed": false,
+            "gain": 0.0,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 66,
+            "before": 24,
+            "closed": true,
+            "gain": 0.42,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "ca599fd473411945841dbe08a2200ac7c9947fa947a9eca7f5e714941d97333f",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 24,
+            "before": 24,
+            "closed": false,
+            "gain": 0.0,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 24,
+            "before": 24,
+            "closed": false,
+            "gain": 0.0,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 66,
+            "before": 24,
+            "closed": true,
+            "gain": 0.42,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "ca599fd473411945841dbe08a2200ac7c9947fa947a9eca7f5e714941d97333f",
+        "id": "F33",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 46,
+            "before": 43,
+            "closed": false,
+            "gain": 0.03,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 46,
+            "before": 43,
+            "closed": false,
+            "gain": 0.03,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 90,
+            "before": 43,
+            "closed": true,
+            "gain": 0.47,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "16c8693f77cbb0f9286c3739f5140d963097dd08fe519013bd0810ca7a0276d1",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 46,
+            "before": 43,
+            "closed": false,
+            "gain": 0.03,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 46,
+            "before": 43,
+            "closed": false,
+            "gain": 0.03,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 90,
+            "before": 43,
+            "closed": true,
+            "gain": 0.47,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "16c8693f77cbb0f9286c3739f5140d963097dd08fe519013bd0810ca7a0276d1",
+        "id": "F34",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 59,
+            "before": 23,
+            "closed": true,
+            "gain": 0.36,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 30,
+            "before": 23,
+            "closed": false,
+            "gain": 0.07,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 16,
+            "before": 23,
+            "closed": false,
+            "gain": -0.07,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "2c879c4975d3a6cf4ecd41c36e4f35315578ba90db0ab68f8fd744bed0d55b67",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 59,
+            "before": 23,
+            "closed": true,
+            "gain": 0.36,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 30,
+            "before": 23,
+            "closed": false,
+            "gain": 0.07,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 16,
+            "before": 23,
+            "closed": false,
+            "gain": -0.07,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "2c879c4975d3a6cf4ecd41c36e4f35315578ba90db0ab68f8fd744bed0d55b67",
+        "id": "F35",
+        "matched": true
+      },
+      {
+        "actual_oracle": {
+          "probe_flux": {
+            "after": 71,
+            "before": 72,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 71,
+            "before": 72,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 71,
+            "before": 72,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          }
+        },
+        "actual_request_sha256": "61fdbc0918b0a53b805589b53ed13ccd41838cd1f2b7701cc3a4e5020b6008e8",
+        "checks": {
+          "features": true,
+          "oracle": true,
+          "policies": true,
+          "recovery_anomaly": true,
+          "request_hash": true
+        },
+        "expected_oracle": {
+          "probe_flux": {
+            "after": 71,
+            "before": 72,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 71,
+            "before": 72,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 71,
+            "before": 72,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          }
+        },
+        "expected_request_sha256": "61fdbc0918b0a53b805589b53ed13ccd41838cd1f2b7701cc3a4e5020b6008e8",
+        "id": "F36",
+        "matched": true
+      }
+    ],
+    "fits_sha256_verified": {
+      "E4_r": "51f8a813654603f26b7c6db47960479db520ac51de7cee87d6803b51729fab61",
+      "E5_g": "a8cc7164b81be22e72f75d9bc4db892c974f65b28c15fe1fcc3ef7491f323a8c"
+    },
+    "new_model_cost_usd": 0.0,
+    "reference_cases_total": 36,
+    "scope": "Selected cases only; all three probes and four policies per selected case.",
+    "status": "reproduced",
+    "whole_reference_reproduced": true
+  },
+  "record_audit": {
+    "configured_cost_usd": 0.064206,
+    "probe_totals_intervention_cases": {
+      "elimination": 41,
+      "heuristic": 48,
+      "muse": 41,
+      "random": 66
+    },
+    "reference_cases": 36,
+    "reference_complete": true,
+    "scope": "Stored accounting and source hashes, not raw-image reproduction or provider billing.",
+    "status": "verified",
+    "summary": {
+      "cases": 36,
+      "evaluation_scope": "Policy replay on precomputed probes; no measured runtime or injection saving.",
+      "interval_scope": "Case bootstrap conditional on these exposures; not a population interval.",
+      "muse_minus_baseline_probes": {
+        "elimination": {
+          "ci95": [
+            -0.21875,
+            0.1875
+          ],
+          "mean": 0.0,
+          "n": 32
+        },
+        "heuristic": {
+          "ci95": [
+            -0.53125,
+            0.0625
+          ],
+          "mean": -0.21875,
+          "n": 32
+        },
+        "random": {
+          "ci95": [
+            -1.125,
+            -0.4375
+          ],
+          "mean": -0.78125,
+          "n": 32
+        }
+      },
+      "muse_replies": {
+        "closed_without_fallback": {
+          "ci95": [
+            0.719,
+            0.95
+          ],
+          "k": 28,
+          "n": 32,
+          "rate": 0.875
+        },
+        "cost_usd": 0.064206,
+        "invalid": 0,
+        "used_fallback": 4,
+        "valid": 36
+      },
+      "policies": {
+        "elimination": {
+          "by_exposure": {
+            "E4_r": {
+              "mean_probes": 1.375,
+              "success": {
+                "ci95": [
+                  0.806,
+                  1.0
+                ],
+                "k": 16,
+                "n": 16,
+                "rate": 1.0
+              }
+            },
+            "E5_g": {
+              "mean_probes": 1.1875,
+              "success": {
+                "ci95": [
+                  0.806,
+                  1.0
+                ],
+                "k": 16,
+                "n": 16,
+                "rate": 1.0
+              }
+            }
+          },
+          "correct_abstentions": {
+            "ci95": [
+              0.51,
+              1.0
+            ],
+            "k": 4,
+            "n": 4,
+            "rate": 1.0
+          },
+          "first_probe_closes": {
+            "ci95": [
+              0.612,
+              0.89
+            ],
+            "k": 25,
+            "n": 32,
+            "rate": 0.78125
+          },
+          "intervention_cases": {
+            "ci95": [
+              0.893,
+              1.0
+            ],
+            "k": 32,
+            "n": 32,
+            "rate": 1.0
+          },
+          "mean_probes": 1.28125,
+          "probes_per_success": 1.28125
+        },
+        "heuristic": {
+          "by_exposure": {
+            "E4_r": {
+              "mean_probes": 1.5,
+              "success": {
+                "ci95": [
+                  0.806,
+                  1.0
+                ],
+                "k": 16,
+                "n": 16,
+                "rate": 1.0
+              }
+            },
+            "E5_g": {
+              "mean_probes": 1.5,
+              "success": {
+                "ci95": [
+                  0.806,
+                  1.0
+                ],
+                "k": 16,
+                "n": 16,
+                "rate": 1.0
+              }
+            }
+          },
+          "correct_abstentions": {
+            "ci95": [
+              0.51,
+              1.0
+            ],
+            "k": 4,
+            "n": 4,
+            "rate": 1.0
+          },
+          "first_probe_closes": {
+            "ci95": [
+              0.546,
+              0.844
+            ],
+            "k": 23,
+            "n": 32,
+            "rate": 0.71875
+          },
+          "intervention_cases": {
+            "ci95": [
+              0.893,
+              1.0
+            ],
+            "k": 32,
+            "n": 32,
+            "rate": 1.0
+          },
+          "mean_probes": 1.5,
+          "probes_per_success": 1.5
+        },
+        "muse": {
+          "by_exposure": {
+            "E4_r": {
+              "mean_probes": 1.5625,
+              "success": {
+                "ci95": [
+                  0.806,
+                  1.0
+                ],
+                "k": 16,
+                "n": 16,
+                "rate": 1.0
+              }
+            },
+            "E5_g": {
+              "mean_probes": 1,
+              "success": {
+                "ci95": [
+                  0.806,
+                  1.0
+                ],
+                "k": 16,
+                "n": 16,
+                "rate": 1.0
+              }
+            }
+          },
+          "correct_abstentions": {
+            "ci95": [
+              0.51,
+              1.0
+            ],
+            "k": 4,
+            "n": 4,
+            "rate": 1.0
+          },
+          "first_probe_closes": {
+            "ci95": [
+              0.647,
+              0.911
+            ],
+            "k": 26,
+            "n": 32,
+            "rate": 0.8125
+          },
+          "intervention_cases": {
+            "ci95": [
+              0.893,
+              1.0
+            ],
+            "k": 32,
+            "n": 32,
+            "rate": 1.0
+          },
+          "mean_probes": 1.28125,
+          "probes_per_success": 1.28125
+        },
+        "random": {
+          "by_exposure": {
+            "E4_r": {
+              "mean_probes": 2.125,
+              "success": {
+                "ci95": [
+                  0.806,
+                  1.0
+                ],
+                "k": 16,
+                "n": 16,
+                "rate": 1.0
+              }
+            },
+            "E5_g": {
+              "mean_probes": 2,
+              "success": {
+                "ci95": [
+                  0.806,
+                  1.0
+                ],
+                "k": 16,
+                "n": 16,
+                "rate": 1.0
+              }
+            }
+          },
+          "correct_abstentions": {
+            "ci95": [
+              0.0,
+              0.49
+            ],
+            "k": 0,
+            "n": 4,
+            "rate": 0.0
+          },
+          "first_probe_closes": {
+            "ci95": [
+              0.229,
+              0.547
+            ],
+            "k": 12,
+            "n": 32,
+            "rate": 0.375
+          },
+          "intervention_cases": {
+            "ci95": [
+              0.893,
+              1.0
+            ],
+            "k": 32,
+            "n": 32,
+            "rate": 1.0
+          },
+          "mean_probes": 2.0625,
+          "probes_per_success": 2.0625
+        }
+      },
+      "solvable_by_some_probe": {
+        "ci95": [
+          0.893,
+          1.0
+        ],
+        "k": 32,
+        "n": 32,
+        "rate": 1.0
+      }
+    }
+  },
+  "script_sha256": "7085fc361e333b831cc4135f774d2f47e60de93cd429d1b38d04bda310d70d36",
+  "status": "reproduced"
+}

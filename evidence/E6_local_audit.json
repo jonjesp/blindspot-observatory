@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "all_batches_checked": true,
+  "independent_mae_recomputed": true,
+  "ci_recomputed_from_12_deltas_per_field": true,
+  "source_file_hashes_verified": [
+    "51f8a813654603f26b7c6db47960479db520ac51de7cee87d6803b51729fab61",
+    "a8cc7164b81be22e72f75d9bc4db892c974f65b28c15fe1fcc3ef7491f323a8c"
+  ],
+  "non_overlapping_new_patches_verified": true,
+  "science_functions_sha256": "ccf9e96ef8207bdbeedd7f4f9e235f0e88d9b19996d991d51d9fb820ce11c9c8",
+  "n_sources_per_batch": 25,
+  "repetitions_total": 24,
+  "new_patches_per_exposure": 4,
+  "benchmarks": {
+    "training_savings": 0.3333333333333333,
+    "all_injection_savings": 0.09090909090909094
+  },
+  "fields_metrics": [
+    {
+      "field": "E4_r",
+      "mean_delta_mae": 0.001828703703703704,
+      "upper_ci_delta_mae": 0.002928530092592596,
+      "passed": true
+    },
+    {
+      "field": "E5_g",
+      "mean_delta_mae": 0.0005092592592592626,
+      "upper_ci_delta_mae": 0.002037326388888895,
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Two exposures only; no population-level generalization",
+    "Same FITS exposure per replicated trial",
+    "Approximate, uncalibrated PSF and Gaussian matched-filter assumption",
+    "Evaluation injections are not included in training-only savings",
+    "LLM and Meta API not used for allocation"
+  ],
+  "full_run_single_process": "not completed locally; the full set of 24 trials was executed independently in chunks"
+}

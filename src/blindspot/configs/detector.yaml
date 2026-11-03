@@ -1,0 +1,12 @@
+# Simplified matched-filter detector. This is NOT the ZTF production pipeline.
+patch_size_px: 128
+psf_sigma_px: 1.5
+psf_radius_px: 6
+match_radius_px: 2.5
+detection_snr_threshold: 5.0
+background_median_size_px: 31
+peak_filter_size_px: 5
+sources_per_batch: 25
+train_grid_px: [20, 40, 60, 80, 100]
+holdout_grid_px: [30, 50, 70, 90, 110]
+position_jitter_px: 2

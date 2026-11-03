@@ -1,0 +1,5156 @@
+{
+  "base_url": "https://api.meta.ai/v1",
+  "budget_usd": 10.0,
+  "cases": [
+    {
+      "definition": {
+        "field": "E4_r",
+        "id": "F01",
+        "kind": "two_causes",
+        "offset_x": -1000,
+        "offset_y": -1150
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.0423,
+          "rms_radius_change": 0.1676
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                21,
+                19,
+                20,
+                20
+              ],
+              "B": [
+                9,
+                15,
+                15,
+                14
+              ]
+            },
+            "nominal": {
+              "A": [
+                13,
+                12,
+                13,
+                12
+              ],
+              "B": [
+                3,
+                1,
+                2,
+                2
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": null,
+          "probe_psf": 0.1676,
+          "probe_sky": 0.0423
+        },
+        "field": "E4_r",
+        "id": "F01",
+        "kind": "two_causes",
+        "oracle": {
+          "probe_flux": {
+            "after": 14,
+            "before": 17,
+            "closed": false,
+            "gain": -0.03,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 65,
+            "before": 17,
+            "closed": true,
+            "gain": 0.48,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 19,
+            "before": 17,
+            "closed": false,
+            "gain": 0.02,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_psf"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.48,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_psf"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.48,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_flux",
+              "probe_sky",
+              "probe_psf"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.48,
+            "probes": 3,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "40b697e8ab18c0a196f039c7df49e32163a21d05d8ba5fd644d9a331ba939681",
+        "muse-spark-1.3": "2fed0457f696aa469fcccad4919095d5413f8641cd16e87da4369777265c4c19",
+        "muse-wonder-1.0": "e1662383607852f6e93cb9d9b46449cfee26ccd7c40f70e366d58517aa712bd3"
+      }
+    },
+    {
+      "definition": {
+        "field": "E4_r",
+        "id": "F02",
+        "kind": "two_causes",
+        "offset_x": 0,
+        "offset_y": -1150
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.0,
+          "rms_radius_change": 0.0348
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                22,
+                21,
+                21,
+                23
+              ],
+              "B": [
+                15,
+                18,
+                19,
+                17
+              ]
+            },
+            "nominal": {
+              "A": [
+                20,
+                16,
+                15,
+                18
+              ],
+              "B": [
+                0,
+                1,
+                1,
+                3
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": null,
+          "probe_psf": 0.0348,
+          "probe_sky": 0.0
+        },
+        "field": "E4_r",
+        "id": "F02",
+        "kind": "two_causes",
+        "oracle": {
+          "probe_flux": {
+            "after": 46,
+            "before": 15,
+            "closed": true,
+            "gain": 0.31,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 28,
+            "before": 15,
+            "closed": false,
+            "gain": 0.13,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 18,
+            "before": 15,
+            "closed": false,
+            "gain": 0.03,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_flux"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.31,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_psf",
+              "probe_sky",
+              "probe_flux"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.31,
+            "probes": 3,
+            "success": true,
+            "unsupported_gains": 1
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_psf",
+              "probe_sky",
+              "probe_flux"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.31,
+            "probes": 3,
+            "success": true,
+            "unsupported_gains": 1
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "89de3119e3b1311ac8538ff43e1ca9c067bd88bf22ef5224c487863b2da09e24",
+        "muse-spark-1.3": "7bc4450af14ea5050b70c3949ecf45fb79a66cf14dd4cc93f440dc6b2b862a36",
+        "muse-wonder-1.0": "ec7b598394bced5289db6cd5f843ab5404551e764bc5d741e00bf2c30d1a9167"
+      }
+    },
+    {
+      "definition": {
+        "field": "E4_r",
+        "id": "F03",
+        "kind": "single_cause",
+        "offset_x": 1000,
+        "offset_y": -1150
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.0,
+          "rms_radius_change": 0.12
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                24,
+                22,
+                22,
+                23
+              ],
+              "B": [
+                22,
+                22,
+                22,
+                23
+              ]
+            },
+            "nominal": {
+              "A": [
+                17,
+                13,
+                16,
+                14
+              ],
+              "B": [
+                6,
+                8,
+                7,
+                8
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": null,
+          "probe_psf": 0.12,
+          "probe_sky": 0.0
+        },
+        "field": "E4_r",
+        "id": "F03",
+        "kind": "single_cause",
+        "oracle": {
+          "probe_flux": {
+            "after": 67,
+            "before": 24,
+            "closed": true,
+            "gain": 0.43,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 29,
+            "before": 24,
+            "closed": false,
+            "gain": 0.05,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 29,
+            "before": 24,
+            "closed": false,
+            "gain": 0.05,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_psf",
+              "probe_flux"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.43,
+            "probes": 2,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_psf",
+              "probe_sky",
+              "probe_flux"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.43,
+            "probes": 3,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_sky",
+              "probe_flux"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.43,
+            "probes": 2,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "6b734ac273a9965c9daa0e407522d301430f7dfe61a2f85f24a67e68a2c9e289",
+        "muse-spark-1.3": "44bcb56eadc557f7e30f9d61f9a69da1e73a5b9a1d1543447d36ab4dfa7bb88e",
+        "muse-wonder-1.0": "7ca2c917a36fce2560748966ec3050c2f8eed56b0c6646761dceceb40e407912"
+      }
+    },
+    {
+      "definition": {
+        "field": "E4_r",
+        "id": "F04",
+        "kind": "two_causes",
+        "offset_x": -1000,
+        "offset_y": -690
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.0,
+          "integrated_amplitude_change": 0.0726,
+          "rms_radius_change": 0.1668
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                22,
+                23,
+                23,
+                21
+              ],
+              "B": [
+                14,
+                17,
+                19,
+                17
+              ]
+            },
+            "nominal": {
+              "A": [
+                16,
+                18,
+                15,
+                13
+              ],
+              "B": [
+                9,
+                5,
+                5,
+                6
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.0726,
+          "probe_psf": 0.1668,
+          "probe_sky": 0.0
+        },
+        "field": "E4_r",
+        "id": "F04",
+        "kind": "two_causes",
+        "oracle": {
+          "probe_flux": {
+            "after": 27,
+            "before": 19,
+            "closed": false,
+            "gain": 0.08,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 71,
+            "before": 19,
+            "closed": true,
+            "gain": 0.52,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 14,
+            "before": 19,
+            "closed": false,
+            "gain": -0.05,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_psf"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.52,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_psf"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.52,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_sky",
+              "probe_flux",
+              "probe_psf"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.52,
+            "probes": 3,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "e022f4e7e7861bfcd79aeb726151e1041384d44132baaa54b1617ea906bd1f0e",
+        "muse-spark-1.3": "5975aa4dd2a0a48aaf1af0413300b798e00962badfb87ee0938b0110e1429765",
+        "muse-wonder-1.0": "e7ceb3ea6559027668fce46723d95a447d98f1f469c699f776253b3b132b91d1"
+      }
+    },
+    {
+      "definition": {
+        "field": "E4_r",
+        "id": "F05",
+        "kind": "single_cause",
+        "offset_x": 0,
+        "offset_y": -690
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.2825,
+          "integrated_amplitude_change": 0.0669,
+          "rms_radius_change": 0.0455
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                23,
+                24,
+                24,
+                23
+              ],
+              "B": [
+                23,
+                24,
+                24,
+                24
+              ]
+            },
+            "nominal": {
+              "A": [
+                17,
+                18,
+                18,
+                18
+              ],
+              "B": [
+                5,
+                10,
+                5,
+                6
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.0669,
+          "probe_psf": 0.0455,
+          "probe_sky": 0.2825
+        },
+        "field": "E4_r",
+        "id": "F05",
+        "kind": "single_cause",
+        "oracle": {
+          "probe_flux": {
+            "after": 42,
+            "before": 43,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 42,
+            "before": 43,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 76,
+            "before": 43,
+            "closed": true,
+            "gain": 0.33,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_sky"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.33,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_sky"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.33,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_psf",
+              "probe_sky"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.33,
+            "probes": 2,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "3894d7338f5bf0ae1ded6aa26c83187d7f806e16d76b70d9a5a27d54a2b4804c",
+        "muse-spark-1.3": "e856f8aa407d2128886a9668ca7772becb162b3aa70699d8c86b6a151a6384c4",
+        "muse-wonder-1.0": "ec84af356075b4990a6bd088a167b5978f3bf3d09e6fff4162bf877a5a9b3c81"
+      }
+    },
+    {
+      "definition": {
+        "field": "E4_r",
+        "id": "F06",
+        "kind": "two_causes",
+        "offset_x": 1000,
+        "offset_y": -690
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.0,
+          "integrated_amplitude_change": 0.237,
+          "rms_radius_change": 0.0838
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                24,
+                24,
+                25,
+                24
+              ],
+              "B": [
+                19,
+                20,
+                21,
+                18
+              ]
+            },
+            "nominal": {
+              "A": [
+                17,
+                19,
+                15,
+                16
+              ],
+              "B": [
+                5,
+                2,
+                6,
+                2
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.237,
+          "probe_psf": 0.0838,
+          "probe_sky": 0.0
+        },
+        "field": "E4_r",
+        "id": "F06",
+        "kind": "two_causes",
+        "oracle": {
+          "probe_flux": {
+            "after": 53,
+            "before": 19,
+            "closed": true,
+            "gain": 0.34,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 37,
+            "before": 19,
+            "closed": true,
+            "gain": 0.18,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 22,
+            "before": 19,
+            "closed": false,
+            "gain": 0.03,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_flux"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.34,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_flux"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.34,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_flux"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.34,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "e1e306a65653d69530dc04497a7673e4ae0f851a1adc3078c3bbdd976344e32c",
+        "muse-spark-1.3": "1e18b41e8424f1449bc0d68fc6a27b1940a810bac0f70f349792b8f67390958f",
+        "muse-wonder-1.0": "fe29d3ac08e1ac76a3c071fc788ed23618bcd23a912b599dc991e88be7f3e05c"
+      }
+    },
+    {
+      "definition": {
+        "field": "E4_r",
+        "id": "F07",
+        "kind": "single_cause",
+        "offset_x": -1000,
+        "offset_y": -230
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.0,
+          "integrated_amplitude_change": 0.2884,
+          "rms_radius_change": 0.0861
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                21,
+                22,
+                22,
+                20
+              ],
+              "B": [
+                19,
+                20,
+                21,
+                19
+              ]
+            },
+            "nominal": {
+              "A": [
+                13,
+                16,
+                16,
+                14
+              ],
+              "B": [
+                6,
+                9,
+                10,
+                6
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.2884,
+          "probe_psf": 0.0861,
+          "probe_sky": 0.0
+        },
+        "field": "E4_r",
+        "id": "F07",
+        "kind": "single_cause",
+        "oracle": {
+          "probe_flux": {
+            "after": 70,
+            "before": 31,
+            "closed": true,
+            "gain": 0.39,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 30,
+            "before": 31,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 30,
+            "before": 31,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_flux"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.39,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_flux"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.39,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_sky",
+              "probe_flux"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.39,
+            "probes": 2,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "0eba093627747158a868a5cd3179248b42b35ab2f20fe906014827c4f30ab825",
+        "muse-spark-1.3": "fb71b530e99fc7e5a30642d3a528e36db6f6fde9000fae62abf8cc4899faa9f0",
+        "muse-wonder-1.0": "5de5fac1a93b5a7c8fb22bd019156f8076e1b78603478a78c7ae24b2cc5d4933"
+      }
+    },
+    {
+      "definition": {
+        "field": "E4_r",
+        "id": "F08",
+        "kind": "two_causes",
+        "offset_x": 0,
+        "offset_y": -230
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.298,
+          "integrated_amplitude_change": 0.1079
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                22,
+                22,
+                23,
+                24
+              ],
+              "B": [
+                17,
+                19,
+                18,
+                20
+              ]
+            },
+            "nominal": {
+              "A": [
+                13,
+                12,
+                15,
+                14
+              ],
+              "B": [
+                4,
+                1,
+                3,
+                1
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.1079,
+          "probe_psf": null,
+          "probe_sky": 0.298
+        },
+        "field": "E4_r",
+        "id": "F08",
+        "kind": "two_causes",
+        "oracle": {
+          "probe_flux": {
+            "after": 20,
+            "before": 24,
+            "closed": false,
+            "gain": -0.04,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 30,
+            "before": 24,
+            "closed": false,
+            "gain": 0.06,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 57,
+            "before": 24,
+            "closed": true,
+            "gain": 0.33,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_sky"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.33,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_sky"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.33,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_sky"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.33,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "a996ad764e0ac165be24a04128fcb33f66aaf0ba741704de73c228cda05aea51",
+        "muse-spark-1.3": "2862dc715c227b5a709707d1dc152399ad744069b3c817311ac0f0178d0aa9fc",
+        "muse-wonder-1.0": "9f10c572dbe472521e1480acb052cd842711f303bc15477d120c3025d81fb699"
+      }
+    },
+    {
+      "definition": {
+        "field": "E4_r",
+        "id": "F09",
+        "kind": "single_cause",
+        "offset_x": 1000,
+        "offset_y": -230
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.0,
+          "integrated_amplitude_change": 0.2646,
+          "rms_radius_change": 0.1202
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                23,
+                24,
+                21,
+                24
+              ],
+              "B": [
+                19,
+                21,
+                21,
+                19
+              ]
+            },
+            "nominal": {
+              "A": [
+                14,
+                15,
+                16,
+                15
+              ],
+              "B": [
+                7,
+                9,
+                7,
+                8
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.2646,
+          "probe_psf": 0.1202,
+          "probe_sky": 0.0
+        },
+        "field": "E4_r",
+        "id": "F09",
+        "kind": "single_cause",
+        "oracle": {
+          "probe_flux": {
+            "after": 51,
+            "before": 20,
+            "closed": true,
+            "gain": 0.31,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 23,
+            "before": 20,
+            "closed": false,
+            "gain": 0.03,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 23,
+            "before": 20,
+            "closed": false,
+            "gain": 0.03,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_flux"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.31,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_flux"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.31,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_psf",
+              "probe_flux"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.31,
+            "probes": 2,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "ffdffa4a7bf7599d8c93af0c92c6ec5c0f2530cbb52bd65eaacc0437eddcb237",
+        "muse-spark-1.3": "6080c482d72143f6e8c8f407eb31427c0b0f4d5bb275ca5b32e05dae4cc07520",
+        "muse-wonder-1.0": "5d0c6facbb20a47884560ca60ca5dd227675740392e0de85067557276831695d"
+      }
+    },
+    {
+      "definition": {
+        "field": "E4_r",
+        "id": "F10",
+        "kind": "two_causes",
+        "offset_x": -1000,
+        "offset_y": 230
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.0,
+          "integrated_amplitude_change": 0.0937,
+          "rms_radius_change": 0.0926
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                17,
+                18,
+                19,
+                19
+              ],
+              "B": [
+                17,
+                19,
+                17,
+                17
+              ]
+            },
+            "nominal": {
+              "A": [
+                12,
+                13,
+                16,
+                16
+              ],
+              "B": [
+                5,
+                3,
+                5,
+                6
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.0937,
+          "probe_psf": 0.0926,
+          "probe_sky": 0.0
+        },
+        "field": "E4_r",
+        "id": "F10",
+        "kind": "two_causes",
+        "oracle": {
+          "probe_flux": {
+            "after": 46,
+            "before": 4,
+            "closed": true,
+            "gain": 0.42,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 16,
+            "before": 4,
+            "closed": true,
+            "gain": 0.12,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 8,
+            "before": 4,
+            "closed": false,
+            "gain": 0.04,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_flux"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.42,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_flux"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.42,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_flux"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.42,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "1d4ede1b348e58df39380be36400a614f904a87c74983d95bf56cd13974d7e9d",
+        "muse-spark-1.3": "fc0179871412c938db7f44ede5bf28894bb74d02e1ceb09c693866d8a63a9fdd",
+        "muse-wonder-1.0": "29fe4889b5c1daf674fa9b88499a7b9f70014c9ae2292c276f5428a694a65bc6"
+      }
+    },
+    {
+      "definition": {
+        "field": "E4_r",
+        "id": "F11",
+        "kind": "no_intervention",
+        "offset_x": 0,
+        "offset_y": 230
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.0,
+          "integrated_amplitude_change": 0.0005,
+          "rms_radius_change": 0.019
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                21,
+                21,
+                20,
+                20
+              ],
+              "B": [
+                20,
+                22,
+                22,
+                20
+              ]
+            },
+            "nominal": {
+              "A": [
+                13,
+                17,
+                13,
+                14
+              ],
+              "B": [
+                11,
+                13,
+                17,
+                13
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.0005,
+          "probe_psf": 0.019,
+          "probe_sky": 0.0
+        },
+        "field": "E4_r",
+        "id": "F11",
+        "kind": "no_intervention",
+        "oracle": {
+          "probe_flux": {
+            "after": 63,
+            "before": 67,
+            "closed": false,
+            "gain": -0.04,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 63,
+            "before": 67,
+            "closed": false,
+            "gain": -0.04,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 63,
+            "before": 67,
+            "closed": false,
+            "gain": -0.04,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "correct_abstention": true,
+            "executed": [],
+            "false_alarm": false,
+            "first_probe_closed": false,
+            "probes": 0,
+            "success": true
+          },
+          "heuristic": {
+            "correct_abstention": true,
+            "executed": [],
+            "false_alarm": false,
+            "first_probe_closed": false,
+            "probes": 0,
+            "success": true
+          },
+          "random": {
+            "correct_abstention": false,
+            "executed": [
+              "probe_flux",
+              "probe_psf",
+              "probe_sky"
+            ],
+            "false_alarm": true,
+            "first_probe_closed": false,
+            "probes": 3,
+            "success": false
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "39fec503b1d7c463cdc28ec443bc0bf4acff810d1fe1e83b2efe9768b4709a3c",
+        "muse-spark-1.3": "5bd9451a4e56bc822a3f9774a9725605b67123b8918981c730591731e085bf00",
+        "muse-wonder-1.0": "042f6517b47d4b6892c4479bc42a17744e31b883eb125909df50e3783c4b0ad9"
+      }
+    },
+    {
+      "definition": {
+        "field": "E4_r",
+        "id": "F12",
+        "kind": "two_causes",
+        "offset_x": 1000,
+        "offset_y": 230
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.0583,
+          "integrated_amplitude_change": 0.1061
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                21,
+                21,
+                21,
+                21
+              ],
+              "B": [
+                15,
+                16,
+                18,
+                17
+              ]
+            },
+            "nominal": {
+              "A": [
+                17,
+                16,
+                17,
+                13
+              ],
+              "B": [
+                5,
+                3,
+                3,
+                3
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.1061,
+          "probe_psf": null,
+          "probe_sky": 0.0583
+        },
+        "field": "E4_r",
+        "id": "F12",
+        "kind": "two_causes",
+        "oracle": {
+          "probe_flux": {
+            "after": 23,
+            "before": 17,
+            "closed": false,
+            "gain": 0.06,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 66,
+            "before": 17,
+            "closed": true,
+            "gain": 0.49,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 32,
+            "before": 17,
+            "closed": false,
+            "gain": 0.15,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_flux",
+              "probe_psf"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.49,
+            "probes": 2,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_flux",
+              "probe_sky",
+              "probe_psf"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.49,
+            "probes": 3,
+            "success": true,
+            "unsupported_gains": 1
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_flux",
+              "probe_sky",
+              "probe_psf"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.49,
+            "probes": 3,
+            "success": true,
+            "unsupported_gains": 1
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "ba059cc67b95e4ecabc57a04ec5707582b3827baa7997df93ab059b99bd96be4",
+        "muse-spark-1.3": "ae0e1009f5ee502b7e5cac95e73960c98e5625e6a0a7a2f46149a59edd06d72d",
+        "muse-wonder-1.0": "fbd268f71df28533c068f1153d14804d5b83263792b3fe8b776f7dfc4cfc86d3"
+      }
+    },
+    {
+      "definition": {
+        "field": "E4_r",
+        "id": "F13",
+        "kind": "two_causes",
+        "offset_x": -1000,
+        "offset_y": 690
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.2984,
+          "integrated_amplitude_change": 0.0646,
+          "rms_radius_change": 0.0613
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                21,
+                21,
+                22,
+                20
+              ],
+              "B": [
+                18,
+                21,
+                18,
+                18
+              ]
+            },
+            "nominal": {
+              "A": [
+                13,
+                14,
+                18,
+                17
+              ],
+              "B": [
+                6,
+                4,
+                6,
+                4
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.0646,
+          "probe_psf": 0.0613,
+          "probe_sky": 0.2984
+        },
+        "field": "E4_r",
+        "id": "F13",
+        "kind": "two_causes",
+        "oracle": {
+          "probe_flux": {
+            "after": 10,
+            "before": 10,
+            "closed": false,
+            "gain": 0.0,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 2,
+            "before": 10,
+            "closed": false,
+            "gain": -0.08,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 45,
+            "before": 10,
+            "closed": true,
+            "gain": 0.35,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_sky"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.35,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_sky"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.35,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_flux",
+              "probe_psf",
+              "probe_sky"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.35,
+            "probes": 3,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "40d59fad14bc9431836f9e68abd77ef2948a4cb8bfeb9106377ab33ecb2a7cf4",
+        "muse-spark-1.3": "3b151ab3c3e434ea1d33c030c44e478d9af328b8935736554267431f136bc863",
+        "muse-wonder-1.0": "73305c75c9ca26d63dd3b81b0621dca9189a0eccf3218d1186a5b7fee54533d7"
+      }
+    },
+    {
+      "definition": {
+        "field": "E4_r",
+        "id": "F14",
+        "kind": "single_cause",
+        "offset_x": 0,
+        "offset_y": 690
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.0,
+          "integrated_amplitude_change": 0.0738,
+          "rms_radius_change": 0.1812
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                22,
+                22,
+                23,
+                22
+              ],
+              "B": [
+                19,
+                19,
+                19,
+                21
+              ]
+            },
+            "nominal": {
+              "A": [
+                16,
+                15,
+                16,
+                15
+              ],
+              "B": [
+                4,
+                2,
+                2,
+                3
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.0738,
+          "probe_psf": 0.1812,
+          "probe_sky": 0.0
+        },
+        "field": "E4_r",
+        "id": "F14",
+        "kind": "single_cause",
+        "oracle": {
+          "probe_flux": {
+            "after": 20,
+            "before": 20,
+            "closed": false,
+            "gain": 0.0,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 68,
+            "before": 20,
+            "closed": true,
+            "gain": 0.48,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 20,
+            "before": 20,
+            "closed": false,
+            "gain": 0.0,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_psf"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.48,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_psf"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.48,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_psf"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.48,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "af0e33b95814a4b92c8eb9332ee53a7ebabcf2d21a45ebcaeca29d8c668ecc8e",
+        "muse-spark-1.3": "f11ecd0e46c1f1e062cc97f637f553068aca586c440a7c754e3f5d215744d8d6",
+        "muse-wonder-1.0": "967300452b980c389b05585e1ddb1b46e84ca692f7f8d309efc350e0a1081ffb"
+      }
+    },
+    {
+      "definition": {
+        "field": "E4_r",
+        "id": "F15",
+        "kind": "single_cause",
+        "offset_x": 1000,
+        "offset_y": 690
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.0,
+          "rms_radius_change": 0.0469
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                19,
+                21,
+                18,
+                19
+              ],
+              "B": [
+                16,
+                16,
+                16,
+                16
+              ]
+            },
+            "nominal": {
+              "A": [
+                13,
+                15,
+                10,
+                12
+              ],
+              "B": [
+                5,
+                2,
+                3,
+                3
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": null,
+          "probe_psf": 0.0469,
+          "probe_sky": 0.0
+        },
+        "field": "E4_r",
+        "id": "F15",
+        "kind": "single_cause",
+        "oracle": {
+          "probe_flux": {
+            "after": 16,
+            "before": 12,
+            "closed": false,
+            "gain": 0.04,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 45,
+            "before": 12,
+            "closed": true,
+            "gain": 0.33,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 16,
+            "before": 12,
+            "closed": false,
+            "gain": 0.04,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_flux",
+              "probe_psf"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.33,
+            "probes": 2,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_psf"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.33,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_flux",
+              "probe_sky",
+              "probe_psf"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.33,
+            "probes": 3,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "dbe167a0e4101e34e2a1fd91eb2a9ed2dc0a9ee8fd8f67f80c80137e7b1accba",
+        "muse-spark-1.3": "3da998cee899a52e99b56b7ec98aa871f5039b92b092f7500ad1a2b1e45347c3",
+        "muse-wonder-1.0": "02006d15495da23294212d7b24cbc50e390e1a5dd5d950437de2dfaf8493649a"
+      }
+    },
+    {
+      "definition": {
+        "field": "E4_r",
+        "id": "F16",
+        "kind": "single_cause",
+        "offset_x": -1000,
+        "offset_y": 1150
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "integrated_amplitude_change": 0.1239,
+          "rms_radius_change": 0.13
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                21,
+                21,
+                18,
+                20
+              ],
+              "B": [
+                18,
+                19,
+                18,
+                19
+              ]
+            },
+            "nominal": {
+              "A": [
+                13,
+                13,
+                13,
+                12
+              ],
+              "B": [
+                6,
+                5,
+                4,
+                8
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.1239,
+          "probe_psf": 0.13,
+          "probe_sky": null
+        },
+        "field": "E4_r",
+        "id": "F16",
+        "kind": "single_cause",
+        "oracle": {
+          "probe_flux": {
+            "after": 68,
+            "before": 38,
+            "closed": true,
+            "gain": 0.3,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 37,
+            "before": 38,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 37,
+            "before": 38,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_psf",
+              "probe_flux"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.3,
+            "probes": 2,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_psf",
+              "probe_flux"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.3,
+            "probes": 2,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_flux"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.3,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "295d19c7ed9df23b9b2dbd8fae00590b56330d4a4c1ba2e3271fd25c7ee7544a",
+        "muse-spark-1.3": "50355193ec742a8c366de46e58e7631b1672bab8aca99625b2878869be471cb2",
+        "muse-wonder-1.0": "07632355c315b64d05c1b6efd1ee9c232b69881cc41457a95485e98dd0c9edd5"
+      }
+    },
+    {
+      "definition": {
+        "field": "E4_r",
+        "id": "F17",
+        "kind": "no_intervention",
+        "offset_x": 0,
+        "offset_y": 1150
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.0,
+          "integrated_amplitude_change": 0.0071,
+          "rms_radius_change": 0.0456
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                23,
+                23,
+                23,
+                23
+              ],
+              "B": [
+                23,
+                23,
+                23,
+                22
+              ]
+            },
+            "nominal": {
+              "A": [
+                15,
+                18,
+                18,
+                16
+              ],
+              "B": [
+                18,
+                15,
+                17,
+                15
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.0071,
+          "probe_psf": 0.0456,
+          "probe_sky": 0.0
+        },
+        "field": "E4_r",
+        "id": "F17",
+        "kind": "no_intervention",
+        "oracle": {
+          "probe_flux": {
+            "after": 76,
+            "before": 77,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 76,
+            "before": 77,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 76,
+            "before": 77,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "correct_abstention": true,
+            "executed": [],
+            "false_alarm": false,
+            "first_probe_closed": false,
+            "probes": 0,
+            "success": true
+          },
+          "heuristic": {
+            "correct_abstention": true,
+            "executed": [],
+            "false_alarm": false,
+            "first_probe_closed": false,
+            "probes": 0,
+            "success": true
+          },
+          "random": {
+            "correct_abstention": false,
+            "executed": [
+              "probe_flux",
+              "probe_psf",
+              "probe_sky"
+            ],
+            "false_alarm": true,
+            "first_probe_closed": false,
+            "probes": 3,
+            "success": false
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "88c9cdb22461ecd96181275d9eb84d4d5d548d17a66bb1ea8a35829d06e9362c",
+        "muse-spark-1.3": "96ee3cb52e0766bced31b676a026104a21df050ea9cc914cae2a718ac7e5d1b1",
+        "muse-wonder-1.0": "3ccd927658df20c8fa143a3c72a8872f15a9d76519507825312d4026912301c0"
+      }
+    },
+    {
+      "definition": {
+        "field": "E4_r",
+        "id": "F18",
+        "kind": "single_cause",
+        "offset_x": 1000,
+        "offset_y": 1150
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "integrated_amplitude_change": 0.0772,
+          "rms_radius_change": 0.068
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                21,
+                24,
+                23,
+                22
+              ],
+              "B": [
+                22,
+                21,
+                21,
+                21
+              ]
+            },
+            "nominal": {
+              "A": [
+                18,
+                18,
+                20,
+                20
+              ],
+              "B": [
+                7,
+                6,
+                7,
+                7
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.0772,
+          "probe_psf": 0.068,
+          "probe_sky": null
+        },
+        "field": "E4_r",
+        "id": "F18",
+        "kind": "single_cause",
+        "oracle": {
+          "probe_flux": {
+            "after": 13,
+            "before": 15,
+            "closed": false,
+            "gain": -0.02,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 56,
+            "before": 15,
+            "closed": true,
+            "gain": 0.41,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 13,
+            "before": 15,
+            "closed": false,
+            "gain": -0.02,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_sky",
+              "probe_flux",
+              "probe_psf"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.41,
+            "probes": 3,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_flux",
+              "probe_psf"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.41,
+            "probes": 2,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_sky",
+              "probe_flux",
+              "probe_psf"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.41,
+            "probes": 3,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "1fc3be3905dbd38655d4719b9bf7a6f24ea44b4ab4fab1c6d6c9df8728b790d3",
+        "muse-spark-1.3": "4c50f4b5450a5c89ad8fd79ed4b3d9a24b178043b2c0a2962372629cbe224a37",
+        "muse-wonder-1.0": "2fee44b9695757ff407740d8c21e1122bfaa6186b7991e654ae49647d5322deb"
+      }
+    },
+    {
+      "definition": {
+        "field": "E5_g",
+        "id": "F19",
+        "kind": "single_cause",
+        "offset_x": -1000,
+        "offset_y": -1150
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.2819,
+          "integrated_amplitude_change": 0.0021,
+          "rms_radius_change": 0.0667
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                23,
+                23,
+                22,
+                22
+              ],
+              "B": [
+                23,
+                22,
+                23,
+                23
+              ]
+            },
+            "nominal": {
+              "A": [
+                21,
+                18,
+                16,
+                19
+              ],
+              "B": [
+                11,
+                8,
+                10,
+                9
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.0021,
+          "probe_psf": 0.0667,
+          "probe_sky": 0.2819
+        },
+        "field": "E5_g",
+        "id": "F19",
+        "kind": "single_cause",
+        "oracle": {
+          "probe_flux": {
+            "after": 39,
+            "before": 45,
+            "closed": false,
+            "gain": -0.06,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 39,
+            "before": 45,
+            "closed": false,
+            "gain": -0.06,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 87,
+            "before": 45,
+            "closed": true,
+            "gain": 0.42,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_sky"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.42,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_sky"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.42,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_sky"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.42,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "b768656a57903a07df864b5ba2435dcf73ac6897b1493623a37cf28fa57a5670",
+        "muse-spark-1.3": "e35231070f93ea58bf05a66bc6229f8363d48bb33e59569a940d2f847ecbf3b8",
+        "muse-wonder-1.0": "f3b5048dcff369aad1c2f62dba94fe537dd214933a95650214de7e321da031d5"
+      }
+    },
+    {
+      "definition": {
+        "field": "E5_g",
+        "id": "F20",
+        "kind": "two_causes",
+        "offset_x": 0,
+        "offset_y": -1150
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.3406,
+          "integrated_amplitude_change": 0.081,
+          "rms_radius_change": 0.0257
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                19,
+                17,
+                19,
+                17
+              ],
+              "B": [
+                10,
+                12,
+                10,
+                12
+              ]
+            },
+            "nominal": {
+              "A": [
+                13,
+                11,
+                13,
+                11
+              ],
+              "B": [
+                1,
+                0,
+                1,
+                3
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.081,
+          "probe_psf": 0.0257,
+          "probe_sky": 0.3406
+        },
+        "field": "E5_g",
+        "id": "F20",
+        "kind": "two_causes",
+        "oracle": {
+          "probe_flux": {
+            "after": 10,
+            "before": 1,
+            "closed": false,
+            "gain": 0.09,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 7,
+            "before": 1,
+            "closed": false,
+            "gain": 0.06,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 35,
+            "before": 1,
+            "closed": true,
+            "gain": 0.34,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_sky"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.34,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_sky"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.34,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_psf",
+              "probe_flux",
+              "probe_sky"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.34,
+            "probes": 3,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "4abb9f871f7f2424176147bdae417efcd73ab5f77466912c49340027e811858e",
+        "muse-spark-1.3": "f7bf245e9454b2f1b86f59315faa3d56047b11e4cfe0c205f5010821c998bc6e",
+        "muse-wonder-1.0": "5b374775cb839566ca5121125387b20589d44ae02f36100eaddb5f31929c0eb5"
+      }
+    },
+    {
+      "definition": {
+        "field": "E5_g",
+        "id": "F21",
+        "kind": "two_causes",
+        "offset_x": 1000,
+        "offset_y": -1150
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.2726,
+          "integrated_amplitude_change": 0.0554,
+          "rms_radius_change": 0.1295
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                24,
+                24,
+                23,
+                23
+              ],
+              "B": [
+                20,
+                20,
+                21,
+                20
+              ]
+            },
+            "nominal": {
+              "A": [
+                17,
+                18,
+                16,
+                16
+              ],
+              "B": [
+                6,
+                4,
+                5,
+                6
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.0554,
+          "probe_psf": 0.1295,
+          "probe_sky": 0.2726
+        },
+        "field": "E5_g",
+        "id": "F21",
+        "kind": "two_causes",
+        "oracle": {
+          "probe_flux": {
+            "after": 24,
+            "before": 25,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 40,
+            "before": 25,
+            "closed": false,
+            "gain": 0.15,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 67,
+            "before": 25,
+            "closed": true,
+            "gain": 0.42,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_sky"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.42,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_sky"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.42,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_sky"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.42,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "9b2104976d8c2a8315730fc9cee61ada2ece8be301f0a1a1f6832497714e0fe9",
+        "muse-spark-1.3": "860e01125744e7982907c2d233147b72fb23e45d8875b9c0c8c068d77731b2e0",
+        "muse-wonder-1.0": "462d19e9c51e38e50621149ed65f680c6c36d0523a5247a02aca4e06d8b4bf45"
+      }
+    },
+    {
+      "definition": {
+        "field": "E5_g",
+        "id": "F22",
+        "kind": "single_cause",
+        "offset_x": -1000,
+        "offset_y": -690
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.0,
+          "integrated_amplitude_change": 0.3024,
+          "rms_radius_change": 0.016
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                25,
+                24,
+                23,
+                24
+              ],
+              "B": [
+                24,
+                24,
+                23,
+                24
+              ]
+            },
+            "nominal": {
+              "A": [
+                21,
+                21,
+                18,
+                19
+              ],
+              "B": [
+                9,
+                7,
+                7,
+                10
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.3024,
+          "probe_psf": 0.016,
+          "probe_sky": 0.0
+        },
+        "field": "E5_g",
+        "id": "F22",
+        "kind": "single_cause",
+        "oracle": {
+          "probe_flux": {
+            "after": 75,
+            "before": 35,
+            "closed": true,
+            "gain": 0.4,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 39,
+            "before": 35,
+            "closed": false,
+            "gain": 0.04,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 39,
+            "before": 35,
+            "closed": false,
+            "gain": 0.04,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_flux"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.4,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_flux"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.4,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_flux"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.4,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "ecb84566b23ea9e9840118d2543c67c8879b7e256c7444eb6811ffab6a040e27",
+        "muse-spark-1.3": "b0cec1aa95848b47e406b8b65e67b3f170cc8afa6db2e00d5dc3504af825d2c0",
+        "muse-wonder-1.0": "79c475dadec452e3a86f096dba00503194dd75cc493ff51d8f0c9db1dc567eea"
+      }
+    },
+    {
+      "definition": {
+        "field": "E5_g",
+        "id": "F23",
+        "kind": "single_cause",
+        "offset_x": 0,
+        "offset_y": -690
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.0,
+          "integrated_amplitude_change": 0.2441,
+          "rms_radius_change": 0.1007
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                23,
+                23,
+                24,
+                24
+              ],
+              "B": [
+                24,
+                22,
+                24,
+                24
+              ]
+            },
+            "nominal": {
+              "A": [
+                22,
+                17,
+                19,
+                18
+              ],
+              "B": [
+                6,
+                6,
+                9,
+                5
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.2441,
+          "probe_psf": 0.1007,
+          "probe_sky": 0.0
+        },
+        "field": "E5_g",
+        "id": "F23",
+        "kind": "single_cause",
+        "oracle": {
+          "probe_flux": {
+            "after": 72,
+            "before": 32,
+            "closed": true,
+            "gain": 0.4,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 29,
+            "before": 32,
+            "closed": false,
+            "gain": -0.03,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 29,
+            "before": 32,
+            "closed": false,
+            "gain": -0.03,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_flux"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.4,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_flux"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.4,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_psf",
+              "probe_flux"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.4,
+            "probes": 2,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "c77d0c9f2b8122cafbeffc302c28d6e6e8f8ab52cf09d153e8cb75a6a2e88296",
+        "muse-spark-1.3": "9b43a553161e4f743e8d110b4644ec0c703934d7ee2c3544757fe993877ba5d9",
+        "muse-wonder-1.0": "83b970f42ff9e0fa386805ba5ea109b34f83120d937f527985b9c2e790f9c3e8"
+      }
+    },
+    {
+      "definition": {
+        "field": "E5_g",
+        "id": "F24",
+        "kind": "two_causes",
+        "offset_x": 1000,
+        "offset_y": -690
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.0,
+          "integrated_amplitude_change": 0.0395,
+          "rms_radius_change": 0.0657
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                25,
+                25,
+                25,
+                25
+              ],
+              "B": [
+                21,
+                24,
+                24,
+                22
+              ]
+            },
+            "nominal": {
+              "A": [
+                22,
+                23,
+                21,
+                19
+              ],
+              "B": [
+                3,
+                2,
+                7,
+                6
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.0395,
+          "probe_psf": 0.0657,
+          "probe_sky": 0.0
+        },
+        "field": "E5_g",
+        "id": "F24",
+        "kind": "two_causes",
+        "oracle": {
+          "probe_flux": {
+            "after": 34,
+            "before": 22,
+            "closed": false,
+            "gain": 0.12,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 66,
+            "before": 22,
+            "closed": true,
+            "gain": 0.44,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 27,
+            "before": 22,
+            "closed": false,
+            "gain": 0.05,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_psf"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.44,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_psf"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.44,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_sky",
+              "probe_flux",
+              "probe_psf"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.44,
+            "probes": 3,
+            "success": true,
+            "unsupported_gains": 1
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "35fffeaa7f3fa46f3498ff72b39aba2368171e987777de4774e392a507de45c1",
+        "muse-spark-1.3": "ef08e3f539c9d73ef30c1ec543209d8571f8759ecfceb0ac3a0293130ab510bf",
+        "muse-wonder-1.0": "e99afde20e7ba74e03e7f68ee2db57c080942db8bba23161f590474f9a192d39"
+      }
+    },
+    {
+      "definition": {
+        "field": "E5_g",
+        "id": "F25",
+        "kind": "single_cause",
+        "offset_x": -1000,
+        "offset_y": -230
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.0,
+          "integrated_amplitude_change": 0.0677,
+          "rms_radius_change": 0.136
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                25,
+                25,
+                25,
+                25
+              ],
+              "B": [
+                25,
+                24,
+                25,
+                25
+              ]
+            },
+            "nominal": {
+              "A": [
+                20,
+                24,
+                23,
+                22
+              ],
+              "B": [
+                9,
+                6,
+                7,
+                8
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.0677,
+          "probe_psf": 0.136,
+          "probe_sky": 0.0
+        },
+        "field": "E5_g",
+        "id": "F25",
+        "kind": "single_cause",
+        "oracle": {
+          "probe_flux": {
+            "after": 41,
+            "before": 48,
+            "closed": false,
+            "gain": -0.07,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 86,
+            "before": 48,
+            "closed": true,
+            "gain": 0.38,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 41,
+            "before": 48,
+            "closed": false,
+            "gain": -0.07,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_psf"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.38,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_psf"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.38,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_psf"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.38,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "4948734b1ab561481ec43f408448237a34da544b6407abe64b8e548df8ce934c",
+        "muse-spark-1.3": "d92b6a1751014b64774d1bb3005c4228f9cdfdc880e65b7efc30c2ac21a26404",
+        "muse-wonder-1.0": "9287ba88cc864ad49cd547c69548af613739d22ec599475bb414b03ed58b1452"
+      }
+    },
+    {
+      "definition": {
+        "field": "E5_g",
+        "id": "F26",
+        "kind": "single_cause",
+        "offset_x": 0,
+        "offset_y": -230
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.298,
+          "integrated_amplitude_change": 0.0318,
+          "rms_radius_change": 0.0769
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                23,
+                23,
+                23,
+                24
+              ],
+              "B": [
+                23,
+                24,
+                23,
+                23
+              ]
+            },
+            "nominal": {
+              "A": [
+                20,
+                22,
+                21,
+                19
+              ],
+              "B": [
+                7,
+                8,
+                6,
+                6
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.0318,
+          "probe_psf": 0.0769,
+          "probe_sky": 0.298
+        },
+        "field": "E5_g",
+        "id": "F26",
+        "kind": "single_cause",
+        "oracle": {
+          "probe_flux": {
+            "after": 22,
+            "before": 24,
+            "closed": false,
+            "gain": -0.02,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 22,
+            "before": 24,
+            "closed": false,
+            "gain": -0.02,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 74,
+            "before": 24,
+            "closed": true,
+            "gain": 0.5,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_sky"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.5,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_sky"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.5,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_sky"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.5,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "700c3b959b98e990083f61eb87e6283ead945e20d235c7e6bb008fad3c641b76",
+        "muse-spark-1.3": "513f7eb7ff4a6de72bc3d5d25f0bac264679f6281e149711d4bd52909778b027",
+        "muse-wonder-1.0": "8ae60fd0fbb8bd433216229afc50ba13aa427632acbe66ab4cdc0ef40f7aa0bd"
+      }
+    },
+    {
+      "definition": {
+        "field": "E5_g",
+        "id": "F27",
+        "kind": "single_cause",
+        "offset_x": 1000,
+        "offset_y": -230
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.0,
+          "integrated_amplitude_change": 0.252,
+          "rms_radius_change": 0.0166
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                23,
+                24,
+                24,
+                24
+              ],
+              "B": [
+                23,
+                21,
+                23,
+                24
+              ]
+            },
+            "nominal": {
+              "A": [
+                19,
+                22,
+                22,
+                20
+              ],
+              "B": [
+                11,
+                12,
+                7,
+                10
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.252,
+          "probe_psf": 0.0166,
+          "probe_sky": 0.0
+        },
+        "field": "E5_g",
+        "id": "F27",
+        "kind": "single_cause",
+        "oracle": {
+          "probe_flux": {
+            "after": 72,
+            "before": 37,
+            "closed": true,
+            "gain": 0.35,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 37,
+            "before": 37,
+            "closed": false,
+            "gain": 0.0,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 37,
+            "before": 37,
+            "closed": false,
+            "gain": 0.0,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_flux"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.35,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_flux"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.35,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_sky",
+              "probe_psf",
+              "probe_flux"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.35,
+            "probes": 3,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "f306fb84ef2b23d062a44b3dbb30d99e2fcfeb1e2dc1a75795f79a56c7e32267",
+        "muse-spark-1.3": "df6b5a0cde4d6b9052a6028755923fdf73e48e965045c583b5b780812171be14",
+        "muse-wonder-1.0": "f41dd032692f7c3bf56b89494f40373a12bda5c84a6cbc77be6393479365e389"
+      }
+    },
+    {
+      "definition": {
+        "field": "E5_g",
+        "id": "F28",
+        "kind": "two_causes",
+        "offset_x": -1000,
+        "offset_y": 230
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.2819,
+          "integrated_amplitude_change": 0.0218,
+          "rms_radius_change": 0.1159
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                24,
+                24,
+                24,
+                24
+              ],
+              "B": [
+                21,
+                22,
+                21,
+                23
+              ]
+            },
+            "nominal": {
+              "A": [
+                22,
+                19,
+                21,
+                22
+              ],
+              "B": [
+                6,
+                6,
+                7,
+                7
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.0218,
+          "probe_psf": 0.1159,
+          "probe_sky": 0.2819
+        },
+        "field": "E5_g",
+        "id": "F28",
+        "kind": "two_causes",
+        "oracle": {
+          "probe_flux": {
+            "after": 28,
+            "before": 31,
+            "closed": false,
+            "gain": -0.03,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 42,
+            "before": 31,
+            "closed": false,
+            "gain": 0.11,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 63,
+            "before": 31,
+            "closed": true,
+            "gain": 0.32,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_sky"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.32,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_sky"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.32,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_psf",
+              "probe_flux",
+              "probe_sky"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.32,
+            "probes": 3,
+            "success": true,
+            "unsupported_gains": 1
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "f992afb5e25de5a7d460f6c6da6af97ba12660a7adc92e14029143437801b4cd",
+        "muse-spark-1.3": "cf674a79a3e225f51fdbdc06ebcd4a20bd7b40ce032f7d92a01efe9b74020910",
+        "muse-wonder-1.0": "a100971a66ae5de5e34cf2bf33ebb96fdada4692258ec405e3a4a3b325fb4095"
+      }
+    },
+    {
+      "definition": {
+        "field": "E5_g",
+        "id": "F29",
+        "kind": "two_causes",
+        "offset_x": 0,
+        "offset_y": 230
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.0,
+          "integrated_amplitude_change": 0.12
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                23,
+                25,
+                23,
+                25
+              ],
+              "B": [
+                21,
+                20,
+                20,
+                16
+              ]
+            },
+            "nominal": {
+              "A": [
+                18,
+                20,
+                20,
+                20
+              ],
+              "B": [
+                3,
+                2,
+                1,
+                3
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.12,
+          "probe_psf": null,
+          "probe_sky": 0.0
+        },
+        "field": "E5_g",
+        "id": "F29",
+        "kind": "two_causes",
+        "oracle": {
+          "probe_flux": {
+            "after": 38,
+            "before": 30,
+            "closed": false,
+            "gain": 0.08,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 75,
+            "before": 30,
+            "closed": true,
+            "gain": 0.45,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 24,
+            "before": 30,
+            "closed": false,
+            "gain": -0.06,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_flux",
+              "probe_psf"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.45,
+            "probes": 2,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_flux",
+              "probe_sky",
+              "probe_psf"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.45,
+            "probes": 3,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_psf"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.45,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "ef2bc763241984c433d5d7a6f911afd991396fa11987cef8f9bb11d58ae2e1d9",
+        "muse-spark-1.3": "0e8a4c757b339f41b533eb1f3828cc3a0844069eb777a4c6beadc7cb0a610cf9",
+        "muse-wonder-1.0": "8933cf47f79e86bde36f9305552d2c4644a254e2aa83438b874a14c2d8ab6a0e"
+      }
+    },
+    {
+      "definition": {
+        "field": "E5_g",
+        "id": "F30",
+        "kind": "two_causes",
+        "offset_x": 1000,
+        "offset_y": 230
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.0493,
+          "rms_radius_change": 0.0791
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                22,
+                23,
+                21,
+                22
+              ],
+              "B": [
+                20,
+                20,
+                20,
+                20
+              ]
+            },
+            "nominal": {
+              "A": [
+                15,
+                20,
+                17,
+                17
+              ],
+              "B": [
+                9,
+                4,
+                6,
+                7
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": null,
+          "probe_psf": 0.0791,
+          "probe_sky": 0.0493
+        },
+        "field": "E5_g",
+        "id": "F30",
+        "kind": "two_causes",
+        "oracle": {
+          "probe_flux": {
+            "after": 56,
+            "before": 27,
+            "closed": true,
+            "gain": 0.29,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 25,
+            "before": 27,
+            "closed": false,
+            "gain": -0.02,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 30,
+            "before": 27,
+            "closed": false,
+            "gain": 0.03,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_flux"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.29,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_psf",
+              "probe_sky",
+              "probe_flux"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.29,
+            "probes": 3,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_psf",
+              "probe_sky",
+              "probe_flux"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.29,
+            "probes": 3,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "9819121744a79b968026fce65822162278039e699ea9de15478df1e5c3ebf66d",
+        "muse-spark-1.3": "c2005fe117b0f8d89af43c650c0ccf85f89e0d0e68344b5a6edc31e43e338180",
+        "muse-wonder-1.0": "b389766dc414f22cfe15aedaf1fdd4b1510115cb0937652f2408eabd7070b84d"
+      }
+    },
+    {
+      "definition": {
+        "field": "E5_g",
+        "id": "F31",
+        "kind": "two_causes",
+        "offset_x": -1000,
+        "offset_y": 690
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.0,
+          "integrated_amplitude_change": 0.0179
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                24,
+                24,
+                24,
+                24
+              ],
+              "B": [
+                23,
+                22,
+                21,
+                22
+              ]
+            },
+            "nominal": {
+              "A": [
+                19,
+                17,
+                19,
+                21
+              ],
+              "B": [
+                7,
+                5,
+                8,
+                4
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.0179,
+          "probe_psf": null,
+          "probe_sky": 0.0
+        },
+        "field": "E5_g",
+        "id": "F31",
+        "kind": "two_causes",
+        "oracle": {
+          "probe_flux": {
+            "after": 31,
+            "before": 21,
+            "closed": false,
+            "gain": 0.1,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 60,
+            "before": 21,
+            "closed": true,
+            "gain": 0.39,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 18,
+            "before": 21,
+            "closed": false,
+            "gain": -0.03,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_psf"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.39,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_flux",
+              "probe_sky",
+              "probe_psf"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.39,
+            "probes": 3,
+            "success": true,
+            "unsupported_gains": 1
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_flux",
+              "probe_sky",
+              "probe_psf"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.39,
+            "probes": 3,
+            "success": true,
+            "unsupported_gains": 1
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "7ecf2e227ae9d53927769a41d21644e27037ab2262a7ff910628ca9fc78dee62",
+        "muse-spark-1.3": "93b8f319fb8c8a6acc01261e3cc3597fa17ba4130d49e118f6a35e42bc1bc96d",
+        "muse-wonder-1.0": "5fda925f404f1323604de01d87cbc265ac5e034cb86de4a8ccd78d59760a5d96"
+      }
+    },
+    {
+      "definition": {
+        "field": "E5_g",
+        "id": "F32",
+        "kind": "no_intervention",
+        "offset_x": 0,
+        "offset_y": 690
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.0,
+          "integrated_amplitude_change": 0.0457,
+          "rms_radius_change": 0.0116
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                22,
+                25,
+                23,
+                25
+              ],
+              "B": [
+                24,
+                24,
+                24,
+                24
+              ]
+            },
+            "nominal": {
+              "A": [
+                14,
+                21,
+                17,
+                19
+              ],
+              "B": [
+                20,
+                20,
+                18,
+                18
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.0457,
+          "probe_psf": 0.0116,
+          "probe_sky": 0.0
+        },
+        "field": "E5_g",
+        "id": "F32",
+        "kind": "no_intervention",
+        "oracle": {
+          "probe_flux": {
+            "after": 73,
+            "before": 78,
+            "closed": false,
+            "gain": -0.05,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 73,
+            "before": 78,
+            "closed": false,
+            "gain": -0.05,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 73,
+            "before": 78,
+            "closed": false,
+            "gain": -0.05,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "correct_abstention": true,
+            "executed": [],
+            "false_alarm": false,
+            "first_probe_closed": false,
+            "probes": 0,
+            "success": true
+          },
+          "heuristic": {
+            "correct_abstention": true,
+            "executed": [],
+            "false_alarm": false,
+            "first_probe_closed": false,
+            "probes": 0,
+            "success": true
+          },
+          "random": {
+            "correct_abstention": false,
+            "executed": [
+              "probe_sky",
+              "probe_psf",
+              "probe_flux"
+            ],
+            "false_alarm": true,
+            "first_probe_closed": false,
+            "probes": 3,
+            "success": false
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "59b1468f90b5b499ccd44bd4da1db0e72d392564c5d70c904b92f183aba1d862",
+        "muse-spark-1.3": "cdf994742fb4c658e33fd9eb4648e8090d4e59d7e06cad93894870fa0a094ec8",
+        "muse-wonder-1.0": "7eff52e58fa1bf21c04a25f51ff4571ffeb953608a0133b1f0ed0dc8728811f2"
+      }
+    },
+    {
+      "definition": {
+        "field": "E5_g",
+        "id": "F33",
+        "kind": "single_cause",
+        "offset_x": 1000,
+        "offset_y": 690
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "integrated_amplitude_change": 0.1035,
+          "rms_radius_change": 0.1241
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                24,
+                23,
+                23,
+                24
+              ],
+              "B": [
+                21,
+                23,
+                23,
+                21
+              ]
+            },
+            "nominal": {
+              "A": [
+                17,
+                21,
+                16,
+                22
+              ],
+              "B": [
+                5,
+                9,
+                9,
+                8
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.1035,
+          "probe_psf": 0.1241,
+          "probe_sky": null
+        },
+        "field": "E5_g",
+        "id": "F33",
+        "kind": "single_cause",
+        "oracle": {
+          "probe_flux": {
+            "after": 24,
+            "before": 24,
+            "closed": false,
+            "gain": 0.0,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 24,
+            "before": 24,
+            "closed": false,
+            "gain": 0.0,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 66,
+            "before": 24,
+            "closed": true,
+            "gain": 0.42,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_psf",
+              "probe_flux",
+              "probe_sky"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.42,
+            "probes": 3,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_psf",
+              "probe_flux",
+              "probe_sky"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.42,
+            "probes": 3,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_psf",
+              "probe_sky"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.42,
+            "probes": 2,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "e717a2a81945f5963b1be2176ae0868235f7a94fa24e536edf80a434467d552f",
+        "muse-spark-1.3": "c1caebce6f030ceae1256e66eb3a0b2005fa17f5666e4556aeef29769de1a6c6",
+        "muse-wonder-1.0": "0c9a10805a8ab8869874b8b3831aff5d7939caf46835599699de5f3e2aeca847"
+      }
+    },
+    {
+      "definition": {
+        "field": "E5_g",
+        "id": "F34",
+        "kind": "single_cause",
+        "offset_x": -1000,
+        "offset_y": 1150
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.2501,
+          "rms_radius_change": 0.0237
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                23,
+                23,
+                24,
+                24
+              ],
+              "B": [
+                23,
+                23,
+                24,
+                24
+              ]
+            },
+            "nominal": {
+              "A": [
+                19,
+                16,
+                21,
+                21
+              ],
+              "B": [
+                12,
+                6,
+                6,
+                10
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": null,
+          "probe_psf": 0.0237,
+          "probe_sky": 0.2501
+        },
+        "field": "E5_g",
+        "id": "F34",
+        "kind": "single_cause",
+        "oracle": {
+          "probe_flux": {
+            "after": 46,
+            "before": 43,
+            "closed": false,
+            "gain": 0.03,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 46,
+            "before": 43,
+            "closed": false,
+            "gain": 0.03,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 90,
+            "before": 43,
+            "closed": true,
+            "gain": 0.47,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_sky"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.47,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_sky"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.47,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_sky"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.47,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "8d3ae1ec83cbf06e82c1a75d982674bb2c9ba4e4f4037af0f298781b3caf7a5d",
+        "muse-spark-1.3": "0057cbfb45c4bbc3c282bcf0b39f7d5f5cab478d2de83991112950e0117e1c90",
+        "muse-wonder-1.0": "c16c4f694ca25beb0867220f916c8f55aecf395f279371671ae9ba0eb6facf9d"
+      }
+    },
+    {
+      "definition": {
+        "field": "E5_g",
+        "id": "F35",
+        "kind": "two_causes",
+        "offset_x": 0,
+        "offset_y": 1150
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.0,
+          "integrated_amplitude_change": 0.2133,
+          "rms_radius_change": 0.0336
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                22,
+                24,
+                23,
+                23
+              ],
+              "B": [
+                24,
+                22,
+                22,
+                22
+              ]
+            },
+            "nominal": {
+              "A": [
+                17,
+                18,
+                19,
+                21
+              ],
+              "B": [
+                4,
+                4,
+                7,
+                4
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.2133,
+          "probe_psf": 0.0336,
+          "probe_sky": 0.0
+        },
+        "field": "E5_g",
+        "id": "F35",
+        "kind": "two_causes",
+        "oracle": {
+          "probe_flux": {
+            "after": 59,
+            "before": 23,
+            "closed": true,
+            "gain": 0.36,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 30,
+            "before": 23,
+            "closed": false,
+            "gain": 0.07,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 16,
+            "before": 23,
+            "closed": false,
+            "gain": -0.07,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "censored": false,
+            "executed": [
+              "probe_flux"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.36,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "heuristic": {
+            "censored": false,
+            "executed": [
+              "probe_flux"
+            ],
+            "first_probe_closed": true,
+            "gain": 0.36,
+            "probes": 1,
+            "success": true,
+            "unsupported_gains": 0
+          },
+          "random": {
+            "censored": false,
+            "executed": [
+              "probe_sky",
+              "probe_psf",
+              "probe_flux"
+            ],
+            "first_probe_closed": false,
+            "gain": 0.36,
+            "probes": 3,
+            "success": true,
+            "unsupported_gains": 0
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "0018e14aa0a6bdaabdf054d21c2f222346e63f718bca246fa410eb469bb3c599",
+        "muse-spark-1.3": "7927f38382a1411e71e0299959c94e0865436b8eec0b7b318d9eb19ddd02c615",
+        "muse-wonder-1.0": "e665f86e129165b1664dc4b3f6f2326b4d3434b60be2004592e9c959325eaf57"
+      }
+    },
+    {
+      "definition": {
+        "field": "E5_g",
+        "id": "F36",
+        "kind": "no_intervention",
+        "offset_x": 1000,
+        "offset_y": 1150
+      },
+      "observation": {
+        "available_probes": [
+          "probe_sky",
+          "probe_psf",
+          "probe_flux"
+        ],
+        "indicators": {
+          "background_mad_change": 0.0,
+          "integrated_amplitude_change": 0.0204
+        },
+        "pilot_measurements": {
+          "recovery_counts": {
+            "bright": {
+              "A": [
+                25,
+                24,
+                24,
+                25
+              ],
+              "B": [
+                25,
+                24,
+                25,
+                24
+              ]
+            },
+            "nominal": {
+              "A": [
+                18,
+                20,
+                21,
+                20
+              ],
+              "B": [
+                21,
+                20,
+                22,
+                18
+              ]
+            }
+          },
+          "sources_per_batch": 25
+        }
+      },
+      "reference": {
+        "features": {
+          "probe_flux": 0.0204,
+          "probe_psf": null,
+          "probe_sky": 0.0
+        },
+        "field": "E5_g",
+        "id": "F36",
+        "kind": "no_intervention",
+        "oracle": {
+          "probe_flux": {
+            "after": 71,
+            "before": 72,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_psf": {
+            "after": 71,
+            "before": 72,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          },
+          "probe_sky": {
+            "after": 71,
+            "before": 72,
+            "closed": false,
+            "gain": -0.01,
+            "n": 100
+          }
+        },
+        "policies": {
+          "elimination": {
+            "correct_abstention": true,
+            "executed": [],
+            "false_alarm": false,
+            "first_probe_closed": false,
+            "probes": 0,
+            "success": true
+          },
+          "heuristic": {
+            "correct_abstention": true,
+            "executed": [],
+            "false_alarm": false,
+            "first_probe_closed": false,
+            "probes": 0,
+            "success": true
+          },
+          "random": {
+            "correct_abstention": false,
+            "executed": [
+              "probe_sky",
+              "probe_psf",
+              "probe_flux"
+            ],
+            "false_alarm": true,
+            "first_probe_closed": false,
+            "probes": 3,
+            "success": false
+          }
+        }
+      },
+      "request_sha256": {
+        "muse-spark-1.1": "a1ddf13bbf9f937f123bac7dd6f0230ba3958a54e3493cefc6823423bbc2de9e",
+        "muse-spark-1.3": "a9e9b0a9be28c544d28bd7742fbf0130a1f85bf95e62f49163bcabae83c0e83c",
+        "muse-wonder-1.0": "c88bf110b6601969f97ac40ff9fd9d98d157927caa097d591dcb41f72dbfed3f"
+      }
+    }
+  ],
+  "created_utc": "2026-11-03T03:22:08+00:00",
+  "criterion": {
+    "bootstrap_samples": 10000,
+    "bootstrap_seed": 1729,
+    "familywise_alpha": 0.05,
+    "primary_comparator": "elimination",
+    "primary_comparisons": 3
+  },
+  "documentation": {
+    "checked_date": "2026-11-02",
+    "models": "https://dev.meta.ai/docs/models",
+    "pricing": "https://dev.meta.ai/docs/pricing-rate-limits",
+    "reasoning": "https://dev.meta.ai/docs/reasoning"
+  },
+  "environment": {
+    "PyYAML": "6.0.3",
+    "numpy": "2.4.6",
+    "openai": "3.42.1",
+    "python": "3.11.9",
+    "scipy": "1.17.1"
+  },
+  "freeze": {
+    "configs_sha256": {
+      "detector.yaml": "82969edf99e570f066b462b66db99b3462844b1672d52025b9cea935ea6e0940",
+      "experiment.yaml": "b3be4ef88d0fa531fc15504de0f8f6c8a1c6cb164149039d6d88db1b54697c6f"
+    },
+    "experimental_parameters_sha256": "9fb0a63bd15157a08c963229bda3ec31b94378214c8eea51c735ba2f5151054f",
+    "fits_sha256": {
+      "E4_r": "51f8a813654603f26b7c6db47960479db520ac51de7cee87d6803b51729fab61",
+      "E5_g": "a8cc7164b81be22e72f75d9bc4db892c974f65b28c15fe1fcc3ef7491f323a8c"
+    },
+    "implementation_sha256": {
+      "__init__.py": "bddffebba3f7d7a3d2a5a030d3f60c41ca97bde5eba11a50fca80c00dbe45bad",
+      "agent/__init__.py": "1c5723788e135d98debd2836a6ce208dbf43ea9000ece79cb3b56d3a0af1e0f6",
+      "agent/client.py": "23c3c635a1cf7c557e23cd4302df780331cca9abdc249e38d3b0260657b41484",
+      "agent/muse.py": "fe22f6c35ac9dee326fe6c8c09904efc3790d429794df02953f86d8e0f4ee780",
+      "agent/observation.py": "724f691d236df7cf041c6211b8799ae445a4ae8a6cb9416c78cf085c3748de8c",
+      "agent/offline.py": "c2d7aa1428b8ee4d48f80cbc8544a84baf0f74a5cae7ef400ab39128a55d797f",
+      "agent/schemas.py": "1958e36c28a8b5c3d29cbfd32378aa79429068f7e393aee12fb8da7f04e5af70",
+      "benchmark/__init__.py": "3fc8642f9a0e97395590c317603103c1bf93400fe761515372400abad40d82c0",
+      "benchmark/baselines.py": "56366d7eee15f994409d2e9ed4161fc3b9d74dbc289cc6d8f4beeebbce3dcf34",
+      "benchmark/calibration.py": "8889a221fb94e9aa3d1c5b5f0a7caa17e76e49fe8cc219c7880c964d38f803bc",
+      "benchmark/design.py": "4e30522b9f84258416c75115b976ac87b839a088487ffbb73680c8f28079bed4",
+      "benchmark/freeze.py": "09b90fe2b6a0537df3ed3e7eff639f9a4e83d5c02086c9930b41a1ba24de6302",
+      "benchmark/generator.py": "c26ea254cd67c6989354a9f7cdc56cbff4f2e50c94ced04d86964e0a264266ab",
+      "benchmark/interventions.py": "5652c87cb4297fc1eca54bf30898e64557fd9c3dddfb5e5e40d89b2be38d2b05",
+      "benchmark/measurement.py": "c5a86b972df0e55c1579352df8af5e07cf4c2ae75a406010748ee7da9b2e9b7c",
+      "benchmark/observations.py": "b079b9e79566a7ae02ddc2d9052d76b4b175ced46cc48867f0d3c1f2ac349899",
+      "benchmark/report.py": "b684591a5b9104ab35edd7f174b91d3a5bc832b62dfa89e7f06cc18184691032",
+      "benchmark/runner.py": "f0800406a8b5d1b5cb862c63553510bb707d3081d790e082db35c7d47ad09611",
+      "benchmark/scoring.py": "fef5b3c1a8331d2fa5a57e1507b2f05cbba94dbcf665a5fada4bfd5583d89ecc",
+      "cli.py": "4faa6ebcfb0139fff2ca301a680067b80f43662601fa68b9c3303c6f7b3afcbf",
+      "config.py": "6da3741db7e325f5ea190c272d453eba77a593dc23883f5f20756b2bf99f948c",
+      "configs/__init__.py": "01848a7cb6a76262f1304d96ee7657ca6d9f5d9bb2ad2c7c19224d414e1f4ab3",
+      "configs/detector.yaml": "82969edf99e570f066b462b66db99b3462844b1672d52025b9cea935ea6e0940",
+      "configs/experiment.yaml": "b3be4ef88d0fa531fc15504de0f8f6c8a1c6cb164149039d6d88db1b54697c6f",
+      "data/__init__.py": "91ad3aa8d2db7eb6cbea6ebcb8e30cafae8fbcebcab6c2858ccaae51dd6786dd",
+      "data/manifest.json": "a6504b752dbaa42feb860f6cc5f791f3986ab23e8811671bc79c5cb7eb5b9004",
+      "datasets/__init__.py": "e3018081587fd8af9a5a5f6adb6677138ac3706c0b6217ec746609551002083c",
+      "datasets/ztf.py": "86b51e959fdb488196b9c1bccf69f0a8b381e575cdde14afbac65b0bc98dad2e",
+      "detection/__init__.py": "b94371d0b8904c5e8b75b8baaba6bb1575a1cddb9a40352803b6786daba88e8c",
+      "detection/detector.py": "e0b5ba50899b360d315d24e52b25f0402872c70510195ce5f8d5d0fbe6bcc7cd",
+      "injection/__init__.py": "48f59adee68569f8400cffa521ab13bc32cb6853ee42d87b594b3670416f869b",
+      "injection/psf.py": "fe9692abaabc7de9070683676bd44225ef6877e968d128e55970eec1c02f3cd6",
+      "metrics/__init__.py": "5c7c8946cb20fae40c4c75fea07538270dcc8a769c1a0282262134c8d092a42e",
+      "metrics/completeness.py": "f8c1bd353f86053d1988b1c4a616de0ac7a97be2f722a65516a726707de4c69a",
+      "provenance/__init__.py": "8bf1d8573a17d7243ea8d530cea903df6e182dc870d552c6f8977423ca684943",
+      "provenance/ledger.py": "d4aa591ce24eda67e46618b830f8cb9664780c7e4c2933aaf72fb61443862533"
+    },
+    "plan_sha256": "96fadc5a7c7f92016810dcf5c6155e9de4855d02b8e625493c5455a4b09ba7ff",
+    "request_contract_sha256": "69ed9452925d26225507c1bdf071cf9460c78dbd12397e961d0678fc9e6ddb49",
+    "version": "0.4.1"
+  },
+  "git": {
+    "commit": null,
+    "dirty": null
+  },
+  "order_seed": 20261031,
+  "output_token_limit": 8192,
+  "profiles": [
+    {
+      "model": "muse-spark-1.1",
+      "name": "Muse Spark 1.1",
+      "prices_usd_per_million_tokens": {
+        "cached_input": 0.15,
+        "input": 1.25,
+        "output": 4.25
+      },
+      "reasoning_effort": "xhigh"
+    },
+    {
+      "model": "muse-spark-1.3",
+      "name": "Muse Spark 1.3",
+      "prices_usd_per_million_tokens": {
+        "cached_input": 0.15,
+        "input": 1.25,
+        "output": 4.25
+      },
+      "reasoning_effort": "max"
+    },
+    {
+      "model": "muse-wonder-1.0",
+      "name": "Muse Wonder 1.0",
+      "prices_usd_per_million_tokens": {
+        "cached_input": 0.2,
+        "input": 4.0,
+        "output": 20.0
+      },
+      "reasoning_effort": "max"
+    }
+  ],
+  "reservation_bound_usd": 8.853446500000002,
+  "schedule": [
+    {
+      "case_id": "F20",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F20",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F20",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F16",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F16",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F16",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F25",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F25",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F25",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F05",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F05",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F05",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F03",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F03",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F03",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F07",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F07",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F07",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F08",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F08",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F08",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F35",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F35",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F35",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F30",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F30",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F30",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F21",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F21",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F21",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F06",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F06",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F06",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F04",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F04",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F04",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F19",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F19",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F19",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F24",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F24",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F24",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F02",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F02",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F02",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F09",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F09",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F09",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F28",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F28",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F28",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F32",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F32",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F32",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F36",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F36",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F36",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F29",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F29",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F29",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F26",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F26",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F26",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F13",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F13",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F13",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F31",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F31",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F31",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F11",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F11",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F11",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F17",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F17",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F17",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F10",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F10",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F10",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F34",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F34",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F34",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F22",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F22",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F22",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F01",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F01",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F01",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F15",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F15",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F15",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F27",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F27",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F27",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F14",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F14",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F14",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F33",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F33",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F33",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F23",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F23",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F23",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F12",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F12",
+      "model": "muse-spark-1.3"
+    },
+    {
+      "case_id": "F12",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F18",
+      "model": "muse-spark-1.1"
+    },
+    {
+      "case_id": "F18",
+      "model": "muse-wonder-1.0"
+    },
+    {
+      "case_id": "F18",
+      "model": "muse-spark-1.3"
+    }
+  ],
+  "seal_sha256": "92b2cfd084440e2b72e1df4eaa31db4a147898187340c25978ec01c227a385f0",
+  "source_sha256": {
+    "compare_models.py": "5c3a2b66998b63a49aa63936ea776582e5d10f27aa622f3f50469edbb084b5d6",
+    "evaluate_models.py": "c9d22d6afe9d102178b50fcfe00684d2a2f6f6fffa06992ca63ceca627f80cda",
+    "model_report.py": "256ae392cbee840dd289c76933b6abef41d3a073be401fad2ca703040ce48fd5",
+    "reproduce_benchmark.py": "7085fc361e333b831cc4135f774d2f47e60de93cd429d1b38d04bda310d70d36"
+  }
+}
