@@ -1,0 +1,144 @@
+{
+  "source_zip": "E19 run archive (stored outside this repository; identified by zip_sha256)",
+  "zip_sha256": "20c3690530e831853e7c4bb0d8a1ae7664f7ec1420661f0c364c6f00dca96723",
+  "zip_crc_pass": true,
+  "code_cells_compiled": 13,
+  "unchanged_original_source_except_RUN_E19_flag": true,
+  "replayed_with_fits": "OFFLINE_REPLAY_E19_OK",
+  "frozen_prereg_sha256": "1907a40f49b8f23cd274f301ea319a5807ae61ffa7fc919ec08bc388bff34370",
+  "frozen_messages_sha256": "d347fdcaad4758617ef38193656a7f8c97d38c36a357242672338daa25f00056",
+  "six_distinct_model_response_ids": true,
+  "six_request_hashes_recomputed": true,
+  "cost_recomputed_usd": 0.012229,
+  "prompt_tokens": 2004,
+  "completion_tokens": 2288,
+  "control_closures": 4,
+  "hybrid_closures": 4,
+  "false_closures_each": 1,
+  "control_pilot_probes": 12,
+  "hybrid_pilot_probes": 13,
+  "pilot_probes_saved": -1,
+  "model_valid": 6,
+  "preregistered_gate_passed": false,
+  "cases": [
+    {
+      "case": "X01",
+      "field": "E4_r",
+      "muse_first": "probe_sky",
+      "fixed_probes": 1,
+      "hybrid_probes": 1,
+      "fixed_closed": true,
+      "hybrid_closed": true,
+      "fixed_false": false,
+      "hybrid_false": false,
+      "hybrid_selected": "probe_sky",
+      "hybrid_holdout": {
+        "acceptable": true,
+        "after": 27,
+        "before": 5,
+        "conservative_lower_difference_approx95": 0.059452219853389374,
+        "gain": 0.22,
+        "n": 100
+      }
+    },
+    {
+      "case": "X02",
+      "field": "E4_r",
+      "muse_first": "probe_sky",
+      "fixed_probes": 3,
+      "hybrid_probes": 3,
+      "fixed_closed": true,
+      "hybrid_closed": true,
+      "fixed_false": false,
+      "hybrid_false": false,
+      "hybrid_selected": "probe_flux",
+      "hybrid_holdout": {
+        "acceptable": true,
+        "after": 41,
+        "before": 3,
+        "conservative_lower_difference_approx95": 0.2106054759586778,
+        "gain": 0.38,
+        "n": 100
+      }
+    },
+    {
+      "case": "X03",
+      "field": "E4_r",
+      "muse_first": "probe_sky",
+      "fixed_probes": 3,
+      "hybrid_probes": 3,
+      "fixed_closed": false,
+      "hybrid_closed": false,
+      "fixed_false": false,
+      "hybrid_false": false,
+      "hybrid_selected": null,
+      "hybrid_holdout": null
+    },
+    {
+      "case": "X04",
+      "field": "E5_g",
+      "muse_first": "probe_flux",
+      "fixed_probes": 1,
+      "hybrid_probes": 2,
+      "fixed_closed": true,
+      "hybrid_closed": true,
+      "fixed_false": false,
+      "hybrid_false": false,
+      "hybrid_selected": "probe_sky",
+      "hybrid_holdout": {
+        "acceptable": true,
+        "after": 57,
+        "before": 2,
+        "conservative_lower_difference_approx95": 0.37708621676321386,
+        "gain": 0.55,
+        "n": 100
+      }
+    },
+    {
+      "case": "X05",
+      "field": "E5_g",
+      "muse_first": "probe_sky",
+      "fixed_probes": 1,
+      "hybrid_probes": 1,
+      "fixed_closed": false,
+      "hybrid_closed": false,
+      "fixed_false": true,
+      "hybrid_false": true,
+      "hybrid_selected": "probe_sky",
+      "hybrid_holdout": {
+        "acceptable": false,
+        "after": 52,
+        "before": 39,
+        "conservative_lower_difference_approx95": -0.09229937382547393,
+        "gain": 0.13,
+        "n": 100
+      }
+    },
+    {
+      "case": "X06",
+      "field": "E5_g",
+      "muse_first": "probe_sky",
+      "fixed_probes": 3,
+      "hybrid_probes": 3,
+      "fixed_closed": true,
+      "hybrid_closed": true,
+      "fixed_false": false,
+      "hybrid_false": false,
+      "hybrid_selected": "probe_flux",
+      "hybrid_holdout": {
+        "acceptable": true,
+        "after": 53,
+        "before": 3,
+        "conservative_lower_difference_approx95": 0.32335273454506763,
+        "gain": 0.5,
+        "n": 100
+      }
+    }
+  ],
+  "known_limits": [
+    "Two ZTF exposures at different regions: no external instrumental generalisation",
+    "Artificial two-factor profiles with a known-intervention rescue model",
+    "Conservative Wilson intervals for differences, not paired per-source intervals",
+    "Cost computed from the token ledger, not from an independent query of the provider's billing"
+  ]
+}

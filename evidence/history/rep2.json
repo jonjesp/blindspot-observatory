@@ -1,0 +1,3922 @@
+{
+  "cases": [
+    {
+      "causes": [
+        "probe_psf",
+        "probe_sky"
+      ],
+      "dominant": "probe_psf",
+      "features": {
+        "probe_flux": 0.0101,
+        "probe_psf": 0.1676,
+        "probe_sky": 0.0423
+      },
+      "field": "E4_r",
+      "id": "F01",
+      "kind": "two_causes",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.0012345,
+        "decision": {
+          "decision": "probe",
+          "justification": "Large rms_radius change with small sky and flux changes, plus steep faint-source loss, points to PSF broadening.",
+          "probes": [
+            "probe_psf"
+          ]
+        },
+        "request_sha256": "1fb88e2d6c1af53b773ce9cec491705fb16190255ef2c296d5ecfee5248e8d62",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 14,
+          "before": 17,
+          "closed": false,
+          "gain": -0.03,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 65,
+          "before": 17,
+          "closed": true,
+          "gain": 0.48,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 19,
+          "before": 17,
+          "closed": false,
+          "gain": 0.02,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.48,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.48,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.48,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_flux",
+            "probe_sky",
+            "probe_psf"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.48,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_flux",
+        "probe_psf"
+      ],
+      "dominant": "probe_flux",
+      "features": {
+        "probe_flux": 0.2388,
+        "probe_psf": 0.0348,
+        "probe_sky": 0.0
+      },
+      "field": "E4_r",
+      "id": "F02",
+      "kind": "two_causes",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.00232125,
+        "decision": {
+          "decision": "probe",
+          "justification": "Nominal recovery collapses A~17 to B~1 while bright modestly drops, indicating faint-end loss. Sky MAD unchanged 0.0 and radius change tiny 0.0348 rule out sky/PSF, leaving flux dimming consistent with amplitude change 0.2388.",
+          "probes": [
+            "probe_flux"
+          ]
+        },
+        "request_sha256": "c5a10504b71cf705b4904138054ee538d0bacd8a39530b25537dd81a124d1ae5",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 46,
+          "before": 15,
+          "closed": true,
+          "gain": 0.31,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 28,
+          "before": 15,
+          "closed": false,
+          "gain": 0.13,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 18,
+          "before": 15,
+          "closed": false,
+          "gain": 0.03,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.31,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.31,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.31,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_psf",
+            "probe_sky",
+            "probe_flux"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.31,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 1
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_flux"
+      ],
+      "dominant": "probe_flux",
+      "features": {
+        "probe_flux": 0.2038,
+        "probe_psf": 0.12,
+        "probe_sky": 0.0
+      },
+      "field": "E4_r",
+      "id": "F03",
+      "kind": "single_cause",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.00157625,
+        "decision": {
+          "decision": "probe",
+          "justification": "Nominal recovery drops sharply while bright stays stable, background unchanged, amplitude drops ~20% with small radius change, favoring flux dimming.",
+          "probes": [
+            "probe_flux"
+          ]
+        },
+        "request_sha256": "62a6187174529c73675ad277b0607a659258a34680187a78ed5c10928cc8c179",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 67,
+          "before": 24,
+          "closed": true,
+          "gain": 0.43,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 29,
+          "before": 24,
+          "closed": false,
+          "gain": 0.05,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 29,
+          "before": 24,
+          "closed": false,
+          "gain": 0.05,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.43,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.43,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.43,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_sky",
+            "probe_flux"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.43,
+          "probes": 2,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_flux",
+        "probe_psf"
+      ],
+      "dominant": "probe_psf",
+      "features": {
+        "probe_flux": 0.0726,
+        "probe_psf": 0.1668,
+        "probe_sky": 0.0
+      },
+      "field": "E4_r",
+      "id": "F04",
+      "kind": "two_causes",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.00153925,
+        "decision": {
+          "decision": "probe",
+          "justification": "Background MAD unchanged and amplitude change small, while rms radius increased. Recovery drops in both bins but stronger for nominal, consistent with PSF broadening reducing detectability.",
+          "probes": [
+            "probe_psf"
+          ]
+        },
+        "request_sha256": "26342f9e6dc59667133d19b88332fe89cf071ebb3ef22b98ed0b9b3e6462fbb9",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 27,
+          "before": 19,
+          "closed": false,
+          "gain": 0.08,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 71,
+          "before": 19,
+          "closed": true,
+          "gain": 0.52,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 14,
+          "before": 19,
+          "closed": false,
+          "gain": -0.05,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.52,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.52,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.52,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_sky",
+            "probe_flux",
+            "probe_psf"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.52,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_sky"
+      ],
+      "dominant": "probe_sky",
+      "features": {
+        "probe_flux": 0.0669,
+        "probe_psf": 0.0455,
+        "probe_sky": null
+      },
+      "field": "E4_r",
+      "id": "F05",
+      "kind": "single_cause",
+      "masked": [
+        "probe_sky"
+      ],
+      "muse": {
+        "cost_usd": 0.0018825,
+        "decision": {
+          "decision": "probe",
+          "justification": "Bright recoveries unchanged (~23/25) while nominal collapse 17-18 to 5-10 indicates faint-only loss. Amplitude and radius changes are small, disfavoring flux/PSF shifts; elevated sky background best explains it.",
+          "probes": [
+            "probe_sky"
+          ]
+        },
+        "request_sha256": "cad244a198d69a4b6fbff2dca7960fa2c077fb7a6fe15f8e45e3ffcab66652f3",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 42,
+          "before": 43,
+          "closed": false,
+          "gain": -0.01,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 42,
+          "before": 43,
+          "closed": false,
+          "gain": -0.01,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 76,
+          "before": 43,
+          "closed": true,
+          "gain": 0.33,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.33,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_flux",
+            "probe_psf",
+            "probe_sky"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.33,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.33,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_psf",
+            "probe_sky"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.33,
+          "probes": 2,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_flux",
+        "probe_psf"
+      ],
+      "dominant": "probe_flux",
+      "features": {
+        "probe_flux": 0.237,
+        "probe_psf": 0.0838,
+        "probe_sky": 0.0
+      },
+      "field": "E4_r",
+      "id": "F06",
+      "kind": "two_causes",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.00187375,
+        "decision": {
+          "decision": "probe",
+          "justification": "Nominal recovery collapses A~16 to B~4 while bright drops modestly; background_mad_change=0.0 rules out sky, amplitude change 0.237 dominates radius 0.0838, favoring flux loss.",
+          "probes": [
+            "probe_flux"
+          ]
+        },
+        "request_sha256": "e2bc003c5c12d118a3500e8b73209b3f57c69a4aec5aeff869bc52fe2924e493",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 53,
+          "before": 19,
+          "closed": true,
+          "gain": 0.34,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 37,
+          "before": 19,
+          "closed": true,
+          "gain": 0.18,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 22,
+          "before": 19,
+          "closed": false,
+          "gain": 0.03,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.34,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.34,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.34,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.34,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_flux"
+      ],
+      "dominant": "probe_flux",
+      "features": {
+        "probe_flux": 0.2884,
+        "probe_psf": 0.0861,
+        "probe_sky": 0.0
+      },
+      "field": "E4_r",
+      "id": "F07",
+      "kind": "single_cause",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.00150525,
+        "decision": {
+          "decision": "probe",
+          "justification": "Nominal recovery drops strongly in B vs A while bright drops slightly; background_mad_change ~0 with large integrated_amplitude_change 0.29, favoring flux loss.",
+          "probes": [
+            "probe_flux"
+          ]
+        },
+        "request_sha256": "70d127f572530c8848aed238f964f20364adede54d65b62d62553ae5e101bd7b",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 70,
+          "before": 31,
+          "closed": true,
+          "gain": 0.39,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 30,
+          "before": 31,
+          "closed": false,
+          "gain": -0.01,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 30,
+          "before": 31,
+          "closed": false,
+          "gain": -0.01,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.39,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.39,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.39,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_sky",
+            "probe_flux"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.39,
+          "probes": 2,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_psf",
+        "probe_sky"
+      ],
+      "dominant": "probe_sky",
+      "features": {
+        "probe_flux": 0.1079,
+        "probe_psf": 0.1334,
+        "probe_sky": 0.298
+      },
+      "field": "E4_r",
+      "id": "F08",
+      "kind": "two_causes",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.00236375,
+        "decision": {
+          "decision": "probe",
+          "justification": "Nominal recovery collapsed A~13-15 to B~1-4 with bright also down, and background_mad_change 0.298 dominates amplitude 0.108 and radius 0.133, favoring sky background increase.",
+          "probes": [
+            "probe_sky"
+          ]
+        },
+        "request_sha256": "181a7ca3f733ea42107414e9a820732fcab2dd2f161d28eca22d780201fdb2e6",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 20,
+          "before": 24,
+          "closed": false,
+          "gain": -0.04,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 30,
+          "before": 24,
+          "closed": false,
+          "gain": 0.06,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 57,
+          "before": 24,
+          "closed": true,
+          "gain": 0.33,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.33,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.33,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.33,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.33,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_flux"
+      ],
+      "dominant": "probe_flux",
+      "features": {
+        "probe_flux": 0.2646,
+        "probe_psf": 0.1202,
+        "probe_sky": 0.0
+      },
+      "field": "E4_r",
+      "id": "F09",
+      "kind": "single_cause",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.00200675,
+        "decision": {
+          "decision": "probe",
+          "justification": "Nominal recovery halved while bright mildly down, background MAD unchanged, RMS radius +12% suggests PSF broadening reduces faint detectability.",
+          "probes": [
+            "probe_psf"
+          ]
+        },
+        "request_sha256": "4cc9f6bbe24e1ef4afc301670fa3d1c567f7d0c6f5134c3928f25d045637184a",
+        "state": "completed",
+        "used_fallback": true
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 51,
+          "before": 20,
+          "closed": true,
+          "gain": 0.31,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 23,
+          "before": 20,
+          "closed": false,
+          "gain": 0.03,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 23,
+          "before": 20,
+          "closed": false,
+          "gain": 0.03,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.31,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.31,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_psf",
+            "probe_sky",
+            "probe_flux"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.31,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_psf",
+            "probe_flux"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.31,
+          "probes": 2,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_flux",
+        "probe_psf"
+      ],
+      "dominant": "probe_flux",
+      "features": {
+        "probe_flux": 0.0937,
+        "probe_psf": 0.0926,
+        "probe_sky": 0.0
+      },
+      "field": "E4_r",
+      "id": "F10",
+      "kind": "two_causes",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.00153765,
+        "decision": {
+          "decision": "ambiguous",
+          "justification": "Nominal recovery collapses while bright stable and sky MAD unchanged. Both amplitude and radius shift ~9%, supporting flux dimming or PSF broadening.",
+          "probes": [
+            "probe_psf",
+            "probe_flux"
+          ]
+        },
+        "request_sha256": "072402971664a3795cd28f7570cec6ea39675dd814bf22de0fac0cc7ed1e175f",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 46,
+          "before": 4,
+          "closed": true,
+          "gain": 0.42,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 16,
+          "before": 4,
+          "closed": true,
+          "gain": 0.12,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 8,
+          "before": 4,
+          "closed": false,
+          "gain": 0.04,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.42,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.42,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.12,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.42,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [],
+      "dominant": null,
+      "features": {
+        "probe_flux": 0.0005,
+        "probe_psf": 0.019,
+        "probe_sky": 0.0
+      },
+      "field": "E4_r",
+      "id": "F11",
+      "kind": "no_intervention",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.00126175,
+        "decision": {
+          "decision": "abstain",
+          "justification": "Recovery counts for bright and nominal sources overlap between A and B; background, amplitude, radius changes near zero indicate no detectable anomaly.",
+          "probes": []
+        },
+        "request_sha256": "00364faca7caf56674599ec22950718af6c465a6cbdc2cbe6cf396cd96f047f0",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 63,
+          "before": 67,
+          "closed": false,
+          "gain": -0.04,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 63,
+          "before": 67,
+          "closed": false,
+          "gain": -0.04,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 63,
+          "before": 67,
+          "closed": false,
+          "gain": -0.04,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "correct_abstention": true,
+          "executed": [],
+          "false_alarm": false,
+          "first_probe_closed": false,
+          "probes": 0,
+          "success": true
+        },
+        "heuristic": {
+          "correct_abstention": true,
+          "executed": [],
+          "false_alarm": false,
+          "first_probe_closed": false,
+          "probes": 0,
+          "success": true
+        },
+        "muse": {
+          "correct_abstention": true,
+          "executed": [],
+          "false_alarm": false,
+          "first_probe_closed": false,
+          "probes": 0,
+          "success": true
+        },
+        "random": {
+          "correct_abstention": false,
+          "executed": [
+            "probe_flux",
+            "probe_psf",
+            "probe_sky"
+          ],
+          "false_alarm": true,
+          "first_probe_closed": false,
+          "probes": 3,
+          "success": false
+        }
+      },
+      "recovery_anomaly": false,
+      "solvable": false
+    },
+    {
+      "causes": [
+        "probe_psf",
+        "probe_sky"
+      ],
+      "dominant": "probe_psf",
+      "features": {
+        "probe_flux": 0.1061,
+        "probe_psf": 0.0313,
+        "probe_sky": 0.0583
+      },
+      "field": "E4_r",
+      "id": "F12",
+      "kind": "two_causes",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.001481,
+        "decision": {
+          "decision": "probe",
+          "justification": "Nominal recovery collapses 16 to ~3 while bright drops 21 to ~16; background and radius stable but integrated amplitude down, favoring flux loss.",
+          "probes": [
+            "probe_flux"
+          ]
+        },
+        "request_sha256": "24e9be84138041e12b8058e313e63a6f1efe7900ecf2c7040ec20b5a3dccbe1f",
+        "state": "completed",
+        "used_fallback": true
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 23,
+          "before": 17,
+          "closed": false,
+          "gain": 0.06,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 66,
+          "before": 17,
+          "closed": true,
+          "gain": 0.49,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 32,
+          "before": 17,
+          "closed": false,
+          "gain": 0.15,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_flux",
+            "probe_sky",
+            "probe_psf"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.49,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 1
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_flux",
+            "probe_sky",
+            "probe_psf"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.49,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 1
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_flux",
+            "probe_sky",
+            "probe_psf"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.49,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 1
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_flux",
+            "probe_sky",
+            "probe_psf"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.49,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 1
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_flux",
+        "probe_sky"
+      ],
+      "dominant": "probe_sky",
+      "features": {
+        "probe_flux": 0.0646,
+        "probe_psf": 0.0613,
+        "probe_sky": 0.2984
+      },
+      "field": "E4_r",
+      "id": "F13",
+      "kind": "two_causes",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.00127275,
+        "decision": {
+          "decision": "probe",
+          "justification": "Large background MAD change (~0.30) with small amplitude and radius changes, plus strong loss of nominal sources while bright persist, points to sky background anomaly.",
+          "probes": [
+            "probe_sky"
+          ]
+        },
+        "request_sha256": "71758afa05e8ade5870a1fa65664b93b14eedf5becc6abe22d95bf014e7f7d03",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 10,
+          "before": 10,
+          "closed": false,
+          "gain": 0.0,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 2,
+          "before": 10,
+          "closed": false,
+          "gain": -0.08,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 45,
+          "before": 10,
+          "closed": true,
+          "gain": 0.35,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.35,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.35,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.35,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_flux",
+            "probe_psf",
+            "probe_sky"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.35,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_psf"
+      ],
+      "dominant": "probe_psf",
+      "features": {
+        "probe_flux": 0.0738,
+        "probe_psf": null,
+        "probe_sky": 0.0
+      },
+      "field": "E4_r",
+      "id": "F14",
+      "kind": "single_cause",
+      "masked": [
+        "probe_psf"
+      ],
+      "muse": {
+        "cost_usd": 0.0013836500000000002,
+        "decision": {
+          "decision": "probe",
+          "justification": "Nominal recovery collapses 15-16 to 2-4 while bright stays high, background MAD unchanged 0.0 and integrated amplitude nearly conserved 0.07, favoring PSF broadening.",
+          "probes": [
+            "probe_psf"
+          ]
+        },
+        "request_sha256": "b023fc8c8d3deccc902a667fb0d0badfb5c00cdc2baa0df99ac00924ab4e45c8",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 20,
+          "before": 20,
+          "closed": false,
+          "gain": 0.0,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 68,
+          "before": 20,
+          "closed": true,
+          "gain": 0.48,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 20,
+          "before": 20,
+          "closed": false,
+          "gain": 0.0,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.48,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_flux",
+            "probe_sky",
+            "probe_psf"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.48,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.48,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.48,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_psf"
+      ],
+      "dominant": "probe_psf",
+      "features": {
+        "probe_flux": 0.0002,
+        "probe_psf": 0.0469,
+        "probe_sky": 0.0
+      },
+      "field": "E4_r",
+      "id": "F15",
+      "kind": "single_cause",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.001858,
+        "decision": {
+          "decision": "probe",
+          "justification": "Nominal recovery collapses A~12.5 to B~3.25 with bright drop 19 to 16; background_mad_change 0.0 and amplitude_change 0.0002 rule out sky/flux, rms_radius up 0.0469 implicates PSF.",
+          "probes": [
+            "probe_psf"
+          ]
+        },
+        "request_sha256": "0eecf89fab12fe87d22b0987c208478bff6d0831637e129e4c355c3bb8587c80",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 16,
+          "before": 12,
+          "closed": false,
+          "gain": 0.04,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 45,
+          "before": 12,
+          "closed": true,
+          "gain": 0.33,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 16,
+          "before": 12,
+          "closed": false,
+          "gain": 0.04,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.33,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.33,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.33,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_flux",
+            "probe_sky",
+            "probe_psf"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.33,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_flux"
+      ],
+      "dominant": "probe_flux",
+      "features": {
+        "probe_flux": null,
+        "probe_psf": 0.13,
+        "probe_sky": 0.0
+      },
+      "field": "E4_r",
+      "id": "F16",
+      "kind": "single_cause",
+      "masked": [
+        "probe_flux"
+      ],
+      "muse": {
+        "cost_usd": 0.00118865,
+        "decision": {
+          "decision": "probe",
+          "justification": "Nominal recovery drops ~13 to ~6 while bright stays ~20 to ~18, with rms_radius up 0.13 and background MAD 0.0, favoring PSF broadening.",
+          "probes": [
+            "probe_psf"
+          ]
+        },
+        "request_sha256": "a2e598b5118060a0eb0c4c0f95c5141654cfb9effe42047d0c8d304e7dc76100",
+        "state": "completed",
+        "used_fallback": true
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 68,
+          "before": 38,
+          "closed": true,
+          "gain": 0.3,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 37,
+          "before": 38,
+          "closed": false,
+          "gain": -0.01,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 37,
+          "before": 38,
+          "closed": false,
+          "gain": -0.01,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_psf",
+            "probe_flux"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.3,
+          "probes": 2,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_psf",
+            "probe_sky",
+            "probe_flux"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.3,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_psf",
+            "probe_sky",
+            "probe_flux"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.3,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.3,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [],
+      "dominant": null,
+      "features": {
+        "probe_flux": 0.0071,
+        "probe_psf": 0.0456,
+        "probe_sky": 0.0
+      },
+      "field": "E4_r",
+      "id": "F17",
+      "kind": "no_intervention",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.001195,
+        "decision": {
+          "decision": "abstain",
+          "justification": "No anomaly: bright and nominal recovery counts overlap A vs B, and sky/PSF/flux indicators all near zero.",
+          "probes": []
+        },
+        "request_sha256": "bac65fad1898cf1723da45794b19fc9162343ec533633aa9f99715e3c587d22d",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 76,
+          "before": 77,
+          "closed": false,
+          "gain": -0.01,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 76,
+          "before": 77,
+          "closed": false,
+          "gain": -0.01,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 76,
+          "before": 77,
+          "closed": false,
+          "gain": -0.01,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "correct_abstention": true,
+          "executed": [],
+          "false_alarm": false,
+          "first_probe_closed": false,
+          "probes": 0,
+          "success": true
+        },
+        "heuristic": {
+          "correct_abstention": true,
+          "executed": [],
+          "false_alarm": false,
+          "first_probe_closed": false,
+          "probes": 0,
+          "success": true
+        },
+        "muse": {
+          "correct_abstention": true,
+          "executed": [],
+          "false_alarm": false,
+          "first_probe_closed": false,
+          "probes": 0,
+          "success": true
+        },
+        "random": {
+          "correct_abstention": false,
+          "executed": [
+            "probe_flux",
+            "probe_psf",
+            "probe_sky"
+          ],
+          "false_alarm": true,
+          "first_probe_closed": false,
+          "probes": 3,
+          "success": false
+        }
+      },
+      "recovery_anomaly": false,
+      "solvable": false
+    },
+    {
+      "causes": [
+        "probe_psf"
+      ],
+      "dominant": "probe_psf",
+      "features": {
+        "probe_flux": 0.0772,
+        "probe_psf": null,
+        "probe_sky": 0.0
+      },
+      "field": "E4_r",
+      "id": "F18",
+      "kind": "single_cause",
+      "masked": [
+        "probe_psf"
+      ],
+      "muse": {
+        "cost_usd": 0.00237975,
+        "decision": {
+          "decision": "probe",
+          "justification": "Nominal recovery collapses 19 to ~7 while bright holds ~22 and background MAD unchanged 0.0, with small 7.7% integrated amplitude change favoring PSF broadening over flux loss.",
+          "probes": [
+            "probe_psf"
+          ]
+        },
+        "request_sha256": "94fbf49355a7872720983d489b25da8f63a9c8062c516d5d589249df42654761",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 13,
+          "before": 15,
+          "closed": false,
+          "gain": -0.02,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 56,
+          "before": 15,
+          "closed": true,
+          "gain": 0.41,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 13,
+          "before": 15,
+          "closed": false,
+          "gain": -0.02,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.41,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_flux",
+            "probe_sky",
+            "probe_psf"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.41,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.41,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_sky",
+            "probe_flux",
+            "probe_psf"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.41,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_sky"
+      ],
+      "dominant": "probe_sky",
+      "features": {
+        "probe_flux": 0.0021,
+        "probe_psf": 0.0667,
+        "probe_sky": null
+      },
+      "field": "E5_g",
+      "id": "F19",
+      "kind": "single_cause",
+      "masked": [
+        "probe_sky"
+      ],
+      "muse": {
+        "cost_usd": 0.0025354,
+        "decision": {
+          "decision": "probe",
+          "justification": "Faint recovery halved while bright unchanged; amplitude conserved ~0.002 with radius +0.067, matching PSF broadening conserving flux.",
+          "probes": [
+            "probe_psf"
+          ]
+        },
+        "request_sha256": "38543286bd75531f82bcac7a07c26423d24170cf962dc2f2a565c0ba3644dd67",
+        "state": "completed",
+        "used_fallback": true
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 39,
+          "before": 45,
+          "closed": false,
+          "gain": -0.06,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 39,
+          "before": 45,
+          "closed": false,
+          "gain": -0.06,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 87,
+          "before": 45,
+          "closed": true,
+          "gain": 0.42,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.42,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_psf",
+            "probe_flux",
+            "probe_sky"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.42,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_psf",
+            "probe_sky"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.42,
+          "probes": 2,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.42,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_flux",
+        "probe_sky"
+      ],
+      "dominant": "probe_sky",
+      "features": {
+        "probe_flux": 0.081,
+        "probe_psf": 0.0257,
+        "probe_sky": 0.3406
+      },
+      "field": "E5_g",
+      "id": "F20",
+      "kind": "two_causes",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.0016455,
+        "decision": {
+          "decision": "probe",
+          "justification": "Faint nominal recovery collapses A~12 to B~1 while bright drops less, with large background_mad_change 0.34 and small flux and radius changes, favoring sky noise.",
+          "probes": [
+            "probe_sky"
+          ]
+        },
+        "request_sha256": "325d6345a01550811a0fc4ee82fe9d1ef0a674a75e9dca57d62b03bf189a0147",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 10,
+          "before": 1,
+          "closed": false,
+          "gain": 0.09,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 7,
+          "before": 1,
+          "closed": false,
+          "gain": 0.06,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 35,
+          "before": 1,
+          "closed": true,
+          "gain": 0.34,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.34,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.34,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.34,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_psf",
+            "probe_flux",
+            "probe_sky"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.34,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_psf",
+        "probe_sky"
+      ],
+      "dominant": "probe_sky",
+      "features": {
+        "probe_flux": 0.0554,
+        "probe_psf": 0.1295,
+        "probe_sky": 0.2726
+      },
+      "field": "E5_g",
+      "id": "F21",
+      "kind": "two_causes",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.0014555,
+        "decision": {
+          "decision": "probe",
+          "justification": "Nominal recovery collapsed A~17 to B~5 while bright only slightly dropped, with large background_mad_change 0.27 and small amplitude change, implicating increased sky noise.",
+          "probes": [
+            "probe_sky"
+          ]
+        },
+        "request_sha256": "29f09accb2888cfce509f8e8c421305dbdd44702a04a8afa959ee3498eb42a67",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 24,
+          "before": 25,
+          "closed": false,
+          "gain": -0.01,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 40,
+          "before": 25,
+          "closed": false,
+          "gain": 0.15,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 67,
+          "before": 25,
+          "closed": true,
+          "gain": 0.42,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.42,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.42,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.42,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.42,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_flux"
+      ],
+      "dominant": "probe_flux",
+      "features": {
+        "probe_flux": 0.3024,
+        "probe_psf": 0.016,
+        "probe_sky": 0.0
+      },
+      "field": "E5_g",
+      "id": "F22",
+      "kind": "single_cause",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.00140625,
+        "decision": {
+          "decision": "probe",
+          "justification": "Bright counts unchanged but nominal drops ~20 to ~8. background_mad_change 0.0 rules out sky, rms_radius_change 0.016 rules out PSF, while integrated_amplitude_change 0.30 indicates flux loss.",
+          "probes": [
+            "probe_flux"
+          ]
+        },
+        "request_sha256": "9fc1aa8e0c073d627c13421515e239872fde9e67ca4146d60dc192b6248d6879",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 75,
+          "before": 35,
+          "closed": true,
+          "gain": 0.4,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 39,
+          "before": 35,
+          "closed": false,
+          "gain": 0.04,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 39,
+          "before": 35,
+          "closed": false,
+          "gain": 0.04,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.4,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.4,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.4,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.4,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_flux"
+      ],
+      "dominant": "probe_flux",
+      "features": {
+        "probe_flux": 0.2441,
+        "probe_psf": 0.1007,
+        "probe_sky": 0.0
+      },
+      "field": "E5_g",
+      "id": "F23",
+      "kind": "single_cause",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.0017629000000000002,
+        "decision": {
+          "decision": "probe",
+          "justification": "Bright counts unchanged while nominal collapses, background MAD unchanged so not sky. Large integrated amplitude drop dominates small radius change, favoring flux loss.",
+          "probes": [
+            "probe_flux"
+          ]
+        },
+        "request_sha256": "b68588e8c28a312840d320533476f54d522951c29ec95de9b6ccdb1beca5974b",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 72,
+          "before": 32,
+          "closed": true,
+          "gain": 0.4,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 29,
+          "before": 32,
+          "closed": false,
+          "gain": -0.03,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 29,
+          "before": 32,
+          "closed": false,
+          "gain": -0.03,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.4,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.4,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.4,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_psf",
+            "probe_flux"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.4,
+          "probes": 2,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_flux",
+        "probe_psf"
+      ],
+      "dominant": "probe_psf",
+      "features": {
+        "probe_flux": 0.0395,
+        "probe_psf": 0.0657,
+        "probe_sky": 0.0
+      },
+      "field": "E5_g",
+      "id": "F24",
+      "kind": "two_causes",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.0028695,
+        "decision": {
+          "decision": "ambiguous",
+          "justification": "Nominal recovery collapses in B while bright stays high and background_mad_change is 0.0, ruling out sky. Small amplitude and radius shifts leave both flux dimming and PSF broadening plausible.",
+          "probes": [
+            "probe_psf",
+            "probe_flux"
+          ]
+        },
+        "request_sha256": "5de8b786481765d0f6d7f812bac0fc9da26f98b76b8c2a2e8b3ff4efa3bd6425",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 34,
+          "before": 22,
+          "closed": false,
+          "gain": 0.12,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 66,
+          "before": 22,
+          "closed": true,
+          "gain": 0.44,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 27,
+          "before": 22,
+          "closed": false,
+          "gain": 0.05,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.44,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.44,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.44,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_sky",
+            "probe_flux",
+            "probe_psf"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.44,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 1
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_psf"
+      ],
+      "dominant": "probe_psf",
+      "features": {
+        "probe_flux": 0.0677,
+        "probe_psf": 0.136,
+        "probe_sky": 0.0
+      },
+      "field": "E5_g",
+      "id": "F25",
+      "kind": "single_cause",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.00172925,
+        "decision": {
+          "decision": "probe",
+          "justification": "Bright counts preserved while nominal dropped ~22 to ~7, background unchanged, integrated flux stable but rms radius increased, consistent with PSF broadening.",
+          "probes": [
+            "probe_psf"
+          ]
+        },
+        "request_sha256": "d07f129d65e87ab54e75373332253bce1e4b56f2e6520dd4be2cccb16a08fc15",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 41,
+          "before": 48,
+          "closed": false,
+          "gain": -0.07,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 86,
+          "before": 48,
+          "closed": true,
+          "gain": 0.38,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 41,
+          "before": 48,
+          "closed": false,
+          "gain": -0.07,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.38,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.38,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.38,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.38,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_sky"
+      ],
+      "dominant": "probe_sky",
+      "features": {
+        "probe_flux": 0.0318,
+        "probe_psf": 0.0769,
+        "probe_sky": 0.298
+      },
+      "field": "E5_g",
+      "id": "F26",
+      "kind": "single_cause",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.0013395,
+        "decision": {
+          "decision": "probe",
+          "justification": "Nominal recovery drops 20 to 7 while bright stable; background_mad_change 0.298 dominates vs small radius and amplitude changes, indicating raised sky hiding faint sources.",
+          "probes": [
+            "probe_sky"
+          ]
+        },
+        "request_sha256": "e167b6c330a70ee930e972509c5dab6ba8c4577f269837d020220cd92158cf24",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 22,
+          "before": 24,
+          "closed": false,
+          "gain": -0.02,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 22,
+          "before": 24,
+          "closed": false,
+          "gain": -0.02,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 74,
+          "before": 24,
+          "closed": true,
+          "gain": 0.5,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.5,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.5,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.5,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.5,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_flux"
+      ],
+      "dominant": "probe_flux",
+      "features": {
+        "probe_flux": null,
+        "probe_psf": 0.0166,
+        "probe_sky": 0.0
+      },
+      "field": "E5_g",
+      "id": "F27",
+      "kind": "single_cause",
+      "masked": [
+        "probe_flux"
+      ],
+      "muse": {
+        "cost_usd": 0.00142365,
+        "decision": {
+          "decision": "probe",
+          "justification": "Bright counts preserved while nominal counts drop ~50%, background_mad_change=0 and rms_radius_change tiny, so sky and PSF unlikely; flux dimming best explains faint-only loss.",
+          "probes": [
+            "probe_flux"
+          ]
+        },
+        "request_sha256": "ca3e25f31f6289d3bbb794b7395c658e165cb2abd76b1c3b04168b434e1e0035",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 72,
+          "before": 37,
+          "closed": true,
+          "gain": 0.35,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 37,
+          "before": 37,
+          "closed": false,
+          "gain": 0.0,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 37,
+          "before": 37,
+          "closed": false,
+          "gain": 0.0,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.35,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_psf",
+            "probe_sky",
+            "probe_flux"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.35,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.35,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_sky",
+            "probe_psf",
+            "probe_flux"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.35,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_psf",
+        "probe_sky"
+      ],
+      "dominant": "probe_sky",
+      "features": {
+        "probe_flux": 0.0218,
+        "probe_psf": 0.1159,
+        "probe_sky": 0.2819
+      },
+      "field": "E5_g",
+      "id": "F28",
+      "kind": "two_causes",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.0020871500000000003,
+        "decision": {
+          "decision": "ambiguous",
+          "justification": "Nominal recovery collapsed (21->6) while bright preserved, with large background MAD increase and moderate radius growth, so sky noise and PSF broadening both plausible.",
+          "probes": [
+            "probe_sky",
+            "probe_psf"
+          ]
+        },
+        "request_sha256": "378b964e5270baddd90e2fdd858f99e336b5036fbf942c751149302036b453e4",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 28,
+          "before": 31,
+          "closed": false,
+          "gain": -0.03,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 42,
+          "before": 31,
+          "closed": false,
+          "gain": 0.11,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 63,
+          "before": 31,
+          "closed": true,
+          "gain": 0.32,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.32,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.32,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.32,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_psf",
+            "probe_flux",
+            "probe_sky"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.32,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 1
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_flux",
+        "probe_psf"
+      ],
+      "dominant": "probe_psf",
+      "features": {
+        "probe_flux": 0.12,
+        "probe_psf": 0.1158,
+        "probe_sky": 0.0
+      },
+      "field": "E5_g",
+      "id": "F29",
+      "kind": "two_causes",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.00183975,
+        "decision": {
+          "decision": "ambiguous",
+          "justification": "Nominal recovery collapses A~19 to B~2 while bright drops modestly; sky MAD unchanged 0.0 so sky ruled out, but both amplitude 0.12 and radius 0.1158 changed.",
+          "probes": [
+            "probe_psf",
+            "probe_flux"
+          ]
+        },
+        "request_sha256": "2b7651bd5ee8644e9a035ecc9114da3389558acc836074a627a1e4b5f6c9d230",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 38,
+          "before": 30,
+          "closed": false,
+          "gain": 0.08,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 75,
+          "before": 30,
+          "closed": true,
+          "gain": 0.45,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 24,
+          "before": 30,
+          "closed": false,
+          "gain": -0.06,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_flux",
+            "probe_psf"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.45,
+          "probes": 2,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_flux",
+            "probe_psf"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.45,
+          "probes": 2,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.45,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.45,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_flux",
+        "probe_sky"
+      ],
+      "dominant": "probe_flux",
+      "features": {
+        "probe_flux": 0.205,
+        "probe_psf": 0.0791,
+        "probe_sky": 0.0493
+      },
+      "field": "E5_g",
+      "id": "F30",
+      "kind": "two_causes",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.00165825,
+        "decision": {
+          "decision": "probe",
+          "justification": "Nominal recovery collapses A~17 to B~6.5 while bright stays ~22 to 20, with large amplitude drop 0.205 but small sky 0.049 and radius 0.079 changes, favoring flux dimming.",
+          "probes": [
+            "probe_flux"
+          ]
+        },
+        "request_sha256": "d4e8f8474aeff1754832f307e315a6e461f899e784b95d8b0be17357ad8cd580",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 56,
+          "before": 27,
+          "closed": true,
+          "gain": 0.29,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 25,
+          "before": 27,
+          "closed": false,
+          "gain": -0.02,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 30,
+          "before": 27,
+          "closed": false,
+          "gain": 0.03,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.29,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.29,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.29,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_psf",
+            "probe_sky",
+            "probe_flux"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.29,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_flux",
+        "probe_psf"
+      ],
+      "dominant": "probe_psf",
+      "features": {
+        "probe_flux": 0.0179,
+        "probe_psf": 0.1112,
+        "probe_sky": 0.0
+      },
+      "field": "E5_g",
+      "id": "F31",
+      "kind": "two_causes",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.00136075,
+        "decision": {
+          "decision": "probe",
+          "justification": "Nominal recovery collapses while bright slightly drops, background MAD and amplitude unchanged, but rms radius increased ~0.11 indicating PSF broadening.",
+          "probes": [
+            "probe_psf"
+          ]
+        },
+        "request_sha256": "7b5ac2388916a4ffce866d5493dd58bb13cd18f27fdee4f85ac2857d24ca85e4",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 31,
+          "before": 21,
+          "closed": false,
+          "gain": 0.1,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 60,
+          "before": 21,
+          "closed": true,
+          "gain": 0.39,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 18,
+          "before": 21,
+          "closed": false,
+          "gain": -0.03,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.39,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.39,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_psf"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.39,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_flux",
+            "probe_sky",
+            "probe_psf"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.39,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 1
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [],
+      "dominant": null,
+      "features": {
+        "probe_flux": 0.0457,
+        "probe_psf": 0.0116,
+        "probe_sky": 0.0
+      },
+      "field": "E5_g",
+      "id": "F32",
+      "kind": "no_intervention",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.0013039000000000002,
+        "decision": {
+          "decision": "abstain",
+          "justification": "No clear deficit: bright recoveries identical, nominal B slightly higher, indicators near zero for sky, amplitude, and radius.",
+          "probes": []
+        },
+        "request_sha256": "54b27bdde97a63c884a826f59f8c77757b5fbde779ac4f5a70b186e9c14b5dc3",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 73,
+          "before": 78,
+          "closed": false,
+          "gain": -0.05,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 73,
+          "before": 78,
+          "closed": false,
+          "gain": -0.05,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 73,
+          "before": 78,
+          "closed": false,
+          "gain": -0.05,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "correct_abstention": true,
+          "executed": [],
+          "false_alarm": false,
+          "first_probe_closed": false,
+          "probes": 0,
+          "success": true
+        },
+        "heuristic": {
+          "correct_abstention": true,
+          "executed": [],
+          "false_alarm": false,
+          "first_probe_closed": false,
+          "probes": 0,
+          "success": true
+        },
+        "muse": {
+          "correct_abstention": true,
+          "executed": [],
+          "false_alarm": false,
+          "first_probe_closed": false,
+          "probes": 0,
+          "success": true
+        },
+        "random": {
+          "correct_abstention": false,
+          "executed": [
+            "probe_sky",
+            "probe_psf",
+            "probe_flux"
+          ],
+          "false_alarm": true,
+          "first_probe_closed": false,
+          "probes": 3,
+          "success": false
+        }
+      },
+      "recovery_anomaly": false,
+      "solvable": false
+    },
+    {
+      "causes": [
+        "probe_sky"
+      ],
+      "dominant": "probe_sky",
+      "features": {
+        "probe_flux": 0.1035,
+        "probe_psf": 0.1241,
+        "probe_sky": null
+      },
+      "field": "E5_g",
+      "id": "F33",
+      "kind": "single_cause",
+      "masked": [
+        "probe_sky"
+      ],
+      "muse": {
+        "cost_usd": 0.00213165,
+        "decision": {
+          "decision": "ambiguous",
+          "justification": "Nominal recovery collapses A~19 to B~8 while bright stays high, indicating faint-end sensitivity loss. Both rms_radius and amplitude shifts are ~0.1, supporting sky-noise and PSF-broadening explanations.",
+          "probes": [
+            "probe_sky",
+            "probe_psf"
+          ]
+        },
+        "request_sha256": "ca599fd473411945841dbe08a2200ac7c9947fa947a9eca7f5e714941d97333f",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 24,
+          "before": 24,
+          "closed": false,
+          "gain": 0.0,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 24,
+          "before": 24,
+          "closed": false,
+          "gain": 0.0,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 66,
+          "before": 24,
+          "closed": true,
+          "gain": 0.42,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_psf",
+            "probe_flux",
+            "probe_sky"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.42,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_psf",
+            "probe_flux",
+            "probe_sky"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.42,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.42,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_psf",
+            "probe_sky"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.42,
+          "probes": 2,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_sky"
+      ],
+      "dominant": "probe_sky",
+      "features": {
+        "probe_flux": 0.0732,
+        "probe_psf": 0.0237,
+        "probe_sky": 0.2501
+      },
+      "field": "E5_g",
+      "id": "F34",
+      "kind": "single_cause",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.0013476500000000001,
+        "decision": {
+          "decision": "probe",
+          "justification": "Bright recoveries identical, nominal sharply lower in B; background MAD +25% while rms radius and amplitude changes are small, implicating elevated sky noise.",
+          "probes": [
+            "probe_sky"
+          ]
+        },
+        "request_sha256": "afafd2152fe0f09cbff682a37d591bd908c91387c7273bab93871c9b1f1a712a",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 46,
+          "before": 43,
+          "closed": false,
+          "gain": 0.03,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 46,
+          "before": 43,
+          "closed": false,
+          "gain": 0.03,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 90,
+          "before": 43,
+          "closed": true,
+          "gain": 0.47,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.47,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.47,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.47,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_sky"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.47,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [
+        "probe_flux",
+        "probe_psf"
+      ],
+      "dominant": "probe_flux",
+      "features": {
+        "probe_flux": 0.2133,
+        "probe_psf": 0.0336,
+        "probe_sky": 0.0
+      },
+      "field": "E5_g",
+      "id": "F35",
+      "kind": "two_causes",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.00170075,
+        "decision": {
+          "decision": "probe",
+          "justification": "Nominal recovery collapses B~5 vs A~19 while bright unchanged and background_mad_change=0.0 rules out sky. Amplitude drop 0.213 with tiny radius change favors flux loss.",
+          "probes": [
+            "probe_flux"
+          ]
+        },
+        "request_sha256": "2c879c4975d3a6cf4ecd41c36e4f35315578ba90db0ab68f8fd744bed0d55b67",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 59,
+          "before": 23,
+          "closed": true,
+          "gain": 0.36,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 30,
+          "before": 23,
+          "closed": false,
+          "gain": 0.07,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 16,
+          "before": 23,
+          "closed": false,
+          "gain": -0.07,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.36,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "heuristic": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.36,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "muse": {
+          "censored": false,
+          "executed": [
+            "probe_flux"
+          ],
+          "first_probe_closed": true,
+          "gain": 0.36,
+          "probes": 1,
+          "success": true,
+          "unsupported_gains": 0
+        },
+        "random": {
+          "censored": false,
+          "executed": [
+            "probe_sky",
+            "probe_psf",
+            "probe_flux"
+          ],
+          "first_probe_closed": false,
+          "gain": 0.36,
+          "probes": 3,
+          "success": true,
+          "unsupported_gains": 0
+        }
+      },
+      "recovery_anomaly": true,
+      "solvable": true
+    },
+    {
+      "causes": [],
+      "dominant": null,
+      "features": {
+        "probe_flux": 0.0204,
+        "probe_psf": 0.0422,
+        "probe_sky": 0.0
+      },
+      "field": "E5_g",
+      "id": "F36",
+      "kind": "no_intervention",
+      "masked": [],
+      "muse": {
+        "cost_usd": 0.0011084,
+        "decision": {
+          "decision": "abstain",
+          "justification": "Recovery counts for bright and nominal are essentially identical between A and B, and indicator changes are near zero, showing no anomaly.",
+          "probes": []
+        },
+        "request_sha256": "a9a14fc66876ca53e47fcfd3794e67ab0994fb6839d3cf0960af22bb5c1752f4",
+        "state": "completed",
+        "used_fallback": false
+      },
+      "oracle": {
+        "probe_flux": {
+          "after": 71,
+          "before": 72,
+          "closed": false,
+          "gain": -0.01,
+          "n": 100
+        },
+        "probe_psf": {
+          "after": 71,
+          "before": 72,
+          "closed": false,
+          "gain": -0.01,
+          "n": 100
+        },
+        "probe_sky": {
+          "after": 71,
+          "before": 72,
+          "closed": false,
+          "gain": -0.01,
+          "n": 100
+        }
+      },
+      "policies": {
+        "elimination": {
+          "correct_abstention": true,
+          "executed": [],
+          "false_alarm": false,
+          "first_probe_closed": false,
+          "probes": 0,
+          "success": true
+        },
+        "heuristic": {
+          "correct_abstention": true,
+          "executed": [],
+          "false_alarm": false,
+          "first_probe_closed": false,
+          "probes": 0,
+          "success": true
+        },
+        "muse": {
+          "correct_abstention": true,
+          "executed": [],
+          "false_alarm": false,
+          "first_probe_closed": false,
+          "probes": 0,
+          "success": true
+        },
+        "random": {
+          "correct_abstention": false,
+          "executed": [
+            "probe_sky",
+            "probe_psf",
+            "probe_flux"
+          ],
+          "false_alarm": true,
+          "first_probe_closed": false,
+          "probes": 3,
+          "success": false
+        }
+      },
+      "recovery_anomaly": false,
+      "solvable": false
+    }
+  ],
+  "complete": true,
+  "created_utc": "2026-10-31T14:35:30+00:00",
+  "freeze": {
+    "configs_sha256": {
+      "detector.yaml": "82969edf99e570f066b462b66db99b3462844b1672d52025b9cea935ea6e0940",
+      "experiment.yaml": "b3be4ef88d0fa531fc15504de0f8f6c8a1c6cb164149039d6d88db1b54697c6f"
+    },
+    "fits_sha256": {
+      "E4_r": "51f8a813654603f26b7c6db47960479db520ac51de7cee87d6803b51729fab61",
+      "E5_g": "a8cc7164b81be22e72f75d9bc4db892c974f65b28c15fe1fcc3ef7491f323a8c"
+    },
+    "plan_sha256": "781433aed89a72807c0ec3a32952dacb459310ec6344702ef0224c8333ce6a1d",
+    "request_contract_sha256": "69ed9452925d26225507c1bdf071cf9460c78dbd12397e961d0678fc9e6ddb49",
+    "version": "0.4.0"
+  },
+  "git": {
+    "commit": "b06a4d36f0eeab0c1725b03818f8434778c8ea6c",
+    "dirty": false
+  },
+  "ledger": {
+    "budget_usd": 1.0,
+    "cases": 36,
+    "completed": 36,
+    "invalid_response": 0,
+    "spent_usd": 0.060567,
+    "unresolved": []
+  },
+  "mode": "live",
+  "model": "muse-spark-1.3",
+  "summary": {
+    "cases": 36,
+    "muse_minus_baseline_probes": {
+      "elimination": {
+        "ci95": [
+          -0.1875,
+          0.25
+        ],
+        "mean": 0.03125,
+        "n": 32
+      },
+      "heuristic": {
+        "ci95": [
+          -0.59375,
+          -0.03125
+        ],
+        "mean": -0.3125,
+        "n": 32
+      },
+      "random": {
+        "ci95": [
+          -1.21875,
+          -0.4375
+        ],
+        "mean": -0.84375,
+        "n": 32
+      }
+    },
+    "muse_replies": {
+      "cost_usd": 0.060567,
+      "invalid": 0,
+      "used_fallback": 4,
+      "valid": 36
+    },
+    "policies": {
+      "elimination": {
+        "by_exposure": {
+          "E4_r": {
+            "mean_probes": 1.1875,
+            "success": {
+              "ci95": [
+                0.806,
+                1.0
+              ],
+              "k": 16,
+              "n": 16,
+              "rate": 1.0
+            }
+          },
+          "E5_g": {
+            "mean_probes": 1.1875,
+            "success": {
+              "ci95": [
+                0.806,
+                1.0
+              ],
+              "k": 16,
+              "n": 16,
+              "rate": 1.0
+            }
+          }
+        },
+        "correct_abstentions": {
+          "ci95": [
+            0.51,
+            1.0
+          ],
+          "k": 4,
+          "n": 4,
+          "rate": 1.0
+        },
+        "first_probe_closes": {
+          "ci95": [
+            0.719,
+            0.95
+          ],
+          "k": 28,
+          "n": 32,
+          "rate": 0.875
+        },
+        "intervention_cases": {
+          "ci95": [
+            0.893,
+            1.0
+          ],
+          "k": 32,
+          "n": 32,
+          "rate": 1.0
+        },
+        "mean_probes": 1.1875,
+        "probes_per_success": 1.1875
+      },
+      "heuristic": {
+        "by_exposure": {
+          "E4_r": {
+            "mean_probes": 1.625,
+            "success": {
+              "ci95": [
+                0.806,
+                1.0
+              ],
+              "k": 16,
+              "n": 16,
+              "rate": 1.0
+            }
+          },
+          "E5_g": {
+            "mean_probes": 1.4375,
+            "success": {
+              "ci95": [
+                0.806,
+                1.0
+              ],
+              "k": 16,
+              "n": 16,
+              "rate": 1.0
+            }
+          }
+        },
+        "correct_abstentions": {
+          "ci95": [
+            0.51,
+            1.0
+          ],
+          "k": 4,
+          "n": 4,
+          "rate": 1.0
+        },
+        "first_probe_closes": {
+          "ci95": [
+            0.546,
+            0.844
+          ],
+          "k": 23,
+          "n": 32,
+          "rate": 0.71875
+        },
+        "intervention_cases": {
+          "ci95": [
+            0.893,
+            1.0
+          ],
+          "k": 32,
+          "n": 32,
+          "rate": 1.0
+        },
+        "mean_probes": 1.53125,
+        "probes_per_success": 1.53125
+      },
+      "muse": {
+        "by_exposure": {
+          "E4_r": {
+            "mean_probes": 1.375,
+            "success": {
+              "ci95": [
+                0.806,
+                1.0
+              ],
+              "k": 16,
+              "n": 16,
+              "rate": 1.0
+            }
+          },
+          "E5_g": {
+            "mean_probes": 1.0625,
+            "success": {
+              "ci95": [
+                0.806,
+                1.0
+              ],
+              "k": 16,
+              "n": 16,
+              "rate": 1.0
+            }
+          }
+        },
+        "correct_abstentions": {
+          "ci95": [
+            0.51,
+            1.0
+          ],
+          "k": 4,
+          "n": 4,
+          "rate": 1.0
+        },
+        "first_probe_closes": {
+          "ci95": [
+            0.719,
+            0.95
+          ],
+          "k": 28,
+          "n": 32,
+          "rate": 0.875
+        },
+        "intervention_cases": {
+          "ci95": [
+            0.893,
+            1.0
+          ],
+          "k": 32,
+          "n": 32,
+          "rate": 1.0
+        },
+        "mean_probes": 1.21875,
+        "probes_per_success": 1.21875
+      },
+      "random": {
+        "by_exposure": {
+          "E4_r": {
+            "mean_probes": 2.125,
+            "success": {
+              "ci95": [
+                0.806,
+                1.0
+              ],
+              "k": 16,
+              "n": 16,
+              "rate": 1.0
+            }
+          },
+          "E5_g": {
+            "mean_probes": 2,
+            "success": {
+              "ci95": [
+                0.806,
+                1.0
+              ],
+              "k": 16,
+              "n": 16,
+              "rate": 1.0
+            }
+          }
+        },
+        "correct_abstentions": {
+          "ci95": [
+            0.0,
+            0.49
+          ],
+          "k": 0,
+          "n": 4,
+          "rate": 0.0
+        },
+        "first_probe_closes": {
+          "ci95": [
+            0.229,
+            0.547
+          ],
+          "k": 12,
+          "n": 32,
+          "rate": 0.375
+        },
+        "intervention_cases": {
+          "ci95": [
+            0.893,
+            1.0
+          ],
+          "k": 32,
+          "n": 32,
+          "rate": 1.0
+        },
+        "mean_probes": 2.0625,
+        "probes_per_success": 2.0625
+      }
+    },
+    "solvable_by_some_probe": {
+      "ci95": [
+        0.893,
+        1.0
+      ],
+      "k": 32,
+      "n": 32,
+      "rate": 1.0
+    }
+  }
+}

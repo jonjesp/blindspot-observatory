@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blindspot-observatory"
+dynamic = ["version"]
+description = "Auditable injection-recovery experiments on ZTF images with an LLM experiment planner"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.23", "scipy>=1.9", "pyyaml>=6.0"]
+
+[project.optional-dependencies]
+agent = ["openai>=3.42.1"]
+test = ["pytest>=7.0"]
+dev = ["pytest>=7.0", "ruff==0.17.3"]
+
+[project.scripts]
+blindspot = "blindspot.cli:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "blindspot.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["blindspot", "blindspot.*"]
+
+[tool.setuptools.package-data]
+"blindspot.configs" = ["*.yaml"]
+"blindspot.data" = ["*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]

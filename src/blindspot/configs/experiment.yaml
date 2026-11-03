@@ -1,0 +1,44 @@
+# Benchmark and agent settings. Freeze (commit) before any paid run.
+seed: 20261031
+exposures: [E4_r, E5_g]
+
+benchmark:
+  cases_per_exposure: 18
+  class_counts:
+    no_intervention: 2
+    single_cause: 8
+    two_causes: 8
+  gain_threshold: 0.10      # minimum holdout recovery gain to close a case
+  max_probes: 3
+  y_offsets_px: [-1150, -690, -230, 230, 690, 1150]
+  x_offsets_px: [-1000, 0, 1000]
+  # Patch centres already used by earlier experiments; new sites must not overlap them.
+  excluded_offsets_px:
+    - [0, 0]
+    - [-160, -160]
+    - [-160, 160]
+    - [160, -160]
+    - [160, 160]
+    - [-700, -700]
+    - [-700, 700]
+    - [700, -700]
+    - [700, 700]
+    - [-430, -430]
+    - [-430, 430]
+    - [430, -430]
+    - [430, 430]
+
+baselines:
+  change_tolerance: 0.10    # relative change below which a diagnostic counts as "unchanged"
+
+agent:
+  model: muse-spark-1.3
+  reasoning_effort: minimal
+  max_completion_tokens: 3072
+  max_calls: 36
+  budget_usd: 1.00
+  # USD per million tokens. Preregistered values; verify against the provider's price list.
+  prices_usd_per_million_tokens:
+    input: 1.25
+    cached_input: 0.15
+    output: 4.25

@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.fits binary
+*.fits.fz binary
+*.zip binary
+
+evidence/model_evaluation/protocol.json -text
+evidence/model_evaluation/ledger.json -text
+evidence/model_evaluation/case_results.csv -text
