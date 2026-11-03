@@ -67,6 +67,32 @@ def test_publication_table_mismatch_cannot_produce_success(publication, tmp_path
     with pytest.raises(ValueError, match="published case table"):
         reproduction.reproduce_evaluation(publication, Path("unused.zip"), output)
     assert not (output / "reproduction.json").exists()
+    assert not (output / "report.md").exists()
+    assert not (output / "case_results.csv").exists()
+
+
+def test_failed_rerun_invalidates_previous_success(publication, tmp_path, monkeypatch):
+    output = tmp_path / "outputs"
+    with monkeypatch.context() as mocked:
+        mocked.setattr(reproduction, "verify_measurements", lambda *args: 36)
+        reproduction.reproduce_evaluation(publication, Path("unused.zip"), output)
+    assert (output / "reproduction.json").is_file()
+    previous_table = (output / "case_results.csv").read_bytes()
+
+    status = reproduction.main(
+        [
+            "--directory",
+            str(publication),
+            "--fits-zip",
+            str(tmp_path / "missing.zip"),
+            "--output-directory",
+            str(output),
+        ]
+    )
+
+    assert status == 2
+    assert not (output / "reproduction.json").exists()
+    assert (output / "case_results.csv").read_bytes() == previous_table
 
 
 @pytest.mark.parametrize("nested", [False, True])

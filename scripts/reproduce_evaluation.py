@@ -7,6 +7,7 @@ import csv
 import hashlib
 import sys
 from pathlib import Path
+from tempfile import TemporaryDirectory
 
 from blindspot.benchmark.freeze import freeze_record
 from blindspot.benchmark.observations import recovery_anomaly
@@ -56,7 +57,10 @@ def reproduce_evaluation(directory: Path, fits_path: Path, output: Path) -> dict
     source, destination = directory.resolve(), output.resolve()
     if source == destination or destination.is_relative_to(source) or source.is_relative_to(destination):
         raise ValueError("Reproduction outputs must be separate from the publication directory")
-    with run_lock(destination / "reproduction.json"):
+    receipt = destination / "reproduction.json"
+    with run_lock(receipt):
+        # A receipt certifies the current attempt, even when the output path is reused.
+        receipt.unlink(missing_ok=True)
         document = load_sealed(source / "protocol.json")
         ledger = load_sealed(source / "ledger.json")
         validate_protocol_contract(document)
@@ -67,12 +71,16 @@ def reproduce_evaluation(directory: Path, fits_path: Path, output: Path) -> dict
         require_equal(len(ledger["attempts"]), len(document["schedule"]), "complete response collection")
         validate_ledger(document, ledger, live=True)
         cases = verify_measurements(document, fits_path)
-        write_report(document, ledger, destination)
-        with (source / "case_results.csv").open(encoding="utf-8", newline="") as stream:
-            published = list(csv.DictReader(stream))
-        with (destination / "case_results.csv").open(encoding="utf-8", newline="") as stream:
-            generated = list(csv.DictReader(stream))
-        require_equal(generated, published, "published case table")
+        with TemporaryDirectory(dir=destination) as staging:
+            staged = Path(staging)
+            write_report(document, ledger, staged)
+            with (source / "case_results.csv").open(encoding="utf-8", newline="") as stream:
+                published = list(csv.DictReader(stream))
+            with (staged / "case_results.csv").open(encoding="utf-8", newline="") as stream:
+                generated = list(csv.DictReader(stream))
+            require_equal(generated, published, "published case table")
+            for name in ("report.md", "case_results.csv"):
+                (staged / name).replace(destination / name)
         result = {
             "status": "reproduced",
             "cases_verified": cases,
@@ -88,7 +96,7 @@ def reproduce_evaluation(directory: Path, fits_path: Path, output: Path) -> dict
             ).hexdigest(),
             "scope": "Current-source pixel reproduction; not reconstruction of the original runtime.",
         }
-        save_json(destination / "reproduction.json", result)
+        save_json(receipt, result)
         return result
 
 

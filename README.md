@@ -2,38 +2,44 @@
 
 BlindSpot Observatory evaluates language-model policies for diagnostic-probe selection in astronomical injection–recovery experiments. The benchmark compares model-selected probes with deterministic baselines on controlled interventions in two ZTF exposures. None of the evaluated models met the prespecified criterion for superiority over the elimination baseline.
 
-![A real ZTF exposure, a 128×128 patch before and after injecting 25 artificial sources, and the benchmark's probe counts.](docs/assets/auditor-demonstration.png)
+![ZTF exposure E4_r, the original 128 × 128 pixel patch at F01, and the same patch with 25 artificial sources. Circles mark nine recovered injections and crosses mark the remaining sixteen.](docs/assets/auditor-demonstration.png)
+
+*The illustration uses nominal injections at SNR 6 at the F01 location. The original and injected patches share the same display scale. The 9 of 25 recoveries describe this illustrative batch.*
 
 ## The problem
 
-A survey only sees what its detector catches. To measure what it **misses**, artificial sources are injected into real images and the fraction recovered is counted (*injection–recovery*). When recovery drops, the hard question is **why**: extra sky noise, blurrier optics (PSF), or fainter flux? Each cause calls for a different follow-up experiment, and every experiment costs computing time and expert attention.
+Injection–recovery measures detector completeness by inserting artificial sources into real images and counting the fraction recovered. A drop in recovery can result from higher background noise, a broader point-spread function (PSF), or reduced source flux. Controlled probes test those explanations separately.
 
 ## What the project does
 
 1. Takes two **real ZTF exposures** and injects artificial point sources into 36 patches.
-2. Degrades each patch with a hidden cause (noise, PSF width, flux, or two at once). Four patches are controls with nothing wrong.
-3. Shows a **Muse model only the pilot numbers** (recovery counts and three indicators). The model selects one probe (`probe_sky`, `probe_psf`, `probe_flux`), requests two probes, or abstains.
-4. **Measures everything with deterministic code.** The model performs no measurements or numerical calculations and never sees pixels, the hidden cause, or the probe outcomes. An automated test (AST check) enforces that the agent code cannot import the benchmark internals.
-5. Records every call in a sealed ledger: request hash, response, tokens, cost, and a hard budget cap enforced by reserving the worst-case cost of each request before it is sent.
+2. Applies one or two hidden interventions to 32 patches and leaves four patches as unmodified controls.
+3. Sends pilot recovery counts and up to three diagnostic indicators to the Muse model. The model selects one probe (`probe_sky`, `probe_psf`, `probe_flux`), requests two probes, or abstains.
+4. Calculates measured outcomes with deterministic detector and statistical routines. The model receives no image pixels, hidden intervention labels, or probe outcomes. An automated import check separates agent code from benchmark internals.
+5. Records request hashes, responses, token usage, and calculated costs in a sealed ledger. A conservative reservation is made before each request to enforce the local budget.
 
 ## Result
 
-108 live calls to the Meta Model API: Muse Spark 1.1, Muse Spark 1.3, and Muse Wonder 1.0, with 36 cases each. **Total API cost: USD 2.99.**
+The evaluation includes 108 live calls to the Meta Model API, with 36 cases each for Muse Spark 1.1, Muse Spark 1.3, and Muse Wonder 1.0. **The total calculated token cost was USD 2.99.**
 
-| Policy | Probes needed (32 fault cases) | Closed by the model's own choice | Meta API cost (USD) |
-| --- | ---: | ---: | ---: |
-| Random order | 66 | n/a | none (no API call) |
-| Heuristic (largest change first) | 48 | n/a | none (no API call) |
-| **Elimination** | **41** | n/a | none (no API call) |
-| Muse Spark 1.1 | 39 | 28/32 | 0.39 |
-| Muse Wonder 1.0 | 40 | 27/32 | 2.08 |
-| Muse Spark 1.3 | 43 | 27/32 | 0.52 |
+| Policy | Total intervention probes | Closed by model-selected probes | Additional closures by continuation | Final closures | Calculated token cost (USD) |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Random order | 66 | — | — | 32/32 | — |
+| Heuristic (largest change first) | 48 | — | — | 32/32 | — |
+| **Elimination** | **41** | — | — | 32/32 | — |
+| Muse Spark 1.1 with continuation | 39 | 28/32 | 4/32 | 32/32 | 0.39 |
+| Muse Wonder 1.0 with continuation | 40 | 27/32 | 5/32 | 32/32 | 2.08 |
+| Muse Spark 1.3 with continuation | 43 | 27/32 | 5/32 | 32/32 | 0.52 |
 
-*The cost column is the charge recorded for calls to the Meta Model API and nothing else. Local computation (image injection, detection, and probe measurements) is not measured and is not included in any figure, so the table is neither a total-cost nor a runtime comparison.*
+Each closure column uses the same 32 intervention cases. After the selected probes are exhausted without closure, or after an invalid reply, the policy tries the remaining probes in a fixed order. For each model policy, final closures combine both stages. Baselines run their own probe orders without model calls.
 
-All policies ultimately close 32/32 intervention cases (models continue in a fixed order when their first choice fails). Each model correctly abstained on all four controls; the random baseline executed probes on every control.
+Token costs are calculated from recorded usage and frozen rates. Local computation and invoice reconciliation are outside the scope of the comparison. Each model correctly abstained on all four controls. The random baseline executed probes on every control.
 
-**Interpretation: the models did not demonstrate an advantage over elimination.** The prespecified criterion was "fewer probes, with the whole confidence interval below zero." No model met it: every interval against the rule includes zero. The results are also inconclusive about equivalence; the intervals do not establish it.
+![Probe counts for the six policies, direct and continuation closures for the three models, and adjusted paired bootstrap intervals for the difference from elimination. All three intervals include zero.](docs/assets/model-evaluation.png)
+
+*The figure summarizes the 32 intervention cases. The paired intervals use a nominal Bonferroni-adjusted coverage of 98.33%. [Methods and numerical results](docs/RESULTS.md#prespecified-comparison-and-uncertainty).*
+
+**The models did not demonstrate an advantage over elimination.** The criterion required a complete live collection of valid responses, preservation of intervention closures and control abstentions, and an adjusted interval for the paired probe-count difference entirely below zero. Each model produced one invalid response, and every adjusted interval included zero. Equivalence remains undetermined.
 
 ### Invalid model responses
 
@@ -49,9 +55,7 @@ The two token-limited cases show that maximum reasoning can consume a fixed comp
 
 ## Interpretation and reproducibility
 
-- **Prespecified comparison.** The criterion required fewer probes with the full confidence interval below zero; it was not met. The primary baseline is implemented in [`baselines.py`](src/blindspot/benchmark/baselines.py).
-- **Baseline comparison.** The model policies required 39 to 43 intervention probes, compared with 41 for elimination. Spark 1.1 incurred approximately USD 0.01 in recorded API cost per decision. These observations do not establish superiority or equivalence.
-- **Measured failure modes.** The invalid responses above are recorded with their token usage rather than assumed.
+- **Primary baseline.** Elimination uses the pilot measurements and a deterministic probe order. [Baseline implementation](src/blindspot/benchmark/baselines.py)
 - **Reproducibility.** The published observations, probe measurements and 108-row case table can be reproduced from the verified images without model calls. See [Data and reproducibility](docs/DATA.md#verify-the-published-evaluation-without-model-calls).
 
 Further evaluation could use sequential decisions informed by probe outcomes, natural causes and additional images. Those conditions are outside the current experiment.
