@@ -1,7 +1,7 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it together with the ZTF data products it processes."
+message: "Cite this software and the ZTF data products used in the analysis."
 title: "BlindSpot Observatory: auditable injection-recovery experiments on ZTF images"
 type: software
 license: MIT
 authors:
-  - name: "BlindSpot Observatory contributors"
+  - alias: "Jonjesp"
