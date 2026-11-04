@@ -73,6 +73,26 @@ python -m scripts.reproduce_evaluation --fits-zip "$BLINDSPOT_FITS_ZIP"
 
 Without the images, `blindspot plan` and the tests that do not need pixels still run. No API key is needed to reproduce the published tables. Live calls are optional, opt-in, and capped (see [Data](docs/DATA.md)).
 
+## Web laboratory
+
+The Model Laboratory provides a local browser interface for selecting a ZTF exposure, benchmark cutout, model profile, and execution mode. It displays detector measurements, the model's decision and rationale, holdout recovery charts, and the comparison with elimination. The image viewer supports zoom and separate overlays for detections, injected sources, and recovered sources.
+
+For the images downloaded in the quick start, launch the laboratory from the repository root:
+
+```bash
+python -m scripts.laboratory --fits data/ztf
+```
+
+The interface is available at [http://127.0.0.1:8765](http://127.0.0.1:8765). Archived-response mode recomputes the measurements and replays a recorded decision without API calls.
+
+Live requests require the `agent` extra, API credentials in the process environment, and an explicit session budget:
+
+```bash
+python -m scripts.laboratory --fits data/ztf --live-budget-usd 0.25
+```
+
+Each live request requires authorization in the interface. Setup, image layers, execution modes, and session accounting are described in [Model Laboratory](docs/LABORATORY.md).
+
 ## Meta tooling used
 
 | Model (Meta Model API) | Reasoning | Role |
