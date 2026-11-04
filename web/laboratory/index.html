@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Model Laboratory | BlindSpot Observatory</title>
+  <link rel="stylesheet" href="/laboratory.css">
+  <script type="module" src="/laboratory.js"></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <span class="identity"><img src="/logo.png" alt="BlindSpot Observatory" width="1080" height="1080"></span>
+      <span class="environment">Local workspace</span>
+    </div>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="title">
+      <p class="eyebrow">ZTF / Injection–recovery benchmark</p>
+      <h1 id="title">Model Laboratory</h1>
+      <p>Follow the measurements, inspect the model’s decision, and compare both policies on the same holdout evidence.</p>
+    </section>
+
+    <form id="setup" class="command">
+      <div class="command-bar">
+        <details id="configuration">
+          <summary><span>Run configuration</span><span id="selection" class="selection">Loading protocol</span></summary>
+          <div class="config-panel">
+            <div class="config-grid">
+              <label for="field">ZTF exposure<select id="field" required></select></label>
+              <label for="case">Benchmark cutout<select id="case" required></select></label>
+              <label for="model">Model profile<select id="model" required></select></label>
+              <label for="mode">Execution mode
+                <select id="mode" required>
+                  <option value="replay">Archived response</option>
+                  <option value="live" disabled>Live provider request</option>
+                </select>
+              </label>
+            </div>
+            <p class="muted" id="mode-detail">Loading the sealed evaluation catalog.</p>
+            <label id="live-consent" class="toggle consent" hidden>
+              <input type="checkbox" id="confirm-live">Authorize one paid request for this selection.
+            </label>
+          </div>
+        </details>
+        <button id="run" type="submit" disabled>Run analysis</button>
+      </div>
+    </form>
+
+    <div class="workspace">
+      <section class="panel viewer" aria-labelledby="image-title">
+        <header class="panel-header">
+          <div><p class="eyebrow">01 / Image inspection</p><h2 id="image-title">Astronomical cutout</h2></div>
+          <span id="image-size" class="tag">FITS</span>
+        </header>
+        <div class="viewer-toolbar" id="viewer-tools" hidden>
+          <label for="frame">View
+            <select id="frame">
+              <option value="original">Original FITS</option>
+              <option value="before" disabled>Before probe</option>
+              <option value="after" disabled>After probe</option>
+            </select>
+          </label>
+          <label id="probe-field" for="probe" hidden>Probe<select id="probe"></select></label>
+          <label id="batch-field" for="batch" hidden>Batch<select id="batch"></select></label>
+          <label for="zoom">Zoom
+            <select id="zoom">
+              <option value="fit">Fit</option>
+              <option value="near">150%</option>
+              <option value="close">200%</option>
+              <option value="detail">300%</option>
+            </select>
+          </label>
+        </div>
+        <div class="viewport" id="viewport">
+          <div id="image-empty" class="viewer-empty">
+            <span class="reticle" aria-hidden="true"></span>
+            <p>Awaiting verified FITS input</p>
+            <span>Run an analysis to inspect the selected cutout.</span>
+          </div>
+          <canvas id="cutout" aria-label="Grayscale view of the verified FITS cutout" role="img" hidden></canvas>
+        </div>
+        <fieldset id="layers" class="layers" hidden>
+          <legend class="sr-only">Image layers</legend>
+          <label class="toggle"><input id="layer-detections" type="checkbox" checked><span class="symbol detection" aria-hidden="true"></span>Detections</label>
+          <label class="toggle" id="injected-layer" hidden><input id="layer-injected" type="checkbox" checked><span class="symbol injection" aria-hidden="true"></span>Injections</label>
+          <label class="toggle" id="recovered-layer" hidden><input id="layer-recovered" type="checkbox" checked><span class="symbol recovery" aria-hidden="true"></span>Recovered</label>
+        </fieldset>
+        <p id="image-detail" class="muted">Percentile stretch for display. Measurements use original pixel values.</p>
+        <p id="batch-detail" class="viewer-detail" role="status" hidden></p>
+        <p id="batch-note" class="muted batch-note" hidden>Before and after use independent synthetic source positions. Shapes mark detector peaks, injection sites and accepted matches.</p>
+      </section>
+
+      <aside class="rail" aria-label="Execution and model evidence">
+        <section class="panel execution" aria-labelledby="progress-title">
+          <header class="panel-header">
+            <div><p class="eyebrow">02 / Execution</p><h2 id="progress-title">Run monitor</h2></div>
+            <span id="elapsed" class="tag elapsed" hidden></span>
+          </header>
+          <p id="status" class="run-status" role="status">Loading laboratory.</p>
+          <ol id="stages">
+            <li data-stage="image">Verify FITS input</li>
+            <li data-stage="measurement">Measure pilots and holdouts</li>
+            <li data-stage="decision" id="decision-stage">Resolve model response</li>
+            <li data-stage="scoring">Score policies and trace detections</li>
+          </ol>
+        </section>
+        <section class="panel" aria-labelledby="pilot-title">
+          <p class="eyebrow">03 / Detector measurements</p>
+          <h2 id="pilot-title">Pilot recovery</h2>
+          <p id="pilot-empty" class="muted">Recovery charts appear when the measurement stage completes.</p>
+          <div id="pilots" hidden>
+            <div id="pilot-chart"></div>
+            <p id="indicators" class="muted indicators"></p>
+            <details class="disclosure"><summary>Numerical observation sent to the model</summary><pre id="observation"></pre></details>
+          </div>
+        </section>
+        <section class="panel" aria-labelledby="response-title">
+          <p class="eyebrow">04 / Model response</p>
+          <h2 id="response-title">Decision and rationale</h2>
+          <p id="reply-empty" class="muted">The validated response appears here when it is available.</p>
+          <div id="reply" hidden>
+            <span id="reply-decision" class="tag"></span>
+            <blockquote id="justification"></blockquote>
+            <p id="reply-probes" class="muted"></p>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <section id="results" class="panel results" aria-labelledby="results-title" hidden>
+      <header class="panel-header">
+        <div><p class="eyebrow">05 / Scored evidence</p><h2 id="results-title">Holdout recovery</h2></div>
+        <span id="run-source" class="tag"></span>
+      </header>
+      <p id="case-summary" class="muted"></p>
+      <div class="comparison">
+        <article>
+          <h3 id="model-title">Model policy</h3>
+          <p id="decision" class="outcome"></p>
+          <p id="model-trace" class="muted"></p>
+        </article>
+        <article>
+          <h3>Elimination baseline</h3>
+          <p id="baseline-outcome" class="outcome"></p>
+          <p id="baseline-trace" class="muted"></p>
+        </article>
+      </div>
+      <p id="threshold" class="muted"></p>
+      <p id="empty-probes" class="muted" hidden>Neither policy executed a probe.</p>
+      <div id="holdout-chart" class="holdout-chart"></div>
+      <details class="disclosure">
+        <summary>Request provenance and token usage</summary>
+        <p id="request-scope" class="muted"></p>
+        <dl id="provenance"></dl>
+      </details>
+    </section>
+    <footer><span>BlindSpot Observatory</span><span>Verified ZTF exposures · Sealed benchmark protocol</span></footer>
+  </main>
+</body>
+</html>
